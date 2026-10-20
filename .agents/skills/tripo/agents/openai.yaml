@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tripo"
+  short_description: "Create ImageGen references and Tripo 3D models"
+  default_prompt: "Use $tripo to create an ImageGen reference, then generate a 3D model from that image with my default quality settings."

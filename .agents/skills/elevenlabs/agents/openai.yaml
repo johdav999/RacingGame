@@ -1,0 +1,4 @@
+interface:
+  display_name: "ElevenLabs Sound Effects"
+  short_description: "Generate repo audio with securely stored API keys"
+  default_prompt: "Use $elevenlabs to generate a sound effect and save it in this repository."

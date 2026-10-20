@@ -1,0 +1,45 @@
+cmake_minimum_required(VERSION 3.22)
+project(RacingGame VERSION 0.1.0 LANGUAGES C CXX)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(WEBENGINE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/external/WebEngine" CACHE PATH "Selected WebEngine checkout")
+get_filename_component(WEBENGINE_SOURCE_DIR "${WEBENGINE_SOURCE_DIR}" ABSOLUTE)
+if(NOT EXISTS "${WEBENGINE_SOURCE_DIR}/CMakeLists.txt")
+  message(FATAL_ERROR "Run python scripts/dev.py setup to initialize WebEngine.")
+endif()
+file(READ "${WEBENGINE_SOURCE_DIR}/.emscripten-version" engine_sdk)
+file(READ "${CMAKE_CURRENT_SOURCE_DIR}/.emscripten-version" game_sdk)
+string(STRIP "${engine_sdk}" engine_sdk)
+string(STRIP "${game_sdk}" game_sdk)
+if(EMSCRIPTEN AND NOT engine_sdk STREQUAL game_sdk)
+  message(FATAL_ERROR "Selected engine requires Emscripten ${engine_sdk}; game pins ${game_sdk}.")
+endif()
+include(cmake/WebEngine.cmake)
+racing_add_webengine()
+add_library(racing_scene src/starter_scene.cpp)
+target_include_directories(racing_scene PUBLIC src)
+target_link_libraries(racing_scene PUBLIC engine_core)
+if(EMSCRIPTEN)
+  target_compile_options(racing_scene PRIVATE -fexceptions)
+  add_executable(racing src/browser_main.cpp)
+  target_link_libraries(racing PRIVATE racing_scene racing_engine_browser)
+  target_link_options(racing PRIVATE -sALLOW_MEMORY_GROWTH=1 -sSTACK_SIZE=1048576
+    -sENVIRONMENT=web -sEXIT_RUNTIME=0 -sFILESYSTEM=0
+    "-sEXPORTED_RUNTIME_METHODS=['HEAPU8','UTF8ToString']")
+  set_target_properties(racing PROPERTIES SUFFIX ".js" RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/site")
+  add_custom_target(racing_site
+    COMMAND "${CMAKE_COMMAND}" -E copy_directory "${PROJECT_SOURCE_DIR}/web" "${CMAKE_BINARY_DIR}/site"
+    COMMAND "${CMAKE_COMMAND}" -E copy_directory "${PROJECT_SOURCE_DIR}/assets/runtime" "${CMAKE_BINARY_DIR}/site/assets"
+    COMMAND "${CMAKE_COMMAND}" -DENGINE_DIR=${WEBENGINE_SOURCE_DIR}
+      -DJOLT_DIR=${RACING_JOLT_SOURCE_DIR} -DSITE_DIR=${CMAKE_BINARY_DIR}/site
+      -P "${PROJECT_SOURCE_DIR}/cmake/StageLicenses.cmake"
+    DEPENDS racing VERBATIM)
+else()
+  enable_testing()
+  add_executable(racing_smoke tests/starter_scene_test.cpp)
+  target_link_libraries(racing_smoke PRIVATE racing_scene)
+  add_test(NAME racing_smoke COMMAND racing_smoke)
+  set_tests_properties(racing_smoke PROPERTIES TIMEOUT 30)
+endif()

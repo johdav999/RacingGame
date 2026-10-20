@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engine Skill"
+  short_description: "Build browser games with the WebEngine APIs"
+  default_prompt: "Use $engine-skill to build or extend a playable game with WebEngine, following the current architecture and validating the game in the browser."

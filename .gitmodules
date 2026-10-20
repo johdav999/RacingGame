@@ -1,0 +1,3 @@
+[submodule "external/WebEngine"]
+	path = external/WebEngine
+	url = https://github.com/johdav999/WebEngine.git
