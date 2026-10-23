@@ -1,0 +1,46 @@
+{
+  "name": "dune-building-1",
+  "source": "assets/runtime/models/buildings/DuneBuilding1.glb",
+  "source_sha256": "11268be8bb5310bca76d36fed80a3412923905b99f7ccb96681d11b6997f3517",
+  "sha256": "b94fc8a8dba2466cf8243c59a949eab836da6e963d3b06473058037f528693a0",
+  "bytes": 3600704,
+  "triangles": 8042,
+  "materials": 1,
+  "dimensions": [
+    16.0,
+    5.676109313964844,
+    12.352906227111816
+  ],
+  "source_dimensions_blender": [
+    0.9802857637405396,
+    0.7568361163139343,
+    0.3477630615234375
+  ],
+  "maps": [
+    {
+      "name": "DuneBuilding1_basecolor",
+      "source_size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "DuneBuilding1_normal",
+      "source_size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "DuneBuilding1_rm",
+      "source_size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 1024,
+  "provenance": "User-supplied GLB; provider and license not independently verified",
+  "preparation": "All source triangles and UVs retained; uniform metric scale; bottom-centre pivot; embedded 1024px maps",
+  "qa": "Finite geometry, UVs, embedded images, triangle preservation, exported GLB re-import and front/reverse renders"
+}

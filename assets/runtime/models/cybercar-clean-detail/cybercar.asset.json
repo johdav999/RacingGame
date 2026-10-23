@@ -1,0 +1,90 @@
+{
+  "asset": "cybercar-clean-detail",
+  "provider": "Tripo3D with authored replacement wheels",
+  "task_id": "cd963cf3-d777-4f13-949b-70ac5690606d",
+  "segmentation_task_id": "c074ff73-19dc-48c4-bb7e-99cfeca58d6a",
+  "source_sha256": "5d83334710b404e44a167c86f7bc0f7adcfe683f149b995c9d184d586e523509",
+  "segmented_sha256": "86e88dff49f3008bba6cf24e4680b5fee96f2ae772671ead2dd63bfd6f2cba8e",
+  "sha256": "274eb030c52d37b31ba56e63083e1631e6817b11e8690da056ed1e88d6198237",
+  "triangles": 49034,
+  "texture_size": [
+    4096,
+    4096
+  ],
+  "wheel_texture_size": [
+    256,
+    32
+  ],
+  "parts": [
+    {
+      "name": "cybercar_chassis",
+      "triangles": 11590,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    },
+    {
+      "name": "wheel_front_left",
+      "triangles": 9168,
+      "pivot": [
+        -0.2755,
+        0.08139307863712311,
+        -0.193
+      ],
+      "radius": 0.0825
+    },
+    {
+      "name": "wheel_front_right",
+      "triangles": 9168,
+      "pivot": [
+        -0.2755,
+        0.08139307863712311,
+        0.193
+      ],
+      "radius": 0.0825
+    },
+    {
+      "name": "wheel_rear_left",
+      "triangles": 9168,
+      "pivot": [
+        0.2818,
+        0.08139307863712311,
+        -0.193
+      ],
+      "radius": 0.083
+    },
+    {
+      "name": "wheel_rear_right",
+      "triangles": 9168,
+      "pivot": [
+        0.2818,
+        0.08139307863712311,
+        0.193
+      ],
+      "radius": 0.083
+    },
+    {
+      "name": "cybercar_wheel_wells",
+      "triangles": 772,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  ],
+  "scale": 4.3,
+  "bodyOffsetY": -0.65,
+  "suspension": {
+    "rest": 0.3,
+    "minimum": 0.24,
+    "maximum": 0.38
+  },
+  "max_steer": 0.42,
+  "preparation": "Source wheels removed by clipped wheel-well apertures; retained body UVs and original image bytes; closed authored tires/rims/spokes/hubs and recessed wheel-well liners",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

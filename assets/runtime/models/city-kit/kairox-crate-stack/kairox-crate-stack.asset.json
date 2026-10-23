@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-crate-stack",
+  "provider": "Tripo3D",
+  "task_id": "6a2a0526-661f-47c7-8c7b-14bb197b4887",
+  "credits_consumed": 60.0,
+  "source_sha256": "9bab67d901f96ceea95887254724d7b8b939a5e88d05834e218cc814e25872f7",
+  "reference_sha256": "38cc76dfb0768e274e1426130987ccef8d89b4ec385b8c9146abf4ebc7dfc72f",
+  "sha256": "572389dc160c9a70ff9c172b85861b99d01cc059c167822a2b4060c78be18f18",
+  "bytes": 2382112,
+  "triangles": 45573,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    1.3767597675323486,
+    1.5000001192092896,
+    2.558414936065674
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "One laser striking an energy shield, crisp electrical impact with glassy resonant ripple and short low electromagnetic thump, immediate attack, compact clean decay. Isolated dry game sound, no voices, no music.",
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 0.8
+  },
+  "generated_at": "2026-10-22T09:32:25.917050+00:00",
+  "sha256": "58927c9f06db87228f06acf3be77065a070f3ce8f807f8a0e632745f3d431402",
+  "request_id": null,
+  "character_cost": "8",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "shield-impact",
+    "file": "shield-impact.wav",
+    "loop": false,
+    "sha256": "35d0071bc61b38f2f9ef88f0c8e2530713904674b94cf7bd963fcacf176f8590",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 9360,
+    "seconds": 0.39,
+    "peak": 0.7199999999999999,
+    "rms": 0.12706804041010425,
+    "source_seconds": 0.8,
+    "source_sha256": "58927c9f06db87228f06acf3be77065a070f3ce8f807f8a0e632745f3d431402",
+    "loop_boundary_delta": null,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

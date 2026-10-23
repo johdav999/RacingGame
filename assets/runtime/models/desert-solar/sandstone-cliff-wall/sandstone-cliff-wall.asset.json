@@ -1,0 +1,53 @@
+{
+  "asset": "sandstone-cliff-wall",
+  "provider": "Tripo3D",
+  "task_id": "e427a6d3-cbc3-4117-8a48-175d8f1dd43a",
+  "credits_consumed": 60.0,
+  "source_sha256": "46439ee729522f9432fc2d365cb9191626942302601d79d34b54f8ac893cb5d4",
+  "reference_sha256": "50e5377443e34e5d4f83a6478a6f3fb05c74bc67c524c5220f5192bf71f9f14e",
+  "sha256": "a932b1a35b754f36903486b2d03b8a37685df8c0e37cbacd2484c781cb18b1cf",
+  "bytes": 12798284,
+  "triangles": 9568,
+  "requested_triangle_limit": 10000,
+  "dimensions_xyz_metres": [
+    20.0,
+    9.49402141571045,
+    9.058527946472168
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 20.401082154216855,
+  "source_dimensions_blender": [
+    0.44402191042900085,
+    0.9803401231765747,
+    0.46536850929260254
+  ],
+  "source_textures": [
+    {
+      "name": "Color_e427a6d3-cbc3-4117-8a48-175d8f1dd43a",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_e427a6d3-cbc3-4117-8a48-175d8f1dd43a",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_e427a6d3-cbc3-4117-8a48-175d8f1dd43a",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 2048,
+  "emission_mask_pixels": 0,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

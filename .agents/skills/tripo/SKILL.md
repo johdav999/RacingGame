@@ -1,6 +1,6 @@
 ---
 name: tripo
-description: Create an ImageGen reference image, then generate a 3D model from that image through the direct Tripo3D API, with configurable quality defaults, resumable tasks, repository outputs and encrypted local credentials. Use when the user requests Tripo generation or Tripo API setup.
+description: Create ImageGen references and Tripo 3D models, optionally split into parts in simple, balanced or detailed mode, with resumable tasks and encrypted local credentials. Use when the user requests Tripo generation, segmentation or API setup.
 ---
 
 # Tripo 3D generation
@@ -49,7 +49,13 @@ Apply these screenshot defaults unless the user overrides them:
 | Remove Lighting | Off | `delight=false` |
 | PBR | On | `pbr=true` |
 | Topology | Triangle | `quad=false` |
-| Polycount | 50,000 | `face_limit=50000` |
+| Polycount | Maximum 20,000 triangles | `face_limit=20000` |
+
+Keep every new model within a 20,000-triangle budget. The helper defaults to
+20,000 triangle faces, accepts lower `--face-limit` values, and rejects higher
+values before upload or submission. Quad output defaults to at most 10,000 faces
+(20,000 triangles after triangulation). Inspect the delivered mesh's actual
+triangle count before integration; a provider request limit is not output QA.
 
 Geometry defaults to `v3.1-20260211`; texture is pinned to `v3.5-20260815` so
 `delight=false` is honored (older texture models ignore that flag). Texture quality
@@ -60,6 +66,64 @@ For bare geometry, `--no-texture` also disables PBR unless explicitly overridden
 explicit `--no-texture --pbr` is rejected because Tripo forces texturing with PBR.
 Quads require `.fbx` output. AI Complete controls image input autofix;
 do not confuse it with downstream mesh segmentation/part completion.
+
+## Optional models in parts
+
+Generate a whole model by default. When the user specifies "in parts", "separate
+parts" or segmentation, generate/download the model first, then run `segment`
+against that generation's `job.json`. If a suitable generated model already
+exists, reuse its job instead of regenerating it or its reference.
+
+Honor the requested **simple**, **balanced** or **detailed** parts mode. Default
+to **balanced** when parts are requested without a mode. These are segmentation
+granularity settings, independent of Ultra geometry, texture quality and face
+count; a detailed parts request must not silently change those settings.
+
+| Parts mode | Intended split |
+| --- | --- |
+| `simple` | A few broad components; useful when coarse separation is sufficient |
+| `balanced` | Moderate semantic separation; default for requested parts |
+| `detailed` | Finer components; inspect for excessive small fragments |
+
+Example: "Create this cyberpunk car in parts, detailed mode" means the normal
+ImageGen-to-model workflow followed by:
+
+```powershell
+python <skill-directory>/scripts/tripo.py segment --repo <repo> --source-job artifacts/model-jobs/car/job.json --mode detailed --output artifacts/model-jobs/car-parts/model.glb
+```
+
+The helper pins segmentation `v2.0-20260430` (provider Beta) and sends
+`segmentation_granularity` to `POST /v3/mesh/segment`. Connectivity splitting
+defaults on; use `--no-split-by-connectivity` when disconnected islands should
+remain grouped. Do not pass the original image as segmentation `ref_image`:
+that field expects segmentation guidance and makes the API ignore the mode.
+
+Use this separate stage for mode-controlled parts. Generation's `generate_parts`
+switch has no documented granularity setting and conflicts with textured/PBR
+generation. The helper does not send it or silently turn off the existing
+texture/PBR defaults. Inspect the segmented output's materials before claiming
+texture preservation.
+
+Keep the original model. The segmented result is one GLB containing parts, not
+a promise of one file per part, closed surfaces, exact part count, usable pivots,
+or a rig. Inspect separation, alignment and materials before integration.
+For cars, check wheel/body separation and axle pivots explicitly. If individual
+files are requested, export them after inspection while preserving assembly
+transforms. Part completion, rigging and repeated segmentation are additional
+work, not automatic follow-up operations.
+
+A request to create a model in parts authorizes the generation and one requested
+segmentation stage. Mention the extra paid stage when executing that request.
+This skill update authorizes no paid calls. A different mode requires a new
+segmentation task; do not automatically retry paid quality experiments.
+
+Each stage has its own reserved output directory, task ID, provenance and
+`job.json`. `segment --dry-run` previews the segmentation request without a key
+or API call. Resume the appropriate stage with the existing `resume` command;
+it only polls/downloads that recorded task and never resubmits. After resuming
+generation, start the requested segmentation only if it has not been submitted.
+If a segmentation submission has an uncertain outcome, inspect provider history
+before creating any replacement.
 
 ## Credentials
 
@@ -114,8 +178,9 @@ timestamps and SHA256; it omits signed URLs and credentials. Account rights rema
 unverified until actual entitlement evidence is recorded. Inspect geometry, maps,
 silhouette and scale in Blender or the target viewer and report actual QA scope.
 
-API sources checked 2026-10-12:
+Generation and segmentation schemas checked 2026-10-20:
 [image generation](https://developers.tripo3d.ai/en/docs/generation-image-to-model),
+[segmentation](https://developers.tripo3d.ai/en/docs/mesh-segment),
 [upload](https://developers.tripo3d.ai/en/docs/files),
 [task query](https://developers.tripo3d.ai/en/docs/task-query).
 Recheck official schemas when extending fields or encountering schema errors.

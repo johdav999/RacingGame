@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-barrier-end",
+  "provider": "Tripo3D",
+  "task_id": "9bdf9424-86ce-43ef-acbc-6d3e0813f126",
+  "source_sha256": "9fdbb3e908e52cf07a9e393bc0d5e4595150aaa5f3331eb53f921d44e45129e3",
+  "reference_sha256": "25c28a482cefab950470d8feeac8434fa1369f136b700a9d664938a3680d4162",
+  "sha256": "ec8c66a0eeb72b10b799b1695c3a4c9d47c3b1926a256bf236b949764eeed46f",
+  "bytes": 824820,
+  "source_triangles": 44478,
+  "triangles": 1200,
+  "dimensions": [
+    0.8,
+    1.2,
+    0.7
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

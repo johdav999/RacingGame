@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-catwalk",
+  "provider": "Tripo3D",
+  "task_id": "1e12bc16-40d5-4a9d-bbb2-57f2b4af0ca6",
+  "credits_consumed": 60.0,
+  "source_sha256": "e5002e84afc9d9e0e29aaeeef3bf4cd0f540dea199cd46bc96ba38bbb7692d50",
+  "reference_sha256": "b5a2b7cd03c41274556fd03705130c284eccfcb63f675c443049a79dd8710e6c",
+  "sha256": "12683e9b690acec8b85b4339ed1a1e8ef68a345a065e16572e1ce194401aab49",
+  "bytes": 2499008,
+  "triangles": 41896,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    2.7631051540374756,
+    1.481317400932312,
+    8.0
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

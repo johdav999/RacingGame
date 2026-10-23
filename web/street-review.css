@@ -1,0 +1,10 @@
+body.street-review main{display:none}
+body.street-review footer .controls{visibility:hidden}
+.street-tour{position:fixed;left:32px;top:112px;width:270px;padding:20px;background:#0b1525ed;border-top:2px solid var(--cyan);z-index:5}
+.street-tour h1{font-size:22px;line-height:1.2;margin:12px 0 22px}
+.street-tour label{display:block;font-size:11px;color:var(--muted);margin-bottom:8px}
+.street-tour select{font:inherit;color:#eef6fc;background:#18303c;border:1px solid #7bf4e559;padding:12px;width:100%}
+.street-tour select:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.street-tour p:not(.eyebrow){color:var(--muted);font-size:12px;line-height:1.6}
+.street-tour a{display:block;text-align:center;text-decoration:none;margin-top:18px;padding:12px;font-size:10px;letter-spacing:1px}
+@media(max-width:760px){.street-tour{left:18px;top:85px;width:240px;padding:14px}.street-tour h1{font-size:18px;margin:8px 0 14px}}

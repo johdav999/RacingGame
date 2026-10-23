@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-shop-sign",
+  "provider": "Tripo3D",
+  "task_id": "464167c5-ed91-4202-a3ef-1f1d7cf3a743",
+  "credits_consumed": 60.0,
+  "sha256": "37f26b379ade9f2e69aa7103f3af15bac9cd214a73a421509501bf91d2f49a94",
+  "source_sha256": "a3c6261017a1d4446fe5bae7aadac0b148db2f3f13b336f6778644ad4e1661d1",
+  "reference_sha256": "415303772f56630a30163c502151686d7a312dcd159760cf13b13cee3a82a1c3",
+  "bytes": 2290860,
+  "triangles": 39457,
+  "texture_size": 512,
+  "dimensions": [
+    4.0,
+    1.4419726133346558,
+    1.494594931602478
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

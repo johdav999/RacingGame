@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-braking-board",
+  "provider": "Tripo3D",
+  "task_id": "da73eeab-6b84-4765-94f8-527d42aac270",
+  "source_sha256": "fa4421115989cbf1b969e77d2f91004825f1fdd42936b6e2be27c5e2b27062b6",
+  "reference_sha256": "1002e48e8755d2fbf66b6d8d4a39df8c428463d0010adc184b35799d4c225b03",
+  "sha256": "0be6646b8dbf876a42e4735a3057b547baee674d7c15d79e255060e2e7bf2252",
+  "bytes": 809476,
+  "source_triangles": 44077,
+  "triangles": 1598,
+  "dimensions": [
+    0.85,
+    2.3,
+    0.55
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

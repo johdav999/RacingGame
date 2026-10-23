@@ -76,8 +76,8 @@ def build(args, native=False):
     run(["cmake", "--build", output, "--target", "racing_smoke" if native else "racing_site",
          "--parallel", str(args.jobs)], env)
     if native:
-        run(["ctest", "--test-dir", output, "--output-on-failure", "--timeout", "30",
-             "-R", "^racing_smoke$"], env)
+        run(["ctest", "--test-dir", output, "--output-on-failure", "--timeout", "120",
+             "-R", "^racing_(smoke|chassis_races|street_kit|track_kit|market_plaza|shield|gate_marker|weapon|laser|static_art|desert|desert_lighting|desert_race_kit|dune_villages|performance_settings|paint|audio|trial|trial_rules|ai|ai_races|championship)$"], env)
     else:
         revision = subprocess.check_output(["git", "-C", str(engine), "rev-parse", "HEAD"], text=True).strip()
         dirty = bool(subprocess.check_output(["git", "-C", str(engine), "status", "--porcelain"], text=True).strip())

@@ -1,39 +1,160 @@
 <!doctype html>
 <html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RacingGame · Development garage</title>
-<style>
-  *{box-sizing:border-box}body{margin:0;background:#101722;color:#f1f4f8;font:16px system-ui}
-  main{max-width:1100px;margin:0 auto;padding:24px}h1{font-size:clamp(24px,5vw,40px);margin-bottom:8px}
-  p{line-height:1.5;color:#bcc8d7}#viewport{width:100%;height:65vh;min-height:280px;display:block;border:1px solid #40526b;border-radius:12px}
-  a{color:#9cd1ff}nav{display:flex;gap:20px;flex-wrap:wrap;margin:16px 0}
-</style>
+<title>Neon Ascension · Midnight Circuit</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="prototype.css">
+<link rel="stylesheet" href="time-trial.css">
+<link rel="stylesheet" href="championship.css">
+<link rel="stylesheet" href="street-review.css">
+</head>
+<body>
+<canvas id="viewport" tabindex="0" aria-label="Kairox city racing circuit. W accelerates, S brakes then reverses a car, X reverses directly, A and D steer, F fires, E shields, Shift boosts, Space slides, R recovers, Escape pauses."></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div id="fps-counter" aria-label="Frames per second">FPS —</div>
+<details id="audio-settings">
+  <summary>SOUND</summary>
+  <button id="audio-toggle" type="button">ENABLE SOUND</button>
+  <label>Master <input id="audio-master" type="range" min="0" max="100" value="65"><output>65%</output></label>
+  <label>Engines <input id="audio-engines" type="range" min="0" max="100" value="70"><output>70%</output></label>
+  <label>Effects <input id="audio-effects" type="range" min="0" max="100" value="80"><output>80%</output></label>
+  <label>Race cues <input id="audio-cues" type="range" min="0" max="100" value="85"><output>85%</output></label>
+  <p id="audio-status" role="status">Loading sounds…</p>
+</details>
+<button id="performance-open" type="button">PERFORMANCE</button>
+<dialog id="performance-dialog" aria-labelledby="performance-title">
+  <div class="performance-heading"><h2 id="performance-title">Performance</h2><button id="performance-close" type="button" aria-label="Close performance settings">Close</button></div>
+  <label for="quality-preset">Quality preset</label>
+  <select id="quality-preset"><option value="0">Low</option><option value="1">Balanced</option><option value="2">High</option></select>
+  <p id="quality-description"></p>
+  <label for="resolution-scale">Resolution scale <output id="resolution-value" for="resolution-scale">100%</output></label>
+  <input id="resolution-scale" type="range" min="50" max="100" step="5" value="100" aria-describedby="resolution-help">
+  <p id="resolution-help">Lower the scale to reduce rendering load. Menus stay sharp. Device and pixel limits may cap the final resolution.</p>
+  <p id="render-resolution"></p><p id="performance-save" role="status"></p>
+  <h3>Frame times</h3><p id="frame-measurements">Collecting frame times…</p>
+  <p>Rolling 10 seconds, excluding loading and hidden tabs. p95 shows the slowest 5% boundary. 60 FPS needs 16.7 ms; 30 FPS needs 33.3 ms. CPU callback time excludes GPU completion.</p>
+  <button id="measurement-reset" type="button" class="secondary">RESET MEASUREMENTS</button>
+  <p>Compare the same view after changing settings. Resume driving to measure race stutter; opening this panel pauses an active race.</p>
+</dialog>
+<header>
+  <div class="brand"><span class="brand-mark">N<span>/</span>A</span><div>NEON ASCENSION<small>KA I R O X &nbsp; / &nbsp; AFTER HOURS</small></div></div>
+  <div class="event"><span class="live-dot"></span> MIDNIGHT CIRCUIT <span class="tag">STREET RACE</span></div>
+</header>
 <main>
-  <h1>RacingGame</h1>
-  <p>Development garage · WebEngine integration starter. Driving and racing will be built here.</p>
-  <nav aria-label="Renderer"><a href="?renderer=auto">Automatic</a><a href="?renderer=webgpu">WebGPU</a><a href="?renderer=webgl2">WebGL 2</a></nav>
-  <canvas id="viewport" aria-label="Preview of a placeholder car on a garage floor"></canvas>
-  <p id="status" role="status">Loading engine…</p>
+<section id="garage" class="panel">
+  <div class="garage-heading"><div><p class="eyebrow">MIDNIGHT / GARAGE</p><h1>BUILD YOUR<br><em>ADVANTAGE.</em></h1></div><div class="wallet"><span>CREDITS</span><strong id="credits">0</strong></div></div>
+  <p class="intro">Race. Earn. Upgrade your machine.<br>3 laps · 6 racers · 300–1,200 CR per finish</p>
+  <label class="track-choice" for="track-select">CIRCUIT <select id="track-select"><option value="kairox">Kairox / Midnight Circuit</option><option value="desert">Desert Solar / Helios Run</option></select></label>
+  <p id="track-note" class="note">Neon streets · market bend · transit underpass</p>
+  <label class="track-choice" for="mode-select">EVENT <select id="mode-select"><option value="race">Race / 3 laps</option><option value="trial">Time trial / ghost</option></select></label>
+  <p id="trial-summary" class="note" hidden></p>
+  <label class="track-choice" for="difficulty-select">RIVALS <select id="difficulty-select"><option value="0">Easy</option><option value="1" selected>Normal</option><option value="2">Hard</option></select></label>
+  <p id="difficulty-note" class="note">Balanced pace and braking margins.</p>
+  <button class="secondary watch-best" hidden disabled>WATCH BEST RUN →</button>
+  <div class="selection" role="group" aria-label="Choose your vehicle">
+    <button id="car" class="vehicle selected" aria-pressed="true"><span>01 / WHEELED</span><strong>VEKTOR</strong><small>Grip. Precision. Street muscle.</small></button>
+    <button id="hover" class="vehicle" aria-pressed="false"><span>02 / AGILE HOVER</span><strong>SKIMMER</strong><small>Glide. Countersteer. Keep momentum.</small></button>
+    <button id="bastion" class="vehicle" aria-pressed="false"><span>03 / HEAVY CAR</span><strong>BASTION</strong><small>Broad armor. Strong drive.</small></button>
+    <button id="vector" class="vehicle" aria-pressed="false"><span>04 / FAST HOVER</span><strong>VECTOR</strong><small>Lean hull. Fast exits.</small></button>
+  </div>
+  <p id="vehicle-note" class="note">Brake before corners. Release the slide to regain grip.</p>
+  <div class="paint-controls">
+    <label for="paint-color">BODY PAINT <span id="paint-chassis">VEKTOR</span></label>
+    <div><input id="paint-color" type="color" value="#ffffff" aria-label="Body paint colour" disabled><output id="paint-value" for="paint-color">ORIGINAL</output><button id="paint-reset" class="secondary" type="button" disabled>ORIGINAL</button></div>
+    <p class="note">Choose a colour to preview it on your car. Saved per chassis.</p>
+    <button id="paint-preview" class="secondary" type="button" aria-pressed="false">VIEW CAR</button>
+  </div>
+  <p id="upgrade-scope" class="note">Wheeled upgrades apply to Vektor and Bastion.</p>
+  <div id="upgrades" aria-label="Selected vehicle upgrades"></div>
+  <button id="league-open" class="secondary" type="button">LEAGUE CAREER →</button>
+  <button id="league-records-open" class="secondary" type="button">MY LEAGUE RESULTS →</button>
+  <p id="league-summary" class="note">Street League → Master Championship</p>
+  <div class="garage-actions"><p id="save-status" role="status">LOADING PROGRESSION…</p><button id="league-resume" class="primary" type="button" hidden>CONTINUE LEAGUE →</button><button id="start" class="primary" disabled>INITIALIZING ENGINE…</button></div>
+</section>
+<dialog id="league-dialog" aria-labelledby="league-title">
+  <div class="league-heading"><div><p class="eyebrow">CAREER / ROAD TO THE MASTERS</p><h2 id="league-title">League career</h2></div><button id="league-close" type="button">Close</button></div>
+  <p id="league-save" role="status"></p>
+  <p class="note">Starting another league saves this run to your results. Earned titles, credits and upgrades are kept.</p>
+  <div id="league-ladder" aria-label="League progression"></div>
+  <section id="league-season" hidden>
+    <h3 id="league-season-title"></h3><p id="league-message" role="status"></p>
+    <p id="league-rules"></p><ol id="league-schedule" aria-label="Season schedule"></ol>
+    <div class="league-table-wrap"><table class="classification" aria-label="Championship standings"><thead><tr><th>POS</th><th>DRIVER</th><th>PTS</th><th>GAP</th><th>WINS</th><th>ROUND POSITIONS</th></tr></thead><tbody id="league-rows"></tbody></table></div>
+    <p class="note">Points: 15 / 12 / 10 / 8 / 6 / 4. DNF: 0. Ties: most wins, then second places and other finishes, then latest result.</p>
+    <button id="league-continue" class="primary" type="button"></button>
+    <button id="league-restart" class="secondary" type="button">RESTART THIS SEASON</button>
+  </section>
+</dialog>
+<dialog id="league-records-dialog" aria-labelledby="league-records-title">
+  <div class="league-heading"><div><p class="eyebrow">YOUR CAREER / SAVED RESULTS</p><h2 id="league-records-title">Your league results</h2></div><button id="league-records-close" type="button">Close</button></div>
+  <p id="league-records-save" role="status"></p>
+  <label for="league-record-select">League</label><select id="league-record-select"></select>
+  <p class="note">Latest and best runs stay saved when you move to another league or replay a season. Your current season is saved after each completed round.</p>
+  <div id="league-record-cards"></div>
+</dialog>
+<div id="league-hud" hidden></div>
+<section id="race-hud" class="race-hud" hidden aria-label="Race telemetry">
+  <div class="lap"><span>POSITION</span><strong id="position">1<small>/6</small></strong></div>
+  <div class="lap"><span>LAP</span><strong id="lap">01<small>/03</small></strong></div>
+  <div><span>TOTAL TIME</span><strong id="time">00:00.000</strong></div>
+  <div><span>BEST LAP</span><strong id="best">—</strong></div>
+</section>
+<aside id="standings" class="standings" hidden aria-label="Live race positions"><p class="eyebrow">ON THE CIRCUIT</p><ol id="leaderboard"></ol></aside>
+<div id="countdown" class="countdown" hidden aria-live="polite"></div>
+<div id="notice" class="notice" hidden></div>
+<section id="trial-hud" hidden aria-label="Time trial sectors"><p id="trial-state"></p><div><span id="trial-sector-0"></span><span id="trial-sector-1"></span><span id="trial-sector-2"></span></div><small>Sector duration · cumulative delta to best</small></section>
+<section id="pause-panel" class="panel modal" hidden>
+  <p class="eyebrow">TAKE A BREATH</p><h2>PAUSED</h2><p>The clock is stopped. Your line can wait.</p>
+  <button id="resume" class="primary">RESUME RUN →</button>
+  <button class="secondary restart">RESTART RUN</button><button class="secondary garage-button">BACK TO GARAGE</button>
+</section>
+<section id="result" class="panel modal" hidden>
+  <p class="eyebrow" id="classification-status">RACERS STILL FINISHING</p><h2 id="result-title">RACE FINISHED.</h2>
+  <div class="result-time" id="result-time"></div><p id="result-detail"></p><p id="result-combat"></p>
+  <div id="race-payout" class="payout" aria-live="polite">Winnings pending final classification…</div>
+  <p id="trial-results" hidden></p><button class="secondary watch-best" hidden disabled>WATCH BEST RUN →</button>
+  <table class="classification" aria-label="Race finishing results"><thead><tr><th>POS</th><th>RACER / MACHINE</th><th>TIME + PENALTY</th></tr></thead><tbody id="result-rows"></tbody></table>
+  <p id="league-result" hidden role="status"></p>
+  <button id="league-results-open" class="primary" hidden type="button">CHAMPIONSHIP STANDINGS →</button>
+  <button class="primary restart">RACE AGAIN →</button><button class="secondary garage-button">GARAGE / UPGRADES →</button>
+</section>
+<section id="speed-panel" class="speed-panel" hidden>
+  <span id="vehicle-name">VEKTOR</span><div><strong id="speed">0</strong><small>KM/H</small></div>
+  <div class="boost-label"><span>REACTOR / BOOST</span><span id="charge">100%</span></div>
+  <div class="charge-track"><div id="charge-bar"></div></div>
+</section>
+<section id="combat-panel" class="combat-panel" hidden aria-label="Weapons and defense">
+  <div><kbd>F</kbd><strong id="weapon-state">PULSE READY</strong></div>
+  <p id="target-name">AIM AT A RIVAL AHEAD</p>
+  <div><kbd>E</kbd><strong id="shield-state">SHIELD READY</strong><span id="shield-charge">100%</span></div>
+  <div class="charge-track"><div id="shield-meter"></div></div>
+  <small id="combat-tally">0 HITS · 0 BLOCKS</small>
+</section>
+<aside class="map-panel" aria-label="Circuit map">
+  <div><span>KA I R O X</span><span id="sector">12 SECTORS</span></div>
+  <svg id="map" viewBox="-112 -125 224 250" role="img" aria-label="Track, next checkpoint and vehicle position">
+    <path id="map-road" fill="none" stroke="#345265" stroke-width="9" stroke-linejoin="round"/>
+    <path id="map-line" fill="none" stroke="#6ce9e1" stroke-width="1.5"/>
+    <circle id="map-gate" r="5" fill="#ffc76b"/><g id="map-rivals"></g><circle id="map-ghost" r="5" fill="#7bf4e5" style="display:none"/><circle id="map-player" r="5" fill="#fff" stroke="#f65c99" stroke-width="2"/>
+  </svg>
+  <span class="map-caption"><i></i> NEXT GATE <b>●</b> YOU</span>
+</aside>
 </main>
-<script>
-window.engineStatus = (message) => {
-  document.getElementById('status').textContent = message;
-};
-window.engineStats = (meshes, lights, layers) => {
-  window.racingStats = {meshes, lights, layers};
-};
-window.enginePerformance = (snapshot) => {
-  window.racingPerformance = snapshot;
-};
-var Module = {
-  canvas: document.getElementById('viewport'),
-  printErr: message => console.error(message),
-  onAbort: message => { document.getElementById('status').textContent = 'Engine failed to load: ' + message; }
-};
-window.addEventListener('error', event => {
-  document.getElementById('status').textContent = 'Loading error: ' + event.message;
-});
-</script>
+<footer>
+  <div class="controls"><span><kbd>WASD</kbd> DRIVE · <kbd>S</kbd> BRAKE / REVERSE CAR</span><span><kbd>X</kbd> REVERSE</span><span><kbd>F</kbd> FIRE</span><span><kbd>E</kbd> SHIELD</span><span><kbd>SHIFT</kbd> BOOST</span><span><kbd>SPACE</kbd> SLIDE</span><span><kbd>R</kbd> RECOVER +3s</span><span><kbd>ESC</kbd> PAUSE</span></div>
+  <div class="system"><span id="status" role="status">CONNECTING TO ENGINE…</span><a href="?renderer=webgpu">GPU</a><a href="?renderer=webgl2">GL2</a></div>
+</footer>
+<script src="prototype.js"></script>
+<script src="time-trial.js"></script>
+<script src="racing-ai.js"></script>
+<script src="championship.js"></script>
+<script src="frame-times.js"></script>
+<script src="performance.js"></script>
+<script src="street-review.js"></script>
+<script src="audio-system.js"></script>
+<script src="race-audio.js"></script>
 <script src="racing.js"></script>
+</body>
 </html>

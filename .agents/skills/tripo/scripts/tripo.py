@@ -1,4 +1,4 @@
-"""Direct Tripo API generation with encrypted repo credentials and resumable jobs."""
+"""Direct Tripo generation and optional part segmentation with resumable jobs."""
 import argparse
 from datetime import datetime, timezone
 import hashlib
@@ -18,6 +18,14 @@ from credentials import configure, get_key, repo_root, secret_path, within
 import os
 
 BASE = 'https://openapi.tripo3d.ai/v3'
+SEGMENT_MODEL = 'v2.0-20260430'
+
+
+def valid_task_id(value):
+    # Live v3 responses use UUIDs; documentation examples also use task_* IDs.
+    return isinstance(value, str) and re.fullmatch(
+        r'(?:task_[A-Za-z0-9_-]+|[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})', value) is not None
+
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -83,12 +91,14 @@ def settings(args):
     pbr = texture if args.pbr is None else args.pbr
     if pbr and not texture:
         raise ValueError('PBR requires texture; use --no-pbr with --no-texture')
-    if not 500 <= args.face_limit <= (150000 if args.quad else 2000000):
-        raise ValueError('Face limit outside 500–2,000,000 (quad maximum 150,000)')
+    max_faces = 10000 if args.quad else 20000
+    face_limit = max_faces if args.face_limit is None else args.face_limit
+    if not 500 <= face_limit <= max_faces:
+        raise ValueError(f'Face limit must be between 500 and {max_faces:,}; maximum 20,000 triangles')
     if args.quad != (args.output.lower().endswith('.fbx')):
         raise ValueError('Triangle output requires .glb; quad output requires .fbx')
     payload = dict(model=args.model, geometry_quality='detailed' if args.ultra else 'standard',
-                   face_limit=args.face_limit, texture=texture, pbr=pbr, quad=args.quad)
+                   face_limit=face_limit, texture=texture, pbr=pbr, quad=args.quad)
     if texture:
         payload.update(texture_quality=args.texture_quality, texture_version=args.texture_version,
                        delight=args.remove_lighting)
@@ -108,6 +118,45 @@ def settings(args):
                 raise ValueError('Seeds must be between 0 and 2147483647')
             payload[field] = value
     return mode, payload
+
+
+def segmentation_settings(args, root):
+    if not args.output.lower().endswith('.glb'):
+        raise ValueError('Segmented output requires .glb')
+    source_path = within(root, args.source_job)
+    source = json.loads(source_path.read_text(encoding='utf-8'))
+    if not isinstance(source, dict):
+        raise ValueError('Source job must be a JSON object')
+    task_id = source.get('task_id', '')
+    if not valid_task_id(task_id):
+        raise ValueError('Source job has no valid task ID; resolve the original job first')
+    if source.get('status') != 'success':
+        raise ValueError('Source job must have succeeded; resume the original job first')
+    if source.get('endpoint', '/generation/image-to-model') != '/generation/image-to-model':
+        raise ValueError('Segmentation requires the original image-to-model job')
+    source_output = output_path(root, source['output'])
+    if source_output.parent != source_path.parent or not source_output.is_file():
+        raise ValueError('Keep the downloaded source model beside its source job')
+    payload = dict(model=SEGMENT_MODEL, input=task_id,
+                   segmentation_granularity=args.mode,
+                   split_by_connectivity=args.split_by_connectivity)
+    provenance = dict(source_job=str(source_path.relative_to(root)),
+                      source_output=str(source_output.relative_to(root)),
+                      source_sha256=hashlib.sha256(source_output.read_bytes()).hexdigest())
+    return payload, provenance
+
+
+def submit_job(job_path, job, endpoint, key, opener=None):
+    # Persist uncertainty before POST; never repeat a possibly accepted submission.
+    job['endpoint'] = endpoint
+    job['status'] = 'submitting_unknown_if_interrupted'
+    save_json(job_path, job)
+    task_id = api(endpoint, key, job['request'], opener).get('task_id')
+    if not valid_task_id(task_id):
+        raise ValueError('Submission returned no valid task ID; check provider history before resubmitting')
+    job['task_id'] = task_id
+    job['status'] = 'submitted'
+    save_json(job_path, job)
 
 
 def upload(path, key, opener=None):
@@ -133,7 +182,7 @@ def upload(path, key, opener=None):
 def wait_download(root, job_path, key, seconds, opener=None):
     job = json.loads(job_path.read_text(encoding='utf-8'))
     task_id = job.get('task_id', '')
-    if not isinstance(task_id, str) or not re.fullmatch(r'task_[A-Za-z0-9_-]+', task_id):
+    if not valid_task_id(task_id):
         raise ValueError('Job has no valid task ID; check provider history before resubmitting')
     output = output_path(root, job['output'])
     if output.parent != job_path.parent or output.exists():
@@ -181,13 +230,20 @@ def wait_download(root, job_path, key, seconds, opener=None):
 def parser():
     p = argparse.ArgumentParser(description=__doc__)
     commands = p.add_subparsers(dest='command', required=True)
-    for name in ('configure', 'status', 'generate', 'resume'):
+    for name in ('configure', 'status', 'generate', 'segment', 'resume'):
         c = commands.add_parser(name)
         c.add_argument('--repo', required=True)
-        if name in {'generate', 'resume'}:
+        if name in {'generate', 'segment', 'resume'}:
             c.add_argument('--wait-seconds', type=float, default=1200)
         if name == 'resume':
             c.add_argument('--job', required=True)
+        if name == 'segment':
+            c.add_argument('--source-job', required=True, help='Successful image-to-model job.json')
+            c.add_argument('--output', required=True, help='GLB in a new directory; retains the source model')
+            c.add_argument('--mode', choices=['simple', 'balanced', 'detailed'], default='balanced',
+                           help='Part segmentation granularity (default: balanced)')
+            c.add_argument('--split-by-connectivity', action=argparse.BooleanOptionalAction, default=True)
+            c.add_argument('--dry-run', action='store_true')
         if name != 'generate':
             continue
         inputs = c.add_mutually_exclusive_group(required=True)
@@ -198,7 +254,8 @@ def parser():
         c.add_argument('--model', choices=['v3.1-20260211', 'v3.0-20250812'], default='v3.1-20260211')
         c.add_argument('--texture-version', default='v3.5-20260815')
         c.add_argument('--texture-quality', choices=['standard', 'detailed', 'extreme', 'fast'], default='detailed')
-        c.add_argument('--face-limit', type=int, default=50000)
+        c.add_argument('--face-limit', type=int,
+                       help='Face budget: 500–20,000 triangles or 500–10,000 quads (default: topology maximum)')
         for flag, default in [('ultra', True), ('ai-complete', False), ('texture', True),
                               ('remove-lighting', False), ('pbr', None), ('quad', False)]:
             c.add_argument('--'+flag, action=argparse.BooleanOptionalAction, default=default)
@@ -225,30 +282,32 @@ def main():
             if args.command == 'resume':
                 wait_download(root, within(root, args.job), get_key(root), args.wait_seconds)
             else:
-                mode, payload = settings(args)
+                if args.command == 'segment':
+                    payload, source = segmentation_settings(args, root)
+                    endpoint = '/mesh/segment'
+                else:
+                    mode, payload = settings(args)
+                    endpoint = '/generation/' + mode
+                    source = {}
                 output = output_path(root, args.output)
                 image = None
-                if args.image:
+                if args.command == 'generate' and args.image:
                     image = (root / args.image).resolve(strict=True)
                     if image.suffix.lower() not in {'.png', '.jpg', '.jpeg'} or image.stat().st_size > 20*1024*1024:
                         raise ValueError('Image must be PNG/JPEG at most 20 MiB')
                 if args.dry_run:
-                    print(json.dumps(dict(endpoint=BASE+'/generation/'+mode, request=payload,
+                    print(json.dumps(dict(endpoint=BASE+endpoint, request=payload,
                                           local_image=str(image) if image else None), indent=2))
                     return 0
                 key = get_key(root)
                 output.parent.mkdir(parents=True, exist_ok=False)
                 job_path = output.parent / 'job.json'
-                job = dict(output=str(output.relative_to(root)), request=payload,
+                job = dict(output=str(output.relative_to(root)), request=payload, endpoint=endpoint, **source,
                            submitted_at=datetime.now(timezone.utc).isoformat(), status='not_submitted')
                 save_json(job_path, job)
                 if image:
                     payload['input'], job['image_sha256'] = upload(image, key)
-                job['status'] = 'submitting_unknown_if_interrupted'
-                save_json(job_path, job)
-                job['task_id'] = api('/generation/'+mode, key, payload).get('task_id')
-                job['status'] = 'submitted'
-                save_json(job_path, job)
+                submit_job(job_path, job, endpoint, key)
                 wait_download(root, job_path, key, args.wait_seconds)
     except (ValueError, OSError, KeyError, TypeError, subprocess.SubprocessError) as error:
         message = str(error) if isinstance(error, ValueError) else 'Local I/O or malformed job/response; details suppressed'

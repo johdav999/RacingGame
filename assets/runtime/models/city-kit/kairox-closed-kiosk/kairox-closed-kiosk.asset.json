@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-closed-kiosk",
+  "provider": "Tripo3D",
+  "task_id": "f1bdd6be-cde9-402a-aa41-1f3a1d10bd90",
+  "credits_consumed": 60.0,
+  "source_sha256": "ff40540e9406cdf71dd5927399d6a49ced1061625441f0f0668078680c00fa1f",
+  "reference_sha256": "177fc4c2d4bc91eb1386c5a725e1de5f75185fab7818beedae70266b6e7bc69f",
+  "sha256": "f4ee710f41ec89ea2082c23ee4f8033c8b215927cf0984f9e86d4fd76e8514e1",
+  "bytes": 2281696,
+  "triangles": 43759,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    3.5718753337860107,
+    3.1999998092651367,
+    4.000267505645752
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

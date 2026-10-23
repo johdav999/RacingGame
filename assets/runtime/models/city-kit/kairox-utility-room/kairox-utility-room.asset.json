@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-utility-room",
+  "provider": "Tripo3D",
+  "task_id": "9f1db42f-717f-479d-9d15-c598b92ed7b0",
+  "credits_consumed": 60.0,
+  "source_sha256": "174cffc8d8a9855bc8164253771cc81d6af9663a3fe6630e59217f8927af3bf4",
+  "reference_sha256": "221446048a2d7674c8a0f1fe81d9f17b869aec7ba3f37c9f64a34b555cfe48c1",
+  "sha256": "f26f1083bc31db86d27d59447e27478f87a721b1a2387aee6d39da4dc00642ad",
+  "bytes": 4107292,
+  "triangles": 16539,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    6.0,
+    4.0,
+    10.0
+  ],
+  "coordinates": "+Y up, bottom-centred origin; fitted to the existing 6x4x10m utility assembly envelope",
+  "preparation": "scripts/prepare-city-kit.py; metre normalization, reduced embedded maps, new models capped at 20000 triangles; shared runtime LODs",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

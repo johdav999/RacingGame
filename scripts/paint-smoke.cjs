@@ -1,0 +1,81 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs/promises');
+const path=require('node:path');
+const crypto=require('node:crypto');
+const {chromium}=require('playwright');
+
+(async()=>{const http=require('node:http'),sync=require('node:fs');
+const root=path.resolve('build/web/site');
+const server=http.createServer((req,res)=>{const name=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+const file=path.join(root,name==='/'?'index.html':name);
+if(!file.startsWith(root+path.sep)){res.writeHead(403).end();
+return;
+}res.setHeader('Content-Type',file.endsWith('.wasm')?'application/wasm':file.endsWith('.js')?'text/javascript':file.endsWith('.css')?'text/css':file.endsWith('.html')?'text/html':'application/octet-stream');
+const stream=sync.createReadStream(file);
+stream.on('error',()=>res.writeHead(404).end());
+stream.pipe(res);
+});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));
+const base='http://127.0.0.1:'+server.address().port;
+server.unref();
+const out=path.resolve('build/evidence/paint');
+await fs.mkdir(out,{recursive:true});
+const browser=await chromium.launch({headless:true,args:['--proxy-server=direct://','--proxy-bypass-list=*'],executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+const report={backends:{},errors:[]};
+try{for(const backend of (process.env.RENDERER?[process.env.RENDERER]:['webgpu','webgl2'])){const context=await browser.newContext({viewport:{width:1440,height:1000}});
+const page=await context.newPage();
+page.on('pageerror',e=>(report.errors.push(e.stack||String(e)),console.error(e.stack||String(e))));
+console.log('Loading '+backend);
+await page.goto(`${base}/?renderer=${backend}`);
+const ready=()=>page.waitForFunction(()=>window.racingReady&&window.racingState?.career?.paint,{},{timeout:120000});
+await ready();
+assert.equal(await page.evaluate(()=>racingBackend),backend);
+
+const local=crypto.createHash('sha256').update(await fs.readFile('build/web/site/racing.wasm')).digest('hex');
+const served=await page.evaluate(async()=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await(await fetch('racing.wasm')).arrayBuffer())),n=>n.toString(16).padStart(2,'0')).join(''));
+assert.equal(served,local);
+
+const ids=['car','hover','bastion','vector'],colors=['#ef2845','#27db68','#3779eb','#d75bdf'];
+for(let c=0;
+c<4;
+c++){await page.locator('#'+ids[c]).click();
+await page.waitForFunction(c=>racingState.chassis===c,c);
+await page.locator('#paint-color').scrollIntoViewIfNeeded();
+const before=await page.locator('#viewport').screenshot();
+await page.locator('#paint-color').fill(colors[c]);
+await page.waitForFunction(({c,rgb})=>racingState.career.paint[c]===rgb,{c,rgb:parseInt(colors[c].slice(1),16)});
+await page.waitForTimeout(250);
+const after=await page.locator('#viewport').screenshot();
+assert(!before.equals(after),'paint visibly changes canvas');
+await page.screenshot({path:path.join(out,`${backend}-${ids[c]}.png`)});
+}
+await page.reload();
+await ready();
+assert.deepEqual(await page.evaluate(()=>racingState.career.paint),colors.map(c=>parseInt(c.slice(1),16)));
+await page.locator('#paint-color').scrollIntoViewIfNeeded();
+await page.locator('#paint-reset').click();
+await page.waitForFunction(()=>racingState.career.paint[3]===0x1000000);
+await page.waitForFunction(()=>document.getElementById('paint-value').textContent==='ORIGINAL');
+await page.locator('#start').click();
+await page.waitForFunction(()=>racingState.phase===1||racingState.phase===2);
+assert.equal(await page.evaluate(()=>Module._race_paint(3,0)),0);
+
+await page.evaluate(()=>Module._race_action(7));
+await page.waitForFunction(()=>racingState.phase===0);
+await page.setViewportSize({width:390,height:844});
+await page.locator('#paint-color').scrollIntoViewIfNeeded();
+assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+await page.locator('#paint-preview').click();
+assert(await page.locator('#garage').evaluate(e=>e.getBoundingClientRect().height<260));
+await page.screenshot({path:path.join(out,`${backend}-mobile.png`)});
+
+report.backends[backend]={wasmSha256:local,colors,passed:['four visible previews','saved per chassis after reload','original reset','race lock','narrow layout']};
+await context.close();
+}assert.deepEqual(report.errors,[]);
+}finally{await fs.writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2));
+await browser.close();
+}console.log(JSON.stringify(report,null,2));
+})().catch(e=>{console.error(e);
+process.exitCode=1;
+});
+

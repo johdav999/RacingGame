@@ -1,0 +1,50 @@
+{
+  "asset": "kairox-corner-apartments",
+  "provider": "Tripo3D",
+  "task_id": "defb8400-6253-4285-86f8-4c706d8058c2",
+  "source_sha256": "f2e763cc894220cf666f85911b79a586845accb0f37a21ceda48c76b43af4a3e",
+  "reference_sha256": "7f918512edf593acd72639697636670fb1c3e1ffa88b43d65fce05366fd7a755",
+  "sha256": "35cc87205138196abd1ac738d65e7728836a3a03091649857921160206b78c75",
+  "bytes": 4858040,
+  "source_triangles": 41601,
+  "triangles": 41601,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    15.182294845581055,
+    30.0,
+    15.958517074584961
+  ],
+  "coordinates": "+Y up; origin at bottom footprint centre; uniform scale",
+  "preparation": "scripts/prepare-buildings.py; source geometry preserved, normalized scale and 1024px maps",
+  "collision": "Game installs one static box envelope per placement; GLB has no embedded collision",
+  "validation": "2026-10-21: Blender QA; installed in Midnight Circuit, native building checks and frozen-site WebGPU/WebGL2 loading, retry, full lap and visual inspection; see docs/building-integration.md",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "credits_consumed": 60.0,
+  "source_texture_sizes": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ]
+  ]
+}

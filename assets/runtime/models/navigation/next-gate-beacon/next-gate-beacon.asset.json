@@ -1,0 +1,27 @@
+{
+  "asset": "next-gate-beacon",
+  "provider": "Offline authored geometry",
+  "sha256": "5076e3ed6c07659a3047e34be789d653c1a772bd5a6124f88ba1413c76260631",
+  "bytes": 46132,
+  "triangles": 696,
+  "bounds_min": [
+    -2.799999952316284,
+    0,
+    -0.2800000011920929
+  ],
+  "bounds_max": [
+    2.799999952316284,
+    2.450000047683716,
+    0.20999999344348907
+  ],
+  "dimensions": [
+    5.599999904632568,
+    2.450000047683716,
+    0.48999999463558197
+  ],
+  "materials": 2,
+  "textures": 0,
+  "coordinates": "+Y up, bottom-centred feet, luminous face -Z",
+  "preparation": "scripts/prepare-gate-marker.py; Blender 3.5; no external fonts or textures",
+  "mounting": "Imported central beam top minus 0.25m; 0.65m support clearance"
+}

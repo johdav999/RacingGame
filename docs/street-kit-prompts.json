@@ -1,0 +1,70 @@
+{
+  "generator": "Built-in ImageGen",
+  "date": "2026-10-21",
+  "sources": [
+    "docs/visual-design.md",
+    "docs/assets.md"
+  ],
+  "references": [
+    {
+      "asset": "kairox-transit-pillar",
+      "prompt": "Use case: stylized-concept. Create a geometry-readable 3D asset studio reference for the Kairox cyberpunk racing game: one complete elevated transit support pillar, a tall robust rectangular graphite concrete column with chamfered corners, broad low square footing and a flared T-shaped bearing capital supporting a future beam. Approximately 8 metres tall, capital 4 metres wide, shaft 1.5 metres wide. Weathered concrete, restrained dark metal access panel, small amber safety bands at base, subtle faded magenta trim. Isolated single object, no beam or deck or scenery, no people, no lettering. Elevated front three-quarter view, whole object and base visible, neutral diffuse lighting, plain light gray studio background. Realistic game asset, clear structural silhouette, no cinematic effects or ground plane mesh.",
+      "reference": "artifacts/model-input-images/kairox-transit-pillar/reference-v1.png"
+    },
+    {
+      "asset": "kairox-transit-beam",
+      "prompt": "Use case: stylized-concept. Single modular elevated transit BEAM for Kairox cyberpunk city, isolated complete structural steel and graphite concrete box girder, 8 metres long, 1 metre deep and 1 metre wide, chamfered end caps and recessed side ribs, dark weathered metal, restrained faded magenta stripe, tiny amber maintenance details. Straight horizontal self-contained beam only, no pillars, no track, no surrounding scenery, no ground mesh, no text or logos. Elevated front three-quarter studio view showing full length, top, side and one end, entire silhouette generously framed. Neutral diffuse lighting, light gray plain background. Realistic readable game asset consistent with weathered graphite concrete urban transit.",
+      "reference": "artifacts/model-input-images/kairox-transit-beam/reference-v1.png"
+    },
+    {
+      "asset": "kairox-transit-deck",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One modular elevated transit deck segment, 8 metres long by 6 metres wide, thin 0.6 metre thick reinforced slab, flat top with two recessed parallel guide strips, low solid side parapets. Open butt ends for joining repeated sections. No support pillars, no beams below, no train. Show top, side and end clearly.",
+      "reference": "artifacts/model-input-images/kairox-transit-deck/reference-v1.png"
+    },
+    {
+      "asset": "kairox-station",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One compact elevated transit station entrance and platform building, 12 metres wide, 8 metres deep, 10 metres tall. A recognizable angular Kairox landmark with graphite concrete base containing a broad recessed amber-lit entrance, an integrated enclosed stair tower rising to a cantilevered upper passenger platform under a distinctive split butterfly canopy, ivory metal canopy ribs, cyan glass and faded magenta blank sign fascia. Show the entire building including foundation and roof. No track extensions or surrounding scenery.",
+      "reference": "artifacts/model-input-images/kairox-station/reference-v1.png"
+    },
+    {
+      "asset": "kairox-shop-shutter",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One modular shopfront roller shutter in a robust rectangular wall-mounted frame, 4 metres wide and 3 metres tall, closed graphite corrugated steel slats, side channels, shallow top roller housing and scuffed amber bottom strip. Shallow self-contained facade module, no surrounding building.",
+      "reference": "artifacts/model-input-images/kairox-shop-shutter/reference-v1.png"
+    },
+    {
+      "asset": "kairox-shop-doorway",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One modular shop entrance doorway, 2 metres wide by 3 metres tall, thick graphite concrete rectangular frame around closed double dark teal glazed doors, metal kick plates, recessed amber entrance light, narrow magenta transom. Shallow self-contained facade module with threshold, no surrounding wall or building.",
+      "reference": "artifacts/model-input-images/kairox-shop-doorway/reference-v1.png"
+    },
+    {
+      "asset": "kairox-shop-awning",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One wall-mounted rectangular shop awning canopy, 4 metres wide, 2 metres projection, 0.8 metre total height, faded magenta rigid fabric stretched over a graphite steel frame, two triangular support brackets attached to a rear mounting bar. Sturdy simple silhouette, complete underside supports visible, no shop, no wall, no legs.",
+      "reference": "artifacts/model-input-images/kairox-shop-awning/reference-v1.png"
+    },
+    {
+      "asset": "kairox-shop-sign",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One empty rectangular wall-mounted shop sign frame, 4 metres wide by 1 metre tall, thick graphite industrial metal border around a blank flat faded magenta inset panel, small amber edge lamps, short rear mounting brackets. Shallow complete facade module, absolutely no lettering or symbols, no wall.",
+      "reference": "artifacts/model-input-images/kairox-shop-sign/reference-v1.png"
+    },
+    {
+      "asset": "kairox-safety-fence",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One freestanding modular public safety fence panel, 4 metres wide and 2.5 metres tall, thick graphite steel posts on compact rectangular concrete feet, rigid welded metal grid infill with large square openings, amber capped posts and a narrow faded magenta lower reinforcement bar. Strong readable bars, no razor wire, no other panels or objects.",
+      "reference": "artifacts/model-input-images/kairox-safety-fence/reference-v1.png"
+    },
+    {
+      "asset": "kairox-spectator-railing",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One modular waist-high spectator railing panel, 4 metres wide and 1.2 metres tall, graphite tubular steel top handrail with two horizontal safety bars and closely spaced sturdy vertical pickets, two compact bolted feet, narrow amber reflective bands at each end. Clear open spaces between bars, no glass or solid wall. Full single panel only.",
+      "reference": "artifacts/model-input-images/kairox-spectator-railing/reference-v1.png"
+    },
+    {
+      "asset": "kairox-charging-pedestal",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One compact freestanding electric racing vehicle charging pedestal, 1.8 metres tall, stout rectangular graphite metal column on a low plinth, ivory side armor panels, blank dark teal screen, small amber status strip, one thick charging cable neatly looped on its side with connector docked securely. Clearly modeled vents, service hatch, robust corners. No text, no symbols, no car.",
+      "reference": "artifacts/model-input-images/kairox-charging-pedestal/reference-v1.png"
+    },
+    {
+      "asset": "kairox-utility-cabinet",
+      "prompt": "Use case: stylized-concept. Geometry-readable realistic 3D game asset reference for Kairox cyberpunk city. Weathered graphite concrete and dark metal with restrained faded magenta trim and amber accents. Single isolated complete object in elevated front three-quarter studio view, entire silhouette visible with margins, neutral diffuse light, plain light gray background. No text, letters, numbers, logos, people, vehicles, clutter or ground mesh. One freestanding street utility cabinet, 1.6 metres tall and 1.2 metres wide, graphite painted metal rectangular housing on a low concrete plinth, two closed service doors, recessed latches, side ventilation louvers, top rain lip, small faded magenta patch and amber corner guards. Clear simple realistic electrical infrastructure. No exposed wires, no writing or symbols.",
+      "reference": "artifacts/model-input-images/kairox-utility-cabinet/reference-v1.png"
+    }
+  ]
+}

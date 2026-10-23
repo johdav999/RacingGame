@@ -1,0 +1,53 @@
+{
+  "asset": "sandstone-cliff-buttress",
+  "provider": "Tripo3D",
+  "task_id": "ef089ef3-1d89-47b8-bc50-70aa58ee5ff4",
+  "credits_consumed": 60.0,
+  "source_sha256": "a0f6214f22f011446e7fe1166e49575d87789c680c0d18cabbee14437205f020",
+  "reference_sha256": "e32b54297c7dd0dcf3f64365a454234f3b6f8696e7a993d4d208380e62d0a84b",
+  "sha256": "f4c594b3e4ec550c90f25f9634b8802bfeba35313d94b4d072c2282889fef7b0",
+  "bytes": 12296524,
+  "triangles": 9658,
+  "requested_triangle_limit": 10000,
+  "dimensions_xyz_metres": [
+    11.280158996582031,
+    14.0,
+    7.913760185241699
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 14.274194671199206,
+  "source_dimensions_blender": [
+    0.7902483940124512,
+    0.5544102787971497,
+    0.9807908535003662
+  ],
+  "source_textures": [
+    {
+      "name": "Color_ef089ef3-1d89-47b8-bc50-70aa58ee5ff4",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_ef089ef3-1d89-47b8-bc50-70aa58ee5ff4",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_ef089ef3-1d89-47b8-bc50-70aa58ee5ff4",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 2048,
+  "emission_mask_pixels": 0,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

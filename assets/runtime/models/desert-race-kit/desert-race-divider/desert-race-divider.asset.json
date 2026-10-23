@@ -1,0 +1,56 @@
+{
+  "name": "desert-race-divider",
+  "provider": "Tripo3D",
+  "task_id": "b9ffada7-af63-4724-b775-ddbf3b7ffcf0",
+  "credits_consumed": 60.0,
+  "source_sha256": "05e4468a77d6e7d6943fc88c7386519906a717ea0c412442bc8c8abcbfde3028",
+  "reference_sha256": "d1e3f5a0cb6e63336823ecaf4d49e7eea0627bc7138f9cfedcc5cda70ee02fd0",
+  "sha256": "10a95cefb1bd42b7f5e18f83c659e87b54a249160863b4ee78202134ac15a701",
+  "bytes": 3875620,
+  "source_triangles": 17849,
+  "triangles": 3480,
+  "dimensions": [
+    4.015475273132324,
+    1.2015270439442247,
+    0.6565342545509338
+  ],
+  "materials": 1,
+  "source_maps": [
+    {
+      "name": "Color_b9ffada7-af63-4724-b775-ddbf3b7ffcf0",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_b9ffada7-af63-4724-b775-ddbf3b7ffcf0",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_b9ffada7-af63-4724-b775-ddbf3b7ffcf0",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 1024,
+  "source_size_blender": [
+    0.18571791052818298,
+    0.9809379577636719,
+    0.213724747300148
+  ],
+  "scale_xyz_blender": [
+    4.07772970199585,
+    3.499929904937744,
+    5.61469841003418
+  ],
+  "emission_pixels": 17717,
+  "preparation": "Bottom centre pivot, +Y up, long axis X, budgeted decimation with retained UV maps, reduced embedded PBR maps and cyan-only emission. Divider fitted to existing 4 x 1.2 x 0.65m physics envelope; gate uniformly scaled to 28m width.",
+  "qa": "Finite mesh, source <=20000 triangles, prepared budget, gate clear corridor 21.6m x 4.5m sampled by mesh rays, front and reverse renders. Runtime acceptance recorded separately.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

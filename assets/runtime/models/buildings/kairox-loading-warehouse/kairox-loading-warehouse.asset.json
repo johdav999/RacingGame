@@ -1,0 +1,50 @@
+{
+  "asset": "kairox-loading-warehouse",
+  "provider": "Tripo3D",
+  "task_id": "475c58db-1a05-483c-b23c-4e8f1e238c5b",
+  "source_sha256": "db197487be9ce43a061b7be9ea3d8d658bb5c1117fe3cf0584ef871344c4c942",
+  "reference_sha256": "0ae69bce8fcef6e4ee82f1d3901716cec97ffc82a3fff7d7e191de21a96598a3",
+  "sha256": "b0123f689bd0ebf5fd49b6a1ab6907df4016135d05f63ef29fb9c1c34529b20d",
+  "bytes": 4767192,
+  "source_triangles": 41314,
+  "triangles": 41314,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    26.607343673706055,
+    11.0,
+    30.541584014892578
+  ],
+  "coordinates": "+Y up; origin at bottom footprint centre; uniform scale",
+  "preparation": "scripts/prepare-buildings.py; source geometry preserved, normalized scale and 1024px maps",
+  "collision": "Game installs one static box envelope per placement; GLB has no embedded collision",
+  "validation": "2026-10-21: Blender QA; installed in Midnight Circuit, native building checks and frozen-site WebGPU/WebGL2 loading, retry, full lap and visual inspection; see docs/building-integration.md",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "credits_consumed": 60.0,
+  "source_texture_sizes": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ]
+  ]
+}

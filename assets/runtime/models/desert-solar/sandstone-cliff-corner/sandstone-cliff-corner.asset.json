@@ -1,0 +1,53 @@
+{
+  "asset": "sandstone-cliff-corner",
+  "provider": "Tripo3D",
+  "task_id": "6c989aa5-0413-458e-af75-1d9701c7e039",
+  "credits_consumed": 60.0,
+  "source_sha256": "fea0dd0eaf059fef3b958d862c2a8c5ad6c9d22f116b0a4c828f516ef4a02b8a",
+  "reference_sha256": "6cf962dd59633264bc58a4540da6ce4efb322845e127086db41e26f5a997601a",
+  "sha256": "60f14e247a8663e9fd3c9db591bbc3feec1d13afdb15c3aa12455fdb8c92b92f",
+  "bytes": 13481300,
+  "triangles": 9864,
+  "requested_triangle_limit": 10000,
+  "dimensions_xyz_metres": [
+    11.999999046325684,
+    6.56480073928833,
+    9.707385063171387
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 12.226118334833158,
+  "source_dimensions_blender": [
+    0.793987512588501,
+    0.981505274772644,
+    0.5369489192962646
+  ],
+  "source_textures": [
+    {
+      "name": "Color_6c989aa5-0413-458e-af75-1d9701c7e039",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_6c989aa5-0413-458e-af75-1d9701c7e039",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_6c989aa5-0413-458e-af75-1d9701c7e039",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 2048,
+  "emission_mask_pixels": 0,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

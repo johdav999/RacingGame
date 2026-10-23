@@ -1,0 +1,35 @@
+{
+  "asset": "kairox-transit-tower",
+  "provider": "Tripo3D",
+  "task_id": "2587bf0f-0f0e-470c-a37b-8a23a77c2eee",
+  "source_sha256": "e1f3d2f3d54f076d09bbab23c4b11d1c72d08beb4331e0167bc7c9ab22d04f74",
+  "reference_sha256": "d75a812fee73307467f0b406aa7bf4a6f2a413679e5ade61938a7de9a1225beb",
+  "sha256": "78f18b3f1e8b63b7292edd430c86232a425717b4315e7895ab2daa3ce792c948",
+  "bytes": 4532840,
+  "source_triangles": 40455,
+  "triangles": 40455,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    16.277721405029297,
+    32.0,
+    15.884676933288574
+  ],
+  "coordinates": "+Y up; origin at bottom footprint centre; uniform scale",
+  "preparation": "scripts/prepare-buildings.py; source geometry preserved, normalized scale and 1024px maps",
+  "collision": "Static box collider in StarterScene; footprint and height; outside race barriers",
+  "validation": "Blender QA plus native complete races, clearance/shared resource checks and WebGPU/WebGL2 physical laps; see docs/building-integration.md",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

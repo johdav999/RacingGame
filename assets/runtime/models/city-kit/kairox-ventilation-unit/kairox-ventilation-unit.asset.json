@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-ventilation-unit",
+  "provider": "Tripo3D",
+  "task_id": "e57fcfe6-ce14-45aa-8225-4ba508bbc3bc",
+  "credits_consumed": 60.0,
+  "source_sha256": "7e676dc0bac40b9fd3d944567120179dd484997f74677d920696a1c1cdb1c545",
+  "reference_sha256": "b4cd1106746d8894d835d8bbd20376636ac79d7921d5c0e7103dd380b25ea409",
+  "sha256": "688d4a7cf6907d1ce1792fd80a7e8eee78ed7d7cf248e533ed9cff96c29d95b4",
+  "bytes": 2157132,
+  "triangles": 39491,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    1.9595118761062622,
+    0.8500000834465027,
+    2.416276454925537
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

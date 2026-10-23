@@ -1,0 +1,66 @@
+{
+  "workflow": "Built-in ImageGen reference -> Tripo image-to-model",
+  "date": "2026-10-22",
+  "assets": [
+    {
+      "id": "solar-mirror-intact",
+      "budget": 4000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: A solar heliostat: one broad rectangular silver-blue mirror panel divided into four large mirror tiles in a thick ivory frame, tilted upward 25 degrees on visible graphite trunnion pivot and sturdy single pedestal with four anchor feet. Back bracing partly visible. Mirror softly reflective without reflected scenery. Wide stable simple industrial silhouette."
+    },
+    {
+      "id": "solar-mirror-broken",
+      "budget": 4000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One damaged solar heliostat using the same broad four-tile rectangular silver-blue mirror panel, ivory frame, graphite trunnion pivot and single pedestal with four anchor feet. One tile missing showing rear support, another tile visibly fractured, corner frame bent down. Still one connected standing object, no loose debris."
+    },
+    {
+      "id": "solar-receiver-tower",
+      "budget": 16000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: A tall monumental solar receiver tower, four tapering ivory concrete buttresses around a graphite central service shaft, broad square footing, a large enclosed faceted cylindrical cyan collector crown at top inside dark armor ribs. Restrained cyan collector surface with no haze or bloom. Height about five times width. Sparse maintenance platforms, heavy readable structures, weathered sand wear. Entire base and crown visible."
+    },
+    {
+      "id": "sandstone-cliff-wall",
+      "budget": 10000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One broad modular sandstone canyon wall rock, roughly 20 m wide, 9 m high, 6 m deep, flat grounded underside, orange ochre sedimentary strata, broad vertical erosion grooves, irregular stepped upper silhouette. Chunky solid contiguous geology, no plants or buildings. Ends shaped to overlap adjacent cliff modules."
+    },
+    {
+      "id": "sandstone-cliff-corner",
+      "budget": 10000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One L-shaped convex sandstone cliff corner mass, roughly 12 by 12 m footprint and 10 m high, orange ochre horizontal sedimentary strata, weather-rounded broad ridges, irregular top, solid continuous stone. Two steep cliff faces meet in a rounded outside corner. Flat grounded underside, no props."
+    },
+    {
+      "id": "sandstone-cliff-buttress",
+      "budget": 10000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One tall narrow freestanding sandstone canyon buttress, about 14 m high, 8 m wide, 6 m deep, broad stable foot, tapering stepped top, orange ochre horizontal layers, two broad eroded vertical ribs. Bold asymmetrical silhouette, one solid stone mass, flat underside, no props."
+    },
+    {
+      "id": "sandstone-cliff-low-shelf",
+      "budget": 8000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One low long sandstone ledge module, about 16 m long, 6 m deep, 4 m high, orange ochre layered strata, stepped weather-rounded terraces rising along the rear, flat grounded underside, solid stone. Broad low asymmetrical silhouette, no props."
+    },
+    {
+      "id": "sandstone-rock-arch",
+      "budget": 16000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One massive natural orange sandstone arch, broad horizontal span between two thick rooted stone piers, a large clear empty opening visibly passing all the way through. Approximately 24 m wide, 14 m high, 6 m deep; opening about 14 m wide and 9 m high for a racing road. Flat separate feet, no ground slab across opening. Layered weathered sandstone, plausible thick load-bearing crown. Entire silhouette visible."
+    },
+    {
+      "id": "energy-conduit-straight",
+      "budget": 3000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One modular straight industrial energy conduit segment, 4 m long with square 0.7 m cross section. Graphite box-section core, ivory armored side rails, narrow inset cyan luminous strips along its top shoulders. Identical square mechanical collar at each end, flat parallel end faces perpendicular to length, no cables hanging outside, no built-in pedestal. Strong simple repeatable silhouette."
+    },
+    {
+      "id": "energy-conduit-elbow",
+      "budget": 3000,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One modular 90-degree horizontal L-shaped industrial energy conduit elbow. Graphite square 0.7 m cross-section core, ivory armored side rails, narrow inset cyan luminous strips on top shoulders continuing around bend. Equal-length legs, identical square mechanical collar at each end, flat end faces perpendicular to legs. No pedestal, no loose wires. Clearly visible L footprint."
+    },
+    {
+      "id": "energy-conduit-junction",
+      "budget": 3500,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One modular horizontal T-shaped three-way industrial energy conduit junction. Graphite square 0.7 m cross-section core, ivory armored side rails, narrow inset cyan luminous strips along top shoulders. Three equal short branches terminate in identical square mechanical collars, flat end faces perpendicular to branches. No pedestal, no loose wires, clearly visible T footprint."
+    },
+    {
+      "id": "energy-conduit-support",
+      "budget": 2500,
+      "prompt": "Use case: stylized-concept. Create a single isolated 3D asset reference for Tripo reconstruction for Neon Ascension desert solar complex. Grounded stylized realism, bold readable geometry, plausible construction, moderate detail. Palette warm orange sandstone, faded ivory metal, graphite structural metal, restrained cyan accents on machinery. Show ONE complete standalone object, clear elevated three-quarter view, entire silhouette with generous margin, neutral diffuse studio lighting, plain light gray background. No scene, terrain base, text, labels, logos, collage, extra objects, motion blur or bloom.\nSubject: One standalone industrial energy-conduit support pedestal: broad rectangular ivory anchor foot, short sturdy graphite upright, open U-shaped graphite cradle on top lined with ivory pads. Cradle fits a square 0.7 m conduit, pedestal about 1.2 m high. Small cyan status inset. NO pipe in cradle, no separate loose parts. Heavy simple practical geometry."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-storm-drain",
+  "provider": "Tripo3D",
+  "task_id": "f9e725e9-f15a-4f6c-bd3c-990d396462ee",
+  "source_sha256": "2afe9ad6012417475d5d595f5f7202947d8a94ffb7dc4156271c213cfcbde75a",
+  "reference_sha256": "8853ae8d9a1ff433aba6a69d69dff37fff86819e69842b64ad8e056e4364f938",
+  "sha256": "89d357dea406d777de9f35a966e2ac222bbc76a78705155644a97fd9edb7e582",
+  "bytes": 766044,
+  "source_triangles": 41438,
+  "triangles": 1499,
+  "dimensions": [
+    0.75,
+    0.07,
+    0.6
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

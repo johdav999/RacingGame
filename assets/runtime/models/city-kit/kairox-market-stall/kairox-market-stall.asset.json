@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-market-stall",
+  "provider": "Tripo3D",
+  "task_id": "9095ed30-e9fd-46a7-8125-3aefeae358dc",
+  "credits_consumed": 60.0,
+  "source_sha256": "99435d91f963557382fdf31f5c6daa639e61001438f0eac4107bd8e94272e0ea",
+  "reference_sha256": "c5c8126f08db0983be9a878d0049ab3bf4dae81d6487c8a1d7ff3b83f02a8e41",
+  "sha256": "0b94cef72b6cc72debc1de45a02f2d107f1cf0e0928b6c54794e9eeb46edf68d",
+  "bytes": 2115540,
+  "triangles": 41643,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    3.999929189682007,
+    3.000000238418579,
+    5.157597541809082
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

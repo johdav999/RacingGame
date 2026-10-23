@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-sidewalk-pavement",
+  "provider": "Tripo3D",
+  "task_id": "d73aa394-44c0-4e74-b31e-bca77fa96b23",
+  "source_sha256": "71110a10a4a1b7ad0947b0775a4b2c1cecbfdb62c7ef17e9de16f765c452aa30",
+  "reference_sha256": "bb7ac9ce7baa2b2f874243c623af3e682767fb7d08738569db695e0610d3d15c",
+  "sha256": "d54adbf1cc92099abba26e43ceb55464ce5b7e05e003bf94a837c7eedbe9b092",
+  "bytes": 932464,
+  "source_triangles": 42427,
+  "triangles": 1599,
+  "dimensions": [
+    4,
+    0.16,
+    2
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

@@ -1,0 +1,53 @@
+{
+  "asset": "energy-conduit-support",
+  "provider": "Tripo3D",
+  "task_id": "e7651107-0c4f-48a9-8ba7-e9ba00d21c45",
+  "credits_consumed": 60.0,
+  "source_sha256": "cc2222c86f0b1da07e8b2bae9e72ff1657e70c5b79a49472ca44ec2f4e129dbc",
+  "reference_sha256": "af1080eca5512d255d15b25483c778e3d1e5ba4105b3a80f505e8ef51726fcc7",
+  "sha256": "b0ce908460a139f16c4ac76a49f49e6fa5bb3817ab316bee2540280b6c831683",
+  "bytes": 2713904,
+  "triangles": 2147,
+  "requested_triangle_limit": 2500,
+  "dimensions_xyz_metres": [
+    0.8700955510139465,
+    1.2000000476837158,
+    1.2434839010238647
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 1.2726314900176574,
+  "source_dimensions_blender": [
+    0.6836979389190674,
+    0.9770965576171875,
+    0.9429280757904053
+  ],
+  "source_textures": [
+    {
+      "name": "Color_e7651107-0c4f-48a9-8ba7-e9ba00d21c45",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_e7651107-0c4f-48a9-8ba7-e9ba00d21c45",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_e7651107-0c4f-48a9-8ba7-e9ba00d21c45",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 1024,
+  "emission_mask_pixels": 1041,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

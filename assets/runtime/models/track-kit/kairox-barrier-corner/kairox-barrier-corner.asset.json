@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-barrier-corner",
+  "provider": "Tripo3D",
+  "task_id": "eced0fc2-eb7c-4208-8ae0-4a544a44d6c0",
+  "source_sha256": "6a2a6ff4e4cfd255fefb927a40260097c8e72f24e16ba5b5870deeeea36d7ec0",
+  "reference_sha256": "b85ad0cae1db010b5e75613799d476bd9954ff2c81bba986fd1735182fa94176",
+  "sha256": "b5a08e4c357fa7662de66a49505a67a4311e8648ffd7981ae4c518e3daa67863",
+  "bytes": 820464,
+  "source_triangles": 41018,
+  "triangles": 2000,
+  "dimensions": [
+    2,
+    1.2,
+    2
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

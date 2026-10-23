@@ -1,0 +1,31 @@
+{
+  "asset": "vector",
+  "provider": "Tripo3D",
+  "task_id": "8679ef9f-e87a-4c66-acd8-0be9f6c564e1",
+  "source_sha256": "7dc1deba8c608dc08d90088faecaf5072d4e7df8f06e222a19199e5fbea351a2",
+  "sha256": "6f997498e241cd293c2a40a0ec3aa2ca0637593d5bab9904139b3f54930edaef",
+  "triangles": 47399,
+  "texture_size": [
+    1024,
+    1024
+  ],
+  "dimensions": {
+    "length": 4.8,
+    "height": 1.0,
+    "width": 2.35
+  },
+  "parts": [
+    {
+      "name": "chassis",
+      "indices": 142197,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0
+    }
+  ],
+  "preparation": "scripts/prepare-vehicles.py; +Y up, +Z forward, metres; fitted wheel triangle partition for Bastion",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

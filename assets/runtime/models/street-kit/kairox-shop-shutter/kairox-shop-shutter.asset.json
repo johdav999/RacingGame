@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-shop-shutter",
+  "provider": "Tripo3D",
+  "task_id": "aeccfb28-4f4a-4196-b521-8e2db6a14433",
+  "credits_consumed": 60.0,
+  "sha256": "069aa0b11ad89aa892fce0db022db70bdd1eda135623dcdd779067586ab31c3a",
+  "source_sha256": "339c438e18f615717ea9dee3db049ed5fb8fd69d6f4b728775e06bb03f924850",
+  "reference_sha256": "fec5e2e0be05faa83731a8ec189c63453828ee969658f40941b4ef01176b74b8",
+  "bytes": 2306184,
+  "triangles": 37522,
+  "texture_size": 512,
+  "dimensions": [
+    3.999999761581421,
+    2.56718111038208,
+    1.0589512586593628
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

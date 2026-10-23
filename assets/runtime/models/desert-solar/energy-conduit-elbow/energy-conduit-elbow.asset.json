@@ -1,0 +1,53 @@
+{
+  "asset": "energy-conduit-elbow",
+  "provider": "Tripo3D",
+  "task_id": "958489df-bcaa-43b1-b8b2-9b9092e5b44e",
+  "credits_consumed": 60.0,
+  "source_sha256": "e3361c62a0caaf957b007a466f49d60d103fe5763610c07cbae9ecd25f38e237",
+  "reference_sha256": "59194f140b71c48bb9caa98b1b70cb10efa9ed90bd4277a51a84a8a8f59ca79f",
+  "sha256": "9b29a31c61cec26c6e7d86facbdce67fad1342498a7a8a3fef84aa56a99b2113",
+  "bytes": 3519004,
+  "triangles": 2781,
+  "requested_triangle_limit": 3000,
+  "dimensions_xyz_metres": [
+    3.364619731903076,
+    0.9000000357627869,
+    3.705885648727417
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 3.7994342113329282,
+  "source_dimensions_blender": [
+    0.8855581283569336,
+    0.9753782749176025,
+    0.23687738180160522
+  ],
+  "source_textures": [
+    {
+      "name": "Color_958489df-bcaa-43b1-b8b2-9b9092e5b44e",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_958489df-bcaa-43b1-b8b2-9b9092e5b44e",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_958489df-bcaa-43b1-b8b2-9b9092e5b44e",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 1024,
+  "emission_mask_pixels": 42313,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

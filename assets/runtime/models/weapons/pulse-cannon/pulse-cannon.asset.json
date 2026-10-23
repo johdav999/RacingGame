@@ -1,0 +1,30 @@
+{
+  "asset": "pulse-cannon",
+  "provider": "Tripo3D",
+  "task_id": "34640877-0532-47e3-bf3c-7b7f5e0528b0",
+  "source_sha256": "5c820e7dea6500f7adc5849e7bf5c42bb49b5a784b734f1b981ec51772e69b19",
+  "reference_sha256": "6ac9facfa89fc274f94a9aafec41e1735388d9e35a53fe13b534ad360e42e9b2",
+  "sha256": "9e2939d9cb24c5db7b8d3e06ae668fe037b180fa77a6bea9952d2d067e3a38b5",
+  "bytes": 1670416,
+  "source_triangles": 45601,
+  "triangles": 5799,
+  "dimensions": [
+    0.3,
+    0.32,
+    1.2
+  ],
+  "texture_size": 1024,
+  "preparation": "scripts/prepare-weapon.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom mounting centre, barrel +Z, metres",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "minimum": [
+    -0.15000000596046448,
+    0,
+    -0.6000000238418579
+  ],
+  "maximum": [
+    0.15000000596046448,
+    0.3199999928474426,
+    0.6000000238418579
+  ]
+}

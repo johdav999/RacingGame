@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-station",
+  "provider": "Tripo3D",
+  "task_id": "69ec0ee1-bb49-4e13-a731-56e1eb86ac9f",
+  "credits_consumed": 60.0,
+  "sha256": "396746065874878aecf83702a3a8b229bc1d7362004d6149cbbabca041393899",
+  "source_sha256": "6f404cf191bf2c0d776ae28af8698b2e812314a30478357cd74927fcf9212b6b",
+  "reference_sha256": "b15d1281db7b3a9ee36c91cec55bb2e130f9084c93b4c92c44f1d46ff6f62873",
+  "bytes": 4889364,
+  "triangles": 42443,
+  "texture_size": 1024,
+  "dimensions": [
+    24.3796329498291,
+    17.599998474121094,
+    17.585124969482422
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

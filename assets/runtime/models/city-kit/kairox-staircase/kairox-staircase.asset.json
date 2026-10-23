@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-staircase",
+  "provider": "Tripo3D",
+  "task_id": "057e2507-fcc7-434d-bbff-209ed913497f",
+  "credits_consumed": 60.0,
+  "source_sha256": "0dce8c2a2243cac4855b8ea831e2d26f3faad0a5493a111ef2d9f30b8e5e34b2",
+  "reference_sha256": "feaf11f72a4e79b33d6727aed57fa38a5ba32f9605072b15d8ae8ad5d6c694ef",
+  "sha256": "44e24bd06057149c0fa326abdcfbe0a1755673ab7d162f5a9f983c149a25870b",
+  "bytes": 2268372,
+  "triangles": 42012,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    10.057354927062988,
+    5.0,
+    3.999490737915039
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

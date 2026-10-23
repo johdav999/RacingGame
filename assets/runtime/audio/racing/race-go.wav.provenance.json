@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "One bright high electronic race start signal, a single clear sustained go beep with quick onset and clean short decay, noticeably higher than a countdown beep. Isolated game interface cue, no voices, no music.",
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 0.8
+  },
+  "generated_at": "2026-10-22T09:32:31.900795+00:00",
+  "sha256": "2a321827fbc8eb1cccbbc108a9af4cfa3a33c23d955faab86ca6dfae756287cc",
+  "request_id": null,
+  "character_cost": "8",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "race-go",
+    "file": "race-go.wav",
+    "loop": false,
+    "sha256": "f526134c1d1bc337192004b4555306041d63312ac549180d1f642fc381f7abd8",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 11049,
+    "seconds": 0.460375,
+    "peak": 0.5847586943532237,
+    "rms": 0.18,
+    "source_seconds": 0.8,
+    "source_sha256": "2a321827fbc8eb1cccbbc108a9af4cfa3a33c23d955faab86ca6dfae756287cc",
+    "loop_boundary_delta": null,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

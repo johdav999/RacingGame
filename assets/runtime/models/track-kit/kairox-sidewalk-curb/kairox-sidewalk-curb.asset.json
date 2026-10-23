@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-sidewalk-curb",
+  "provider": "Tripo3D",
+  "task_id": "0ea94ef9-0ebf-41d7-9c6e-113fadbdcff8",
+  "source_sha256": "53f5cc03a2b977c9762ad681b5ccbfc244f8e98a76ccdec5983a995ffb308375",
+  "reference_sha256": "6ef4ebd035524b315b99cbca32fd97aff1e6c001fa4c9151743b32b1b3542df6",
+  "sha256": "59500b0db0cc7b4bcc653c4db6ccd6fac0208b3eaeca310b30ce5f445ca1045f",
+  "bytes": 431072,
+  "source_triangles": 41546,
+  "triangles": 1200,
+  "dimensions": [
+    4,
+    0.28,
+    0.3
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-bollard",
+  "provider": "Tripo3D",
+  "task_id": "955b40ca-2e5d-4164-8585-9613ac5d59ed",
+  "credits_consumed": 60.0,
+  "source_sha256": "c7d7463ada9f0b5149c23fb22afd0180e5b8fa954e293523f9ef88903981da7b",
+  "reference_sha256": "751c05bb4cbdbf98a161902e7f478d571f5c865fe66d1de40295c7b6f5b260cd",
+  "sha256": "19c137c386ddd572763d45a52e3d0d91454960d337fa2b6fb3a8cbfb9578998d",
+  "bytes": 2153404,
+  "triangles": 43553,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    0.43125712871551514,
+    1.100000023841858,
+    0.43272665143013
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

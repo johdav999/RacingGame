@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-spectator-railing",
+  "provider": "Tripo3D",
+  "task_id": "e9b802a1-89d4-4a18-b271-8812181ac162",
+  "credits_consumed": 60.0,
+  "sha256": "56e3ff014cb407fc818c7b3f14adad3b33ddc54b60290d5257a79dc1b634a383",
+  "source_sha256": "404d421c32eafff50fe3fba4447885533cb8ec3f8554821958f672641675112e",
+  "reference_sha256": "cb5201ae2da4efebeae82c2d4e4b70d76d5780105dc684637cbd793e19b1856a",
+  "bytes": 2366852,
+  "triangles": 43026,
+  "texture_size": 512,
+  "dimensions": [
+    4.0,
+    1.4051107168197632,
+    0.43228811025619507
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

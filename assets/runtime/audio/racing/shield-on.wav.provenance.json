@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "One compact futuristic energy shield activation, quick rising electronic shimmer opening into a soft resonant forcefield pulse, short clean decay. Immediate start, isolated dry game effect, no voices, no music.",
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 1.1
+  },
+  "generated_at": "2026-10-22T09:32:24.219474+00:00",
+  "sha256": "1b55c2d15a4a36813845074ee4f801eda6f0d219e4271b386f71753eaea61d42",
+  "request_id": null,
+  "character_cost": "11",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "shield-on",
+    "file": "shield-on.wav",
+    "loop": false,
+    "sha256": "59cc86862789438303ccae4af457dec0c992f56e7603e15f178a69edf46fcaeb",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 18469,
+    "seconds": 0.7695416666666667,
+    "peak": 0.7130894676620919,
+    "rms": 0.18,
+    "source_seconds": 1.08,
+    "source_sha256": "1b55c2d15a4a36813845074ee4f801eda6f0d219e4271b386f71753eaea61d42",
+    "loop_boundary_delta": null,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

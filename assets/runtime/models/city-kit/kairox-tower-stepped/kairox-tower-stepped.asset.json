@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-tower-stepped",
+  "provider": "Tripo3D",
+  "task_id": "4b629caa-d630-4c76-bfa0-4bdba8ae53fe",
+  "credits_consumed": 60.0,
+  "source_sha256": "300c74ec238b613b2913cdb8649946d89d40cf240cedc4214dc7d1b6a558bc3a",
+  "reference_sha256": "2b610726624998134aa28729bf5fca995359b3b266a6a4f56da60ba3ce136c3c",
+  "sha256": "691b2b8489ec9b1bc5fd90ee418dc300ede95cee3067b092137e1220dbf91c83",
+  "bytes": 5223092,
+  "triangles": 44126,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    22.40342903137207,
+    65.0,
+    38.53116989135742
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

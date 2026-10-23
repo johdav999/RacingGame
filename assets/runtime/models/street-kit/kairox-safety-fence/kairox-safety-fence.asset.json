@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-safety-fence",
+  "provider": "Tripo3D",
+  "task_id": "2d62e699-c949-43cd-8a36-039a04d0586c",
+  "credits_consumed": 60.0,
+  "sha256": "27c8b800728b4e8bbf6eb217c6cbe73f4f82d031227a5078c60a8025c1687b08",
+  "source_sha256": "94862aa02b47615704658d36eb757909216aa1238cf1b80250d20c9e98cbcb57",
+  "reference_sha256": "e2ef2212e8844d7a4ccd9c395e7b4458c650957d0df3644ca48a296ed4be1d39",
+  "bytes": 2470640,
+  "triangles": 43427,
+  "texture_size": 512,
+  "dimensions": [
+    4.0,
+    2.2428853511810303,
+    0.6259853839874268
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

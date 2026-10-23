@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-transit-deck",
+  "provider": "Tripo3D",
+  "task_id": "2b14dd78-a08d-4bb0-aa10-94a1ada0ed22",
+  "credits_consumed": 60.0,
+  "sha256": "e39fa3593014c5699ced77656428856c0645c58f0103a2f6b367be6f1b40f080",
+  "source_sha256": "7c89372fa0305afd2c2b37d20e6b62b66a108d4ac0eb930804e67af16e4f75f3",
+  "reference_sha256": "bbe2f4d2c4fa189f784e4cb5d54fae003b905d8a229efd9575eb9e51f1f269ab",
+  "bytes": 4941544,
+  "triangles": 40038,
+  "texture_size": 1024,
+  "dimensions": [
+    8.0,
+    1.0069364309310913,
+    4.600594997406006
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

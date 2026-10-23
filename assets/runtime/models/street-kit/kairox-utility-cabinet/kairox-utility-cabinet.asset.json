@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-utility-cabinet",
+  "provider": "Tripo3D",
+  "task_id": "21b75fc6-3014-43e5-bfe1-8646759014f0",
+  "credits_consumed": 60.0,
+  "sha256": "65ebef756e78011857d543c92bda495e781678d16404811cb6118e5c2f0352a7",
+  "source_sha256": "e5409da0008c002862e4f0cf42bb4d9518cfa35931950a3c5bab6b6ede739bf2",
+  "reference_sha256": "5225f0eeefbf49cf2f39d710bf78fd799883e36f6cfc12d904b696d72575cf65",
+  "bytes": 2243968,
+  "triangles": 37609,
+  "texture_size": 512,
+  "dimensions": [
+    1.4320099353790283,
+    1.600000023841858,
+    0.7073974013328552
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

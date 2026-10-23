@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "Seamless steady loop of a lightweight science fiction hovercraft lift engine, smooth airy magnetic turbine hum with soft granular air cushion hiss. Stable medium pitch, constant speed and volume, dry isolated close recording, no movement or whoosh pass, no voices, no music.",
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 6.0
+  },
+  "generated_at": "2026-10-22T09:32:04.710722+00:00",
+  "sha256": "1b0d1dd3810a450d70f8ce5acef3ba8bc1a8fa2cc7981953a651eb83408f5aa3",
+  "request_id": null,
+  "character_cost": "60",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "skimmer-engine",
+    "file": "skimmer-engine.wav",
+    "loop": true,
+    "sha256": "5890f9302bdefc1142b029cbf799c62e3dee69b8dd4efc2465487847df596ae2",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 141120,
+    "seconds": 5.88,
+    "peak": 0.424068900601841,
+    "rms": 0.11,
+    "source_seconds": 6.0,
+    "source_sha256": "1b0d1dd3810a450d70f8ce5acef3ba8bc1a8fa2cc7981953a651eb83408f5aa3",
+    "loop_boundary_delta": 0.03332621234778894,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "asset": "sandstone-rock-arch",
+  "provider": "Tripo3D",
+  "task_id": "d2e14ced-83b8-429a-a774-5d628a3a11a0",
+  "credits_consumed": 60.0,
+  "source_sha256": "cb66a8ec0496e9682f9ed4b041a88f563ca5b514d26414ebf5172d0b7cee3584",
+  "reference_sha256": "b9e55d3c0fd0e84230958ecf4f7f1439ead933d659627ecc1fac5e5c385dd4d6",
+  "sha256": "d9d18b5cb867ca4cedf7455da97bf588200614cc1720d1796d2bdaaeaee4d111",
+  "bytes": 13888372,
+  "triangles": 15619,
+  "requested_triangle_limit": 16000,
+  "dimensions_xyz_metres": [
+    24.0,
+    13.312682151794434,
+    9.791626930236816
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 24.47380870355058,
+  "source_dimensions_blender": [
+    0.40008601546287537,
+    0.980640172958374,
+    0.5439562797546387
+  ],
+  "source_textures": [
+    {
+      "name": "Color_d2e14ced-83b8-429a-a774-5d628a3a11a0",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_d2e14ced-83b8-429a-a774-5d628a3a11a0",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_d2e14ced-83b8-429a-a774-5d628a3a11a0",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 2048,
+  "emission_mask_pixels": 0,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

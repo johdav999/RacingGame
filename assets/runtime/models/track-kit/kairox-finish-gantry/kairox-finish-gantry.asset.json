@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-finish-gantry",
+  "provider": "Tripo3D",
+  "task_id": "c77fb350-f298-41ff-912c-893164a8a732",
+  "source_sha256": "7aace217b488a618d627595ed0012f3d4d16c5c6a0ff6a2f2412c67f5e5278c1",
+  "reference_sha256": "0199dff6ccf53da0b5884f5c33f7dcd77117aac2d6b859334670e878bce6a7d6",
+  "sha256": "117e323f1a7a69b41701e328e745ab69fd6689515f1777c2971405e38856f5ad",
+  "bytes": 1824056,
+  "source_triangles": 44833,
+  "triangles": 5999,
+  "dimensions": [
+    35,
+    8,
+    1.4
+  ],
+  "texture_size": 1024,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

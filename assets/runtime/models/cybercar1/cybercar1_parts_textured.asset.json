@@ -1,0 +1,281 @@
+{
+  "source_files": {
+    "cybercar1.glb": "094b2ecbab72669956321bfde5f0d8c8450b4d279438e5c758eb63755cf88cc1",
+    "cybercar1_parts.glb": "1a16db8010b0b82914b7b7f3da186d4eb05d78380c3876d907dc513999aeff09"
+  },
+  "parts": [
+    {
+      "name": "car_part_15",
+      "source_part": "tripo_part_15",
+      "triangles": 9
+    },
+    {
+      "name": "car_part_02",
+      "source_part": "tripo_part_2",
+      "triangles": 578
+    },
+    {
+      "name": "car_part_00",
+      "source_part": "tripo_part_0",
+      "triangles": 3891
+    },
+    {
+      "name": "car_part_01",
+      "source_part": "tripo_part_1",
+      "triangles": 1649
+    },
+    {
+      "name": "wheel_front_right",
+      "source_part": "tripo_part_3",
+      "triangles": 537
+    },
+    {
+      "name": "wheel_front_left",
+      "source_part": "tripo_part_4",
+      "triangles": 552
+    },
+    {
+      "name": "wheel_rear_right",
+      "source_part": "tripo_part_5",
+      "triangles": 503
+    },
+    {
+      "name": "car_part_06",
+      "source_part": "tripo_part_6",
+      "triangles": 219
+    },
+    {
+      "name": "car_part_07",
+      "source_part": "tripo_part_7",
+      "triangles": 181
+    },
+    {
+      "name": "car_part_08",
+      "source_part": "tripo_part_8",
+      "triangles": 96
+    },
+    {
+      "name": "car_part_09",
+      "source_part": "tripo_part_9",
+      "triangles": 100
+    },
+    {
+      "name": "car_part_10",
+      "source_part": "tripo_part_10",
+      "triangles": 58
+    },
+    {
+      "name": "wheel_rear_left",
+      "source_part": "tripo_part_11",
+      "triangles": 475
+    },
+    {
+      "name": "car_part_12",
+      "source_part": "tripo_part_12",
+      "triangles": 163
+    },
+    {
+      "name": "car_part_13",
+      "source_part": "tripo_part_13",
+      "triangles": 85
+    },
+    {
+      "name": "car_part_14",
+      "source_part": "tripo_part_14",
+      "triangles": 66
+    }
+  ],
+  "wheels": [
+    {
+      "name": "wheel_front_right",
+      "source_part": "tripo_part_3",
+      "pivot_gltf": [
+        -0.25237971544265747,
+        0.08663322031497955,
+        -0.20299604535102844
+      ],
+      "spin_axis_local": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08528399960192344,
+      "circle_fit_rms": 0.0008283809584997628,
+      "pivot_edit_world_position_error": 0.0
+    },
+    {
+      "name": "wheel_front_left",
+      "source_part": "tripo_part_4",
+      "pivot_gltf": [
+        -0.25259819626808167,
+        0.08632750809192657,
+        0.20028451085090637
+      ],
+      "spin_axis_local": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08524303582982047,
+      "circle_fit_rms": 0.0009016017799098053,
+      "pivot_edit_world_position_error": 0.0
+    },
+    {
+      "name": "wheel_rear_right",
+      "source_part": "tripo_part_5",
+      "pivot_gltf": [
+        0.29941561818122864,
+        0.08596517890691757,
+        -0.20279446244239807
+      ],
+      "spin_axis_local": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08506040975006389,
+      "circle_fit_rms": 0.0011114773389179614,
+      "pivot_edit_world_position_error": 0.0
+    },
+    {
+      "name": "wheel_rear_left",
+      "source_part": "tripo_part_11",
+      "pivot_gltf": [
+        0.30048075318336487,
+        0.08641958981752396,
+        0.2010038197040558
+      ],
+      "spin_axis_local": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08544422831497027,
+      "circle_fit_rms": 0.001111525888921738,
+      "pivot_edit_world_position_error": 0.0
+    }
+  ],
+  "gltf_axes": {
+    "forward": "-X",
+    "up": "+Y",
+    "wheel_spin_axis_local": "+Z"
+  },
+  "scale": "Original input scale preserved; no conversion to full-size car dimensions.",
+  "texture_size": [
+    4096,
+    4096
+  ],
+  "method": "Cycles selected-to-active emission base color and packed metallic/roughness; tangent normal bake",
+  "blender_version": "3.5.1",
+  "output_sha256": "230d8278a968f9b2389018201efced83ddd07f7e447bcc05f23ad1db2b3d5331",
+  "export_note": "Separate Color node required: legacy Separate RGB was not recognized correctly by the Blender 3.5 glTF exporter.",
+  "verification": {
+    "reimported_glb": true,
+    "mesh_count": 16,
+    "triangles": 9162,
+    "shared_materials": 1,
+    "all_parts_have_uvs": true,
+    "wheel_rotation_checks": [
+      {
+        "wheel": "wheel_front_right",
+        "pivot_error_max": 0.0,
+        "angles_degrees": [
+          45,
+          90,
+          180,
+          270,
+          360
+        ],
+        "body_static": true
+      },
+      {
+        "wheel": "wheel_front_left",
+        "pivot_error_max": 0.0,
+        "angles_degrees": [
+          45,
+          90,
+          180,
+          270,
+          360
+        ],
+        "body_static": true
+      },
+      {
+        "wheel": "wheel_rear_right",
+        "pivot_error_max": 0.0,
+        "angles_degrees": [
+          45,
+          90,
+          180,
+          270,
+          360
+        ],
+        "body_static": true
+      },
+      {
+        "wheel": "wheel_rear_left",
+        "pivot_error_max": 0.0,
+        "angles_degrees": [
+          45,
+          90,
+          180,
+          270,
+          360
+        ],
+        "body_static": true
+      }
+    ],
+    "renders": [
+      "qa-source-front.png",
+      "qa-textured-front.png",
+      "qa-textured-rear.png",
+      "qa-wheels-rotated-60.png"
+    ],
+    "embedded_textures": [
+      {
+        "name": "cybercar1_parts_normal",
+        "size": [
+          4096,
+          4096
+        ],
+        "embedded_png_matches_bake_exactly": true,
+        "sha256": "45c823f701431cafe2023319e683342a454f15323d310d3f1ba442f1b06ffb67"
+      },
+      {
+        "name": "cybercar1_parts_basecolor",
+        "size": [
+          4096,
+          4096
+        ],
+        "embedded_png_matches_bake_exactly": true,
+        "sha256": "887768261821354d4b94729aecc2d15e008b937c696ec4b9b6f030ab8afed387"
+      },
+      {
+        "name": "cybercar1_parts_metallic_roughness",
+        "size": [
+          4096,
+          4096
+        ],
+        "embedded_png_matches_bake_exactly": true,
+        "sha256": "003720be8b93b178c977f47d381fed79ceb821a2ac97ac0aedd93371785e1239"
+      }
+    ]
+  },
+  "output_bytes": 21610888,
+  "asset": "cybercar1_parts_textured.glb",
+  "working_source": "artifacts/model-jobs/cybercar1-texture-transfer/cybercar1_parts_textured.blend",
+  "limitations": [
+    "Source and segmented geometry differ; projection introduces local texture distortion.",
+    "Original normalized scale is preserved."
+  ],
+  "runtime_integration": {
+    "documentation": "docs/player-car.md",
+    "scale": 4.3,
+    "forward": "+Z",
+    "up": "+Y",
+    "wheel_pose_source": "VehicleComponent interpolated physics poses",
+    "native_tests": "racing_smoke passed",
+    "browser_tests": "scripts/cybercar-smoke.cjs passed on WebGPU and WebGL2",
+    "validation_date": "2026-10-20"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-tower-crowned",
+  "provider": "Tripo3D",
+  "task_id": "ab181251-dea0-4f65-a798-5fd1934fb8b1",
+  "credits_consumed": 60.0,
+  "source_sha256": "e61d4688f6bfe235ef1053b6d844db5cdb783cedddc6881eaa7dc92d242473ba",
+  "reference_sha256": "7323d60b04cc79d1a6ef767220f27cd9640002f8a178f1ccae882fa7f6124de8",
+  "sha256": "b3c6a067e5f3d6b4364426c86fe4810a79cb2f870b2a3588b3231653d55054ca",
+  "bytes": 5054540,
+  "triangles": 42249,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    28.340545654296875,
+    80.0,
+    31.106727600097656
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

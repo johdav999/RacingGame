@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-chevron-board",
+  "provider": "Tripo3D",
+  "task_id": "96f0756d-d22f-4e32-8603-4396268885d3",
+  "source_sha256": "4f58de864be77924352d6e3faf2f2e981e11775f68b691a1500cc132b949dcc5",
+  "reference_sha256": "be06bed49f32d203466cf702ecfd269bd0f5db3d915f0ef8cdcc1e6131300d0f",
+  "sha256": "bd2938e9ff74f0d212b5d4146fbd5cff07bc3475672b1c7510272c520c2cbc18",
+  "bytes": 716856,
+  "source_triangles": 41924,
+  "triangles": 1800,
+  "dimensions": [
+    2.4,
+    2.4,
+    0.6
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

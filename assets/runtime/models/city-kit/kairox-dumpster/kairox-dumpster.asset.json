@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-dumpster",
+  "provider": "Tripo3D",
+  "task_id": "44226cbf-05d9-440f-b32f-fa275ba03576",
+  "credits_consumed": 60.0,
+  "source_sha256": "294777c8cbf2da09820d018bc9ba75720b57721b20bbf7c73cdbb1bcb86434d6",
+  "reference_sha256": "bd231350d283940593c4c278b2244c4a472953ea89db5d03c7fc0e7e0e831b54",
+  "sha256": "ebfef1d96da79f0fda86830fd8bea3e74ca62912c6cca864ce7f141148807b93",
+  "bytes": 2210728,
+  "triangles": 43580,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    1.361415147781372,
+    1.5000001192092896,
+    2.518662929534912
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

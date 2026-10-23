@@ -1,0 +1,30 @@
+{
+  "asset": "kairox-plaza-drain",
+  "provider": "Tripo3D",
+  "task_id": "9536133d-30e4-48ae-a4a8-474543aa440e",
+  "credits_consumed": 60.0,
+  "source_sha256": "07f6dd04cb5a084f79a60412fd7d385d54357e3a9a6688668c4e1174d33534a8",
+  "reference_sha256": "5336daa1e1a7134d2882e9ef6a2cfa3b496f2a572a276ff5ac4bbe3e79f1ad65",
+  "sha256": "ce50457f88e7a0b992dc75b6b2c529b083d40df388614f2808d5b6b8421a307d",
+  "bytes": 3617872,
+  "source_triangles": 40381,
+  "triangles": 5999,
+  "bounds_min": [
+    -0.22499999403953552,
+    0,
+    -2
+  ],
+  "bounds_max": [
+    0.22499999403953552,
+    0.15000000596046448,
+    2
+  ],
+  "dimensions_xyz_metres": [
+    0.44999998807907104,
+    0.15000000596046448,
+    4
+  ],
+  "preparation": "scripts/prepare-plaza.py; fitted module dimensions, decimated mesh, embedded 1024px maps",
+  "coordinates": "+Y up, longitudinal +Z, bottom-centred; runtime conforms module to curved plaza",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

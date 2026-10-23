@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-sidewalk-corner",
+  "provider": "Tripo3D",
+  "task_id": "28f39c31-6d36-4702-aaa4-f8ecc626b7a7",
+  "source_sha256": "fb2eae6796f674ab18b78fbdff784cb97690e0095d944c56dcc594d0bbd57782",
+  "reference_sha256": "f50e2bf229f6f53d00f3d6edb90161593c5b28cfc42bebaa4c2a661f9c9bb9e8",
+  "sha256": "317d8356162a387f56471e2503a142cbbb3799b3998b3e1542e5d7f4917d29ea",
+  "bytes": 682468,
+  "source_triangles": 37921,
+  "triangles": 1799,
+  "dimensions": [
+    2,
+    0.16,
+    2
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

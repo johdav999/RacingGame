@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-wall-lamp",
+  "provider": "Tripo3D",
+  "task_id": "f8574efc-14b6-4b19-91c4-ae3f2be75b87",
+  "source_sha256": "9b6539b45e862ba77f02ba47dc03aa1aa7c3c83b6dfc977ae185d52a063d04cd",
+  "reference_sha256": "a469f103f175c1316fe3e9835e1bc83fa00d52d9a293a13f910cf5bbe75038cf",
+  "sha256": "fe574707e8e1ae5e89780b7f8eb04002faed78866eb2786d7dec126c850cd468",
+  "bytes": 725200,
+  "source_triangles": 40344,
+  "triangles": 1200,
+  "dimensions": [
+    0.55,
+    0.7,
+    0.35
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

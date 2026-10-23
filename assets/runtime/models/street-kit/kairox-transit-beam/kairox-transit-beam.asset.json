@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-transit-beam",
+  "provider": "Tripo3D",
+  "task_id": "c2ac1669-8026-49fe-aae2-59c6dc7683fc",
+  "credits_consumed": 60.0,
+  "sha256": "27e29559e54e168d2294ea4abf6e555de4b499bd1cbfa84ae37c186983e5d1e9",
+  "source_sha256": "88dfd2d1c0ff10fab931ff05113b4d143302362857c158e4b2f69d4f686ab408",
+  "reference_sha256": "3273d9e745b6de9769b91a1c8967f5240e8a0314f7672bbc7e64700dbe12fba6",
+  "bytes": 5047788,
+  "triangles": 42848,
+  "texture_size": 1024,
+  "dimensions": [
+    8.0,
+    1.301652431488037,
+    1.372708797454834
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

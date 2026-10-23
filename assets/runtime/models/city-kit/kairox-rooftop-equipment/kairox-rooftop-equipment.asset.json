@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-rooftop-equipment",
+  "provider": "Tripo3D",
+  "task_id": "5dfe399c-7289-46a3-88c4-f780b88b22ca",
+  "credits_consumed": 60.0,
+  "source_sha256": "d422530b667d6cbb9deefd550ef16e9e56e3f74e5d12abbfa174bda2f4c94d92",
+  "reference_sha256": "da179ad073c5578d4ed95359ebdf75c91f22a322b7d7ba55061c052507816387",
+  "sha256": "1dcdb2439da7c38840363364d0d718bcfa41b1ffbd41f0bb0cc1bdc010da3f60",
+  "bytes": 2392444,
+  "triangles": 43973,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    2.465730667114258,
+    2.5,
+    4.887934684753418
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; geometry and UVs preserved; reduced embedded maps",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

@@ -1,0 +1,53 @@
+{
+  "asset": "energy-conduit-junction",
+  "provider": "Tripo3D",
+  "task_id": "6f2ef5da-c314-4452-a5c2-768816da2887",
+  "credits_consumed": 60.0,
+  "source_sha256": "e6c23d9867ad34df1e209cc78263f077c85c54380c234d25044c562a390e5b05",
+  "reference_sha256": "d3b3be57f3f88171701a5ec13b70ef8823f1854cfeb50a6ff777fcc76ae69be8",
+  "sha256": "b10d09ab02bbd05ba03b6252dd2f976f73ca6f1f295d15579c89e967f2654e8b",
+  "bytes": 3688764,
+  "triangles": 3149,
+  "requested_triangle_limit": 3500,
+  "dimensions_xyz_metres": [
+    3.992434501647949,
+    0.8999999761581421,
+    3.9676320552825928
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 4.0726103032466705,
+  "source_dimensions_blender": [
+    0.9803134202957153,
+    0.9742233157157898,
+    0.22098848223686218
+  ],
+  "source_textures": [
+    {
+      "name": "Color_6f2ef5da-c314-4452-a5c2-768816da2887",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_6f2ef5da-c314-4452-a5c2-768816da2887",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_6f2ef5da-c314-4452-a5c2-768816da2887",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 1024,
+  "emission_mask_pixels": 33119,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

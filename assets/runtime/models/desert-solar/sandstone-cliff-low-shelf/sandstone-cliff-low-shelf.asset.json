@@ -1,0 +1,53 @@
+{
+  "asset": "sandstone-cliff-low-shelf",
+  "provider": "Tripo3D",
+  "task_id": "c9a3d415-ec8f-4fa6-ac90-6551f4ea0a47",
+  "credits_consumed": 60.0,
+  "source_sha256": "afc7184e6bc748ed7fd4924b30df7c48cb90af67647aabd1109b433a1f81a9e5",
+  "reference_sha256": "ff1a3709cd7f762d2491cc42ee7895caa7d3803887607843e06a9f885a44f9b5",
+  "sha256": "0e015bbeb00a406fa8910990dacf67ad2f9f83a43b382aa7e2e95e410edb94fb",
+  "bytes": 12353212,
+  "triangles": 7848,
+  "requested_triangle_limit": 8000,
+  "dimensions_xyz_metres": [
+    15.999999046325684,
+    4.5445356369018555,
+    5.908259391784668
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 16.337736504135673,
+  "source_dimensions_blender": [
+    0.36163267493247986,
+    0.9793277978897095,
+    0.278161883354187
+  ],
+  "source_textures": [
+    {
+      "name": "Color_c9a3d415-ec8f-4fa6-ac90-6551f4ea0a47",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_c9a3d415-ec8f-4fa6-ac90-6551f4ea0a47",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_c9a3d415-ec8f-4fa6-ac90-6551f4ea0a47",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 2048,
+  "emission_mask_pixels": 0,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

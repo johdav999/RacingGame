@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-streetlight",
+  "provider": "Tripo3D",
+  "task_id": "08139550-e6ad-44f0-a278-d164b7a8e914",
+  "source_sha256": "eb91b40d8bea1ae1814d8d62b4292c31c31aafef41647a6b6a11cbe50d2b66dd",
+  "reference_sha256": "d07f6ff482c77effcec522111641ed9eeb94d12db3a0f43ea3b9ce9b3bd1fc00",
+  "sha256": "3cc477bb83cfe8f2e02e05d4fe0479c036a2599052a97622868d0d6d59ec1c6a",
+  "bytes": 811060,
+  "source_triangles": 42014,
+  "triangles": 2200,
+  "dimensions": [
+    2.4,
+    7.5,
+    0.7
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

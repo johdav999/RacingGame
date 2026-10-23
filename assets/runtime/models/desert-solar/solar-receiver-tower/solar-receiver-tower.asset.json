@@ -1,0 +1,53 @@
+{
+  "asset": "solar-receiver-tower",
+  "provider": "Tripo3D",
+  "task_id": "63823a2e-204d-4c64-9e11-b8055a5d0a43",
+  "credits_consumed": 60.0,
+  "source_sha256": "03f05fd998cd05293d031d2b7088a7fea153d57614c3007d551a445aa2ddac6d",
+  "reference_sha256": "ad1fc9a5fabc31cdcc69fd8a2569dd468a3a061e3539bf985a6f778c9ed82c9b",
+  "sha256": "314d6b15e7d51749855e8e5780c836343f1ed5429359c5a76698bf4a57784e5e",
+  "bytes": 13623028,
+  "triangles": 14884,
+  "requested_triangle_limit": 16000,
+  "dimensions_xyz_metres": [
+    23.59577751159668,
+    55.0,
+    21.651567459106445
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 56.52032217948244,
+  "source_dimensions_blender": [
+    0.41747424006462097,
+    0.3830758035182953,
+    0.9731013178825378
+  ],
+  "source_textures": [
+    {
+      "name": "Color_63823a2e-204d-4c64-9e11-b8055a5d0a43",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_63823a2e-204d-4c64-9e11-b8055a5d0a43",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_63823a2e-204d-4c64-9e11-b8055a5d0a43",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 2048,
+  "emission_mask_pixels": 187953,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

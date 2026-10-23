@@ -1,0 +1,80 @@
+[
+  {
+    "name": "vektor-engine",
+    "duration": 6,
+    "loop": true,
+    "prompt": "Seamless steady loop of a futuristic sports coupe engine at medium RPM, tight throaty mechanical combustion growl with subtle electric turbine whine. Constant speed and volume, dry isolated close recording, no acceleration sweep, no gear changes, no voices, no music, no other vehicles."
+  },
+  {
+    "name": "skimmer-engine",
+    "duration": 6,
+    "loop": true,
+    "prompt": "Seamless steady loop of a lightweight science fiction hovercraft lift engine, smooth airy magnetic turbine hum with soft granular air cushion hiss. Stable medium pitch, constant speed and volume, dry isolated close recording, no movement or whoosh pass, no voices, no music."
+  },
+  {
+    "name": "bastion-engine",
+    "duration": 6,
+    "loop": true,
+    "prompt": "Seamless steady loop of a heavy armored racing car engine at medium RPM, deep muscular industrial motor rumble with a restrained supercharger whine. Constant stable load and pitch, dry isolated close recording, no acceleration or gear changes, no voices, no music."
+  },
+  {
+    "name": "vector-engine",
+    "duration": 6,
+    "loop": true,
+    "prompt": "Seamless steady loop of a high performance antigravity racing craft, precise bright electromagnetic motor whir and smooth twin turbine harmonics, energetic but not piercing. Constant pitch and volume, dry isolated close recording, no sweep, no voices, no music."
+  },
+  {
+    "name": "tire-slide",
+    "duration": 4,
+    "loop": true,
+    "prompt": "Seamless continuous loop of racing tires scrubbing and sliding on dry asphalt, controlled rubber friction hiss with a soft low squeal, steady intensity, close dry recording. No engine, no crash, no voices, no music."
+  },
+  {
+    "name": "reactor-boost",
+    "duration": 4,
+    "loop": true,
+    "prompt": "Seamless continuous loop of a futuristic vehicle reactor boost, powerful smooth compressed plasma rush with a deep turbine undertone, sustained steady thrust. No start or end burst, no explosions, no voices, no music."
+  },
+  {
+    "name": "laser-fire",
+    "duration": 0.8,
+    "loop": false,
+    "prompt": "One short crisp futuristic vehicle laser cannon shot, sharp electric crack followed by a bright descending plasma zap and a very short tail. Single isolated shot, immediate attack, dry close sound, no repeated firing, no voices, no music."
+  },
+  {
+    "name": "shield-on",
+    "duration": 1.1,
+    "loop": false,
+    "prompt": "One compact futuristic energy shield activation, quick rising electronic shimmer opening into a soft resonant forcefield pulse, short clean decay. Immediate start, isolated dry game effect, no voices, no music."
+  },
+  {
+    "name": "shield-impact",
+    "duration": 0.8,
+    "loop": false,
+    "prompt": "One laser striking an energy shield, crisp electrical impact with glassy resonant ripple and short low electromagnetic thump, immediate attack, compact clean decay. Isolated dry game sound, no voices, no music."
+  },
+  {
+    "name": "hull-impact",
+    "duration": 0.8,
+    "loop": false,
+    "prompt": "One short heavy armored vehicle impact, low metallic chassis thud with a restrained crunchy rattle, tight and dry, immediate attack, no explosion, no debris shower, no voices, no music."
+  },
+  {
+    "name": "countdown-tick",
+    "duration": 0.5,
+    "loop": false,
+    "prompt": "One single short clean race countdown electronic beep, medium pitch, firm attack and very short decay, clear through engine noise, isolated interface sound. No sequence, no voice, no music."
+  },
+  {
+    "name": "race-go",
+    "duration": 0.8,
+    "loop": false,
+    "prompt": "One bright high electronic race start signal, a single clear sustained go beep with quick onset and clean short decay, noticeably higher than a countdown beep. Isolated game interface cue, no voices, no music."
+  },
+  {
+    "name": "race-finish",
+    "duration": 2,
+    "loop": false,
+    "prompt": "One concise futuristic race finish notification, a satisfying ascending electronic confirmation flourish ending in a bright resonant chime, dry polished game interface effect. No crowd, no speech, no background music."
+  }
+]

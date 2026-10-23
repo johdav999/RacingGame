@@ -1,0 +1,36 @@
+{
+  "asset": "kairox-residential-midrise",
+  "provider": "Tripo3D",
+  "task_id": "07457543-d04f-4e68-9a0f-257ec2f085c1",
+  "credits_consumed": 60.0,
+  "source_sha256": "126fceea719562f9c445efa6516c412fe8151a8d298109a40c4033db0013246f",
+  "reference_sha256": "bc4b29e2c3c661c504781dacda96e4818172ebce7e4b85b95d3daaba4f2942d0",
+  "sha256": "3d2729e9ed2d4158042b8c00bcab1309177e4c222bcc2bd8ca88cd072b0d089f",
+  "bytes": 3842508,
+  "triangles": 17836,
+  "parts": 1,
+  "materials": 1,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    21.261276245117188,
+    36.0,
+    22.45465850830078
+  ],
+  "coordinates": "+Y up, bottom-centred origin, uniform metre scale; facade orientation is asset-specific",
+  "preparation": "scripts/prepare-city-kit.py; metre normalization, reduced embedded maps, new models capped at 20000 triangles; shared runtime LODs",
+  "collision": "Decorative placement outside track barriers; no road collision",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

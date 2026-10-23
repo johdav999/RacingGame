@@ -1,0 +1,50 @@
+{
+  "asset": "kairox-shop-arcade",
+  "provider": "Tripo3D",
+  "task_id": "97af2ac0-8485-45d7-8d16-27830111e742",
+  "source_sha256": "7acf5716407bbf34d8badcd7a6e87d4ca2ba91916c9580d6a71dd0c97f5d84b1",
+  "reference_sha256": "ecc26f7f0d23e05d5dc4b43c3e7cf03af719ce6d7565a456442dc46150a1ca3d",
+  "sha256": "a1fdcd534b663c2d08ba249b620d317984e49067e771d91588171a910e137e12",
+  "bytes": 5099092,
+  "source_triangles": 41822,
+  "triangles": 41822,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    19.302112579345703,
+    12.0,
+    30.752077102661133
+  ],
+  "coordinates": "+Y up; origin at bottom footprint centre; uniform scale",
+  "preparation": "scripts/prepare-buildings.py; source geometry preserved, normalized scale and 1024px maps",
+  "collision": "Game installs one static box envelope per placement; GLB has no embedded collision",
+  "validation": "2026-10-21: Blender QA; installed in Midnight Circuit, native building checks and frozen-site WebGPU/WebGL2 loading, retry, full lap and visual inspection; see docs/building-integration.md",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "credits_consumed": 60.0,
+  "source_texture_sizes": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ]
+  ]
+}

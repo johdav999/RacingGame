@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "Seamless steady loop of a high performance antigravity racing craft, precise bright electromagnetic motor whir and smooth twin turbine harmonics, energetic but not piercing. Constant pitch and volume, dry isolated close recording, no sweep, no voices, no music.",
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 6.0
+  },
+  "generated_at": "2026-10-22T09:32:11.067998+00:00",
+  "sha256": "b98d7cc969b218b2d9ddab1f71c13e1caebbce9895f3ea5f01640814b9111898",
+  "request_id": null,
+  "character_cost": "60",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "vector-engine",
+    "file": "vector-engine.wav",
+    "loop": true,
+    "sha256": "af1d9d74d92b29b88169b5cdf2a21271971dafe012d8822b9fc227e1ac8e1337",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 141120,
+    "seconds": 5.88,
+    "peak": 0.31050934760742005,
+    "rms": 0.11000000000000001,
+    "source_seconds": 6.0,
+    "source_sha256": "b98d7cc969b218b2d9ddab1f71c13e1caebbce9895f3ea5f01640814b9111898",
+    "loop_boundary_delta": 0.04336680196539201,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

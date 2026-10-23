@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "Seamless steady loop of a futuristic sports coupe engine at medium RPM, tight throaty mechanical combustion growl with subtle electric turbine whine. Constant speed and volume, dry isolated close recording, no acceleration sweep, no gear changes, no voices, no music, no other vehicles.",
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 6.0
+  },
+  "generated_at": "2026-10-22T09:32:01.435895+00:00",
+  "sha256": "3706a1af4a848eae2ebc681c3b7d3cbeb40963c2a8edd5d4989e36f47590da5c",
+  "request_id": null,
+  "character_cost": "60",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "vektor-engine",
+    "file": "vektor-engine.wav",
+    "loop": true,
+    "sha256": "365cc5dc4f8b8600cf743e2237883ce30f76137d49d103a3a61b1de45f8359a8",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 141120,
+    "seconds": 5.88,
+    "peak": 0.5051082983640225,
+    "rms": 0.11,
+    "source_seconds": 6.0,
+    "source_sha256": "3706a1af4a848eae2ebc681c3b7d3cbeb40963c2a8edd5d4989e36f47590da5c",
+    "loop_boundary_delta": 0.007873775444807276,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

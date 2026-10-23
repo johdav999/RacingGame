@@ -1,0 +1,56 @@
+{
+  "name": "desert-race-gate",
+  "provider": "Tripo3D",
+  "task_id": "39973309-cbe6-4895-944f-f4cd5b4ea092",
+  "credits_consumed": 60.0,
+  "source_sha256": "f037cb092cfe80a37abdfb52b997318886a33ec9f9748c8bf14a38133f238a97",
+  "reference_sha256": "68f540b9c6b31276de4eba29edd04aeaf4ebc73658ce94ede39073f828f76880",
+  "sha256": "a3aae3762fd6326b326e1b9d3358b9ebf2c2edb8e46d0f7ca496ed4b25c9dfdb",
+  "bytes": 13760008,
+  "source_triangles": 17183,
+  "triangles": 11980,
+  "dimensions": [
+    27.99945640563965,
+    7.225798874365864,
+    4.49050498008728
+  ],
+  "materials": 1,
+  "source_maps": [
+    {
+      "name": "Color_39973309-cbe6-4895-944f-f4cd5b4ea092",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_39973309-cbe6-4895-944f-f4cd5b4ea092",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_39973309-cbe6-4895-944f-f4cd5b4ea092",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 2048,
+  "source_size_blender": [
+    0.15723136067390442,
+    0.9803024530410767,
+    0.25297051668167114
+  ],
+  "scale_xyz_blender": [
+    28.562612533569336,
+    28.562612533569336,
+    28.562612533569336
+  ],
+  "emission_pixels": 313977,
+  "preparation": "Bottom centre pivot, +Y up, long axis X, budgeted decimation with retained UV maps, reduced embedded PBR maps and cyan-only emission. Divider fitted to existing 4 x 1.2 x 0.65m physics envelope; gate uniformly scaled to 28m width.",
+  "qa": "Finite mesh, source <=20000 triangles, prepared budget, gate clear corridor 21.6m x 4.5m sampled by mesh rays, front and reverse renders. Runtime acceptance recorded separately.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

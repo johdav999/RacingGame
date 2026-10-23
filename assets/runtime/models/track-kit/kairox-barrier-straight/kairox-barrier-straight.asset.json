@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-barrier-straight",
+  "provider": "Tripo3D",
+  "task_id": "9b49f44a-4396-4ef8-9113-605dc4de23a0",
+  "source_sha256": "cd9f537be1dd591f74758980f5bb9b3cb4a9278f27a23d3fbc39c6fbbc6f6445",
+  "reference_sha256": "78d87eb9766abe05be8f324573d1e919a45c8e443eb0991d5ceb9990fb81ab78",
+  "sha256": "20d9cb95766eeeb59e6089a3d4044313c08ab6b91a76998f50840613aef6555e",
+  "bytes": 873260,
+  "source_triangles": 42707,
+  "triangles": 1599,
+  "dimensions": [
+    4,
+    1.2,
+    0.7
+  ],
+  "texture_size": 512,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

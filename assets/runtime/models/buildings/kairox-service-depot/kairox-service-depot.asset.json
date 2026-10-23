@@ -1,0 +1,35 @@
+{
+  "asset": "kairox-service-depot",
+  "provider": "Tripo3D",
+  "task_id": "37729d10-8417-46bc-883a-f5995a81090a",
+  "source_sha256": "ce1f24b51a0f0f181f15badbf46cb5945b8bcfb47910b51b14ce934b18334415",
+  "reference_sha256": "6e396482e524ed5b22379646ace2c1c6bc0cfbc6f48583d7ec65224b17598b3d",
+  "sha256": "b86cb9332956ed03aa57099625ef4dc65fd2b8dbe90f8b189c873a33691dfcab",
+  "bytes": 4409860,
+  "source_triangles": 41632,
+  "triangles": 41632,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    18.814376831054688,
+    10.0,
+    22.993412017822266
+  ],
+  "coordinates": "+Y up; origin at bottom footprint centre; uniform scale",
+  "preparation": "scripts/prepare-buildings.py; source geometry preserved, normalized scale and 1024px maps",
+  "collision": "Static box collider in StarterScene; footprint and height; outside race barriers",
+  "validation": "Blender QA plus native complete races, clearance/shared resource checks and WebGPU/WebGL2 physical laps; see docs/building-integration.md",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

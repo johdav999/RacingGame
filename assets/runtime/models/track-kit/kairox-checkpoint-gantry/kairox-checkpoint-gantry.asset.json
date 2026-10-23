@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-checkpoint-gantry",
+  "provider": "Tripo3D",
+  "task_id": "430256fd-51ce-414e-89d3-0bd432c9d977",
+  "source_sha256": "c2d036432d07ce05ab7541fda1726de01032925012984918c5980f51aa4a30f9",
+  "reference_sha256": "78a94a7a9d33c3c0136de2598a728c93d5fb9df18038d23f671045bfd53f5fa1",
+  "sha256": "494b0efeaceabab465907f00c39a8e3c64c04da20127eebc509a5e4d01d38023",
+  "bytes": 1532256,
+  "source_triangles": 41109,
+  "triangles": 4999,
+  "dimensions": [
+    35,
+    8,
+    1
+  ],
+  "texture_size": 1024,
+  "preparation": "scripts/prepare-track-kit.py; welded/decimated, fresh UVs, source base/ORM/normal rebake, metric fit",
+  "coordinates": "+Y up, bottom footprint centre; length +X, facade +Z",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

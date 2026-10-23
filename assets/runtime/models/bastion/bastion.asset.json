@@ -1,0 +1,97 @@
+{
+  "asset": "bastion",
+  "provider": "Tripo3D",
+  "task_id": "e3b0ec3a-5646-4b1f-bb71-2d016b43ee55",
+  "source_sha256": "320371822bee152435a33fcb9881aa43465d2b7801f2f92e889e52ea97853f2d",
+  "sha256": "b958ca02c957321ee8e1feb336874a5b1b4e477bc2818f4f806aad54effcd2c0",
+  "triangles": 73884,
+  "texture_size": [
+    1024,
+    1024
+  ],
+  "dimensions": {
+    "length": 4.6,
+    "height": 1.28,
+    "width": 2.25
+  },
+  "parts": [
+    {
+      "name": "chassis",
+      "indices": 109320,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0,
+      "width": 0
+    },
+    {
+      "name": "wheel_front_left",
+      "indices": 27504,
+      "pivot": [
+        -0.9756466657506696,
+        -0.2577159916020867,
+        1.3380221988044136
+      ],
+      "radius": 0.3812183022409318,
+      "width": 0.3222799301147461
+    },
+    {
+      "name": "wheel_front_right",
+      "indices": 27504,
+      "pivot": [
+        0.9766718612433436,
+        -0.2577159916020867,
+        1.3380221988044136
+      ],
+      "radius": 0.3812183022409318,
+      "width": 0.3177609443664551
+    },
+    {
+      "name": "wheel_rear_left",
+      "indices": 27504,
+      "pivot": [
+        -0.9756466657506696,
+        -0.2577159916020867,
+        -1.4797283473786935
+      ],
+      "radius": 0.3812183022409318,
+      "width": 0.3599197268486023
+    },
+    {
+      "name": "wheel_rear_right",
+      "indices": 27504,
+      "pivot": [
+        0.9766718612433436,
+        -0.2577159916020867,
+        -1.4797283473786935
+      ],
+      "radius": 0.3812183022409318,
+      "width": 0.3579789400100708
+    },
+    {
+      "name": "wheel_wells",
+      "indices": 2316,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "radius": 0,
+      "width": 0
+    }
+  ],
+  "preparation": "scripts/prepare-vehicles.py; +Y up, +Z forward, metres; clipped Bastion wheel wells and closed authored wheel assemblies",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "suspension": {
+    "rest": 0.3,
+    "minimum": 0.24,
+    "maximum": 0.38
+  },
+  "max_steer": 0.42,
+  "wheel_texture_size": [
+    256,
+    32
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "Seamless steady loop of a heavy armored racing car engine at medium RPM, deep muscular industrial motor rumble with a restrained supercharger whine. Constant stable load and pitch, dry isolated close recording, no acceleration or gear changes, no voices, no music.",
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 6.0
+  },
+  "generated_at": "2026-10-22T09:32:08.026369+00:00",
+  "sha256": "3feffa72f711d600f32ecdf36a3f41dbf1e1fd058c5ec21d75559258a5470f04",
+  "request_id": null,
+  "character_cost": "60",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "bastion-engine",
+    "file": "bastion-engine.wav",
+    "loop": true,
+    "sha256": "e5cbd2f86ed8a69f5e425bc27570fea7c71cb29de0c1da550f40d8c08f1269d9",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 141120,
+    "seconds": 5.88,
+    "peak": 0.4150705895183507,
+    "rms": 0.11,
+    "source_seconds": 6.0,
+    "source_sha256": "3feffa72f711d600f32ecdf36a3f41dbf1e1fd058c5ec21d75559258a5470f04",
+    "loop_boundary_delta": 0.006988738670003357,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

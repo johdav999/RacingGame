@@ -1,0 +1,956 @@
+{
+  "asset_count": 12,
+  "total_triangles": 84854,
+  "total_bytes": 98758224,
+  "credits_consumed": 720.0,
+  "checks": "GLB structure, hashes, embedded PBR/normal/emissive maps, map dimensions and actual triangles",
+  "assets": [
+    {
+      "asset": "solar-mirror-intact",
+      "provider": "Tripo3D",
+      "task_id": "52db53ee-84d7-4aea-8d6a-da735bb04b31",
+      "credits_consumed": 60.0,
+      "source_sha256": "4c16430e93bf1950194a7ecd911a60ae0b05baf511ea978814e7aec178954ce2",
+      "reference_sha256": "07f4e713dba8615d786e3f888123621021dab2a6b190acf12b6dd16b88257b97",
+      "sha256": "c22f1703d6c4a1bb08f25231a829844abc74f00c22b228662c6d94e911a9acd7",
+      "bytes": 2821916,
+      "triangles": 3419,
+      "requested_triangle_limit": 4000,
+      "dimensions_xyz_metres": [
+        6.0,
+        4.78378963470459,
+        3.38051176071167
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 6.129228350180954,
+      "source_dimensions_blender": [
+        0.5515395998954773,
+        0.9789160490036011,
+        0.780488133430481
+      ],
+      "source_textures": [
+        {
+          "name": "Color_52db53ee-84d7-4aea-8d6a-da735bb04b31",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_52db53ee-84d7-4aea-8d6a-da735bb04b31",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_52db53ee-84d7-4aea-8d6a-da735bb04b31",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 1024,
+      "emission_mask_pixels": 0,
+      "materials": 2,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits; intact mirror optical normals/material corrected. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "solar-mirror-broken",
+      "provider": "Tripo3D",
+      "task_id": "dd3a08bc-4d9c-44b6-a6df-f7d889e2e270",
+      "credits_consumed": 60.0,
+      "source_sha256": "adb89fc617827f0a431617452e339defd5a9b999378742aaf4f4acb38bfb95b2",
+      "reference_sha256": "592dfb93b5721905b547a9ab9fa8fc33ecbe3debe332cb17d8503a92bf8c13b3",
+      "sha256": "66b0f40202178283fb1195a65eff3744d4a33f7948775af97ed1d3a72b0d7cad",
+      "bytes": 3653300,
+      "triangles": 3391,
+      "requested_triangle_limit": 4000,
+      "dimensions_xyz_metres": [
+        6.0,
+        5.7044572830200195,
+        5.964912414550781
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 6.119884837338805,
+      "source_dimensions_blender": [
+        0.9746772050857544,
+        0.9804105758666992,
+        0.9321184158325195
+      ],
+      "source_textures": [
+        {
+          "name": "Color_dd3a08bc-4d9c-44b6-a6df-f7d889e2e270",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_dd3a08bc-4d9c-44b6-a6df-f7d889e2e270",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_dd3a08bc-4d9c-44b6-a6df-f7d889e2e270",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 1024,
+      "emission_mask_pixels": 0,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "solar-receiver-tower",
+      "provider": "Tripo3D",
+      "task_id": "63823a2e-204d-4c64-9e11-b8055a5d0a43",
+      "credits_consumed": 60.0,
+      "source_sha256": "03f05fd998cd05293d031d2b7088a7fea153d57614c3007d551a445aa2ddac6d",
+      "reference_sha256": "ad1fc9a5fabc31cdcc69fd8a2569dd468a3a061e3539bf985a6f778c9ed82c9b",
+      "sha256": "314d6b15e7d51749855e8e5780c836343f1ed5429359c5a76698bf4a57784e5e",
+      "bytes": 13623028,
+      "triangles": 14884,
+      "requested_triangle_limit": 16000,
+      "dimensions_xyz_metres": [
+        23.59577751159668,
+        55.0,
+        21.651567459106445
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 56.52032217948244,
+      "source_dimensions_blender": [
+        0.41747424006462097,
+        0.3830758035182953,
+        0.9731013178825378
+      ],
+      "source_textures": [
+        {
+          "name": "Color_63823a2e-204d-4c64-9e11-b8055a5d0a43",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_63823a2e-204d-4c64-9e11-b8055a5d0a43",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_63823a2e-204d-4c64-9e11-b8055a5d0a43",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 2048,
+      "emission_mask_pixels": 187953,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "sandstone-cliff-wall",
+      "provider": "Tripo3D",
+      "task_id": "e427a6d3-cbc3-4117-8a48-175d8f1dd43a",
+      "credits_consumed": 60.0,
+      "source_sha256": "46439ee729522f9432fc2d365cb9191626942302601d79d34b54f8ac893cb5d4",
+      "reference_sha256": "50e5377443e34e5d4f83a6478a6f3fb05c74bc67c524c5220f5192bf71f9f14e",
+      "sha256": "a932b1a35b754f36903486b2d03b8a37685df8c0e37cbacd2484c781cb18b1cf",
+      "bytes": 12798284,
+      "triangles": 9568,
+      "requested_triangle_limit": 10000,
+      "dimensions_xyz_metres": [
+        20.0,
+        9.49402141571045,
+        9.058527946472168
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 20.401082154216855,
+      "source_dimensions_blender": [
+        0.44402191042900085,
+        0.9803401231765747,
+        0.46536850929260254
+      ],
+      "source_textures": [
+        {
+          "name": "Color_e427a6d3-cbc3-4117-8a48-175d8f1dd43a",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_e427a6d3-cbc3-4117-8a48-175d8f1dd43a",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_e427a6d3-cbc3-4117-8a48-175d8f1dd43a",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 2048,
+      "emission_mask_pixels": 0,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "sandstone-cliff-corner",
+      "provider": "Tripo3D",
+      "task_id": "6c989aa5-0413-458e-af75-1d9701c7e039",
+      "credits_consumed": 60.0,
+      "source_sha256": "fea0dd0eaf059fef3b958d862c2a8c5ad6c9d22f116b0a4c828f516ef4a02b8a",
+      "reference_sha256": "6cf962dd59633264bc58a4540da6ce4efb322845e127086db41e26f5a997601a",
+      "sha256": "60f14e247a8663e9fd3c9db591bbc3feec1d13afdb15c3aa12455fdb8c92b92f",
+      "bytes": 13481300,
+      "triangles": 9864,
+      "requested_triangle_limit": 10000,
+      "dimensions_xyz_metres": [
+        11.999999046325684,
+        6.56480073928833,
+        9.707385063171387
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 12.226118334833158,
+      "source_dimensions_blender": [
+        0.793987512588501,
+        0.981505274772644,
+        0.5369489192962646
+      ],
+      "source_textures": [
+        {
+          "name": "Color_6c989aa5-0413-458e-af75-1d9701c7e039",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_6c989aa5-0413-458e-af75-1d9701c7e039",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_6c989aa5-0413-458e-af75-1d9701c7e039",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 2048,
+      "emission_mask_pixels": 0,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "sandstone-cliff-buttress",
+      "provider": "Tripo3D",
+      "task_id": "ef089ef3-1d89-47b8-bc50-70aa58ee5ff4",
+      "credits_consumed": 60.0,
+      "source_sha256": "a0f6214f22f011446e7fe1166e49575d87789c680c0d18cabbee14437205f020",
+      "reference_sha256": "e32b54297c7dd0dcf3f64365a454234f3b6f8696e7a993d4d208380e62d0a84b",
+      "sha256": "f4c594b3e4ec550c90f25f9634b8802bfeba35313d94b4d072c2282889fef7b0",
+      "bytes": 12296524,
+      "triangles": 9658,
+      "requested_triangle_limit": 10000,
+      "dimensions_xyz_metres": [
+        11.280158996582031,
+        14.0,
+        7.913760185241699
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 14.274194671199206,
+      "source_dimensions_blender": [
+        0.7902483940124512,
+        0.5544102787971497,
+        0.9807908535003662
+      ],
+      "source_textures": [
+        {
+          "name": "Color_ef089ef3-1d89-47b8-bc50-70aa58ee5ff4",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_ef089ef3-1d89-47b8-bc50-70aa58ee5ff4",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_ef089ef3-1d89-47b8-bc50-70aa58ee5ff4",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 2048,
+      "emission_mask_pixels": 0,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "sandstone-cliff-low-shelf",
+      "provider": "Tripo3D",
+      "task_id": "c9a3d415-ec8f-4fa6-ac90-6551f4ea0a47",
+      "credits_consumed": 60.0,
+      "source_sha256": "afc7184e6bc748ed7fd4924b30df7c48cb90af67647aabd1109b433a1f81a9e5",
+      "reference_sha256": "ff1a3709cd7f762d2491cc42ee7895caa7d3803887607843e06a9f885a44f9b5",
+      "sha256": "0e015bbeb00a406fa8910990dacf67ad2f9f83a43b382aa7e2e95e410edb94fb",
+      "bytes": 12353212,
+      "triangles": 7848,
+      "requested_triangle_limit": 8000,
+      "dimensions_xyz_metres": [
+        15.999999046325684,
+        4.5445356369018555,
+        5.908259391784668
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 16.337736504135673,
+      "source_dimensions_blender": [
+        0.36163267493247986,
+        0.9793277978897095,
+        0.278161883354187
+      ],
+      "source_textures": [
+        {
+          "name": "Color_c9a3d415-ec8f-4fa6-ac90-6551f4ea0a47",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_c9a3d415-ec8f-4fa6-ac90-6551f4ea0a47",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_c9a3d415-ec8f-4fa6-ac90-6551f4ea0a47",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 2048,
+      "emission_mask_pixels": 0,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "sandstone-rock-arch",
+      "provider": "Tripo3D",
+      "task_id": "d2e14ced-83b8-429a-a774-5d628a3a11a0",
+      "credits_consumed": 60.0,
+      "source_sha256": "cb66a8ec0496e9682f9ed4b041a88f563ca5b514d26414ebf5172d0b7cee3584",
+      "reference_sha256": "b9e55d3c0fd0e84230958ecf4f7f1439ead933d659627ecc1fac5e5c385dd4d6",
+      "sha256": "d9d18b5cb867ca4cedf7455da97bf588200614cc1720d1796d2bdaaeaee4d111",
+      "bytes": 13888372,
+      "triangles": 15619,
+      "requested_triangle_limit": 16000,
+      "dimensions_xyz_metres": [
+        24.0,
+        13.312682151794434,
+        9.791626930236816
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 24.47380870355058,
+      "source_dimensions_blender": [
+        0.40008601546287537,
+        0.980640172958374,
+        0.5439562797546387
+      ],
+      "source_textures": [
+        {
+          "name": "Color_d2e14ced-83b8-429a-a774-5d628a3a11a0",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_d2e14ced-83b8-429a-a774-5d628a3a11a0",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_d2e14ced-83b8-429a-a774-5d628a3a11a0",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 2048,
+      "emission_mask_pixels": 0,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            2048,
+            2048
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "energy-conduit-straight",
+      "provider": "Tripo3D",
+      "task_id": "bb6e7583-1842-47e9-a944-c0a0d08cbcf3",
+      "credits_consumed": 60.0,
+      "source_sha256": "63c657f9dc79fc297f5c8d3969c54d08866f34dade8ab70b90651fa20136d174",
+      "reference_sha256": "88fc5c12c934d12034b2bc784e47ab67cf6d9b3319ac0da0176914999289cee2",
+      "sha256": "66e85e50eb513fb713ec310d43d313cf52262cd653f8670dabb76422c048e669",
+      "bytes": 3920616,
+      "triangles": 2526,
+      "requested_triangle_limit": 3000,
+      "dimensions_xyz_metres": [
+        4.0,
+        0.7980028986930847,
+        0.7919535636901855
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 4.068230922176141,
+      "source_dimensions_blender": [
+        0.19466784596443176,
+        0.983228325843811,
+        0.19615475833415985
+      ],
+      "source_textures": [
+        {
+          "name": "Color_bb6e7583-1842-47e9-a944-c0a0d08cbcf3",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_bb6e7583-1842-47e9-a944-c0a0d08cbcf3",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_bb6e7583-1842-47e9-a944-c0a0d08cbcf3",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 1024,
+      "emission_mask_pixels": 64686,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "energy-conduit-elbow",
+      "provider": "Tripo3D",
+      "task_id": "958489df-bcaa-43b1-b8b2-9b9092e5b44e",
+      "credits_consumed": 60.0,
+      "source_sha256": "e3361c62a0caaf957b007a466f49d60d103fe5763610c07cbae9ecd25f38e237",
+      "reference_sha256": "59194f140b71c48bb9caa98b1b70cb10efa9ed90bd4277a51a84a8a8f59ca79f",
+      "sha256": "9b29a31c61cec26c6e7d86facbdce67fad1342498a7a8a3fef84aa56a99b2113",
+      "bytes": 3519004,
+      "triangles": 2781,
+      "requested_triangle_limit": 3000,
+      "dimensions_xyz_metres": [
+        3.364619731903076,
+        0.9000000357627869,
+        3.705885648727417
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 3.7994342113329282,
+      "source_dimensions_blender": [
+        0.8855581283569336,
+        0.9753782749176025,
+        0.23687738180160522
+      ],
+      "source_textures": [
+        {
+          "name": "Color_958489df-bcaa-43b1-b8b2-9b9092e5b44e",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_958489df-bcaa-43b1-b8b2-9b9092e5b44e",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_958489df-bcaa-43b1-b8b2-9b9092e5b44e",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 1024,
+      "emission_mask_pixels": 42313,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "energy-conduit-junction",
+      "provider": "Tripo3D",
+      "task_id": "6f2ef5da-c314-4452-a5c2-768816da2887",
+      "credits_consumed": 60.0,
+      "source_sha256": "e6c23d9867ad34df1e209cc78263f077c85c54380c234d25044c562a390e5b05",
+      "reference_sha256": "d3b3be57f3f88171701a5ec13b70ef8823f1854cfeb50a6ff777fcc76ae69be8",
+      "sha256": "b10d09ab02bbd05ba03b6252dd2f976f73ca6f1f295d15579c89e967f2654e8b",
+      "bytes": 3688764,
+      "triangles": 3149,
+      "requested_triangle_limit": 3500,
+      "dimensions_xyz_metres": [
+        3.992434501647949,
+        0.8999999761581421,
+        3.9676320552825928
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 4.0726103032466705,
+      "source_dimensions_blender": [
+        0.9803134202957153,
+        0.9742233157157898,
+        0.22098848223686218
+      ],
+      "source_textures": [
+        {
+          "name": "Color_6f2ef5da-c314-4452-a5c2-768816da2887",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_6f2ef5da-c314-4452-a5c2-768816da2887",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_6f2ef5da-c314-4452-a5c2-768816da2887",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 1024,
+      "emission_mask_pixels": 33119,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "asset": "energy-conduit-support",
+      "provider": "Tripo3D",
+      "task_id": "e7651107-0c4f-48a9-8ba7-e9ba00d21c45",
+      "credits_consumed": 60.0,
+      "source_sha256": "cc2222c86f0b1da07e8b2bae9e72ff1657e70c5b79a49472ca44ec2f4e129dbc",
+      "reference_sha256": "af1080eca5512d255d15b25483c778e3d1e5ba4105b3a80f505e8ef51726fcc7",
+      "sha256": "b0ce908460a139f16c4ac76a49f49e6fa5bb3817ab316bee2540280b6c831683",
+      "bytes": 2713904,
+      "triangles": 2147,
+      "requested_triangle_limit": 2500,
+      "dimensions_xyz_metres": [
+        0.8700955510139465,
+        1.2000000476837158,
+        1.2434839010238647
+      ],
+      "coordinates": "glTF +Y up, bottom centre origin",
+      "scale_factor": 1.2726314900176574,
+      "source_dimensions_blender": [
+        0.6836979389190674,
+        0.9770965576171875,
+        0.9429280757904053
+      ],
+      "source_textures": [
+        {
+          "name": "Color_e7651107-0c4f-48a9-8ba7-e9ba00d21c45",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_e7651107-0c4f-48a9-8ba7-e9ba00d21c45",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_e7651107-0c4f-48a9-8ba7-e9ba00d21c45",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_dimension_cap": 1024,
+      "emission_mask_pixels": 1041,
+      "materials": 1,
+      "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+      "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "exported_maps": [
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        },
+        {
+          "size": [
+            1024,
+            1024
+          ],
+          "format": "PNG"
+        }
+      ]
+    }
+  ]
+}

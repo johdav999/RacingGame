@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-shop-awning",
+  "provider": "Tripo3D",
+  "task_id": "9703e013-61d4-45e5-a142-76367f9d35ab",
+  "credits_consumed": 60.0,
+  "sha256": "1bca3510eb4e0d0c96977fe88c52f954aaf392ac591be1d8e66b616765700789",
+  "source_sha256": "3ea003619525d066762b3472774acb6ad1dcd7f5a592ab654c137d4c380a1287",
+  "reference_sha256": "c377c9b4902900b8a53260d5bcc11891dc3dc5b976d8fed29fa48473558ce18a",
+  "bytes": 2096852,
+  "triangles": 42913,
+  "texture_size": 512,
+  "dimensions": [
+    4.000000476837158,
+    1.4426378011703491,
+    1.9109702110290527
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "One short heavy armored vehicle impact, low metallic chassis thud with a restrained crunchy rattle, tight and dry, immediate attack, no explosion, no debris shower, no voices, no music.",
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 0.8
+  },
+  "generated_at": "2026-10-22T09:32:27.876064+00:00",
+  "sha256": "5c091b36d50242fc18cf35a6b34e3b866d867648916a797ab3727c96d570e963",
+  "request_id": null,
+  "character_cost": "8",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "hull-impact",
+    "file": "hull-impact.wav",
+    "loop": false,
+    "sha256": "3392c683d78c53c0e3dfa2a02bde085d25ac1f23dfee52943b889c2d7ce50bf7",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 12305,
+    "seconds": 0.5127083333333333,
+    "peak": 0.72,
+    "rms": 0.12015162029400463,
+    "source_seconds": 0.8,
+    "source_sha256": "5c091b36d50242fc18cf35a6b34e3b866d867648916a797ab3727c96d570e963",
+    "loop_boundary_delta": null,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

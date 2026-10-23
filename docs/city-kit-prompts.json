@@ -1,0 +1,46 @@
+[
+  {
+    "name": "kairox-market-stall",
+    "prompt": "Use case: stylized-concept. Asset type: clean image-to-3D reference for Kairox cyberpunk racing city. One complete isolated compact market stall, 4m wide, sturdy graphite metal frame with four thick posts, muted faded magenta solid sheet-metal canopy, cream counter, inset amber lamps, several integral closed storage boxes below counter. Clear sturdy geometry, realistic worn metal PBR look, no tiny clutter. Elevated front three-quarter studio view, whole silhouette visible with generous margins, neutral diffuse lighting, plain light gray background. No people, vehicles, road, scene, text, logos, watermark, multiple views or separate objects."
+  },
+  {
+    "name": "kairox-closed-kiosk",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: compact 3 metre wide closed street kiosk with flat slightly overhanging roof, closed corrugated serving shutter, inset side service door, blank faded magenta sign panel, sturdy bottom plinth."
+  },
+  {
+    "name": "kairox-dumpster",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one 2 metre wide industrial waste dumpster, muted teal steel container, two closed sloping graphite lids, four sturdy short feet, solid reinforced corners and lift pockets; no rubbish."
+  },
+  {
+    "name": "kairox-crate-stack",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one compact connected stack of three interlocking cargo crates, two broad crates on bottom and one centered above, molded graphite corner protectors, cream panels, amber latches, no markings."
+  },
+  {
+    "name": "kairox-bollard",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one stout industrial street bollard 1 metre tall, square bolted steel base, chamfered graphite pillar with ivory upper sleeve and broad amber horizontal reflector band, subtle worn edges."
+  },
+  {
+    "name": "kairox-ventilation-unit",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one low rectangular rooftop ventilation unit, 2 metres wide, weathered ivory metal housing, one large recessed circular top fan with thick grille, dark louvered sides and short mounting feet."
+  },
+  {
+    "name": "kairox-tower-stepped",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one complete tall stepped residential tower building, 65 metres high, three offset terraced masses tapering toward rooftop, graphite concrete and cream vertical fins, sparse amber window strips, broad solid base, no surrounding ground or buildings."
+  },
+  {
+    "name": "kairox-tower-crowned",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one complete 80 metre tall slender octagonal corporate tower building, strong vertical graphite ribs, inset desaturated teal glass, distinctive wide angular crown with enclosed mechanical roof, ivory bands, solid base. No surrounding ground or buildings."
+  },
+  {
+    "name": "kairox-staircase",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one freestanding industrial straight staircase flight, 4 metres rise and 7 metres run, 2 metres width, substantial closed steel treads, thick handrails both sides, supported upper landing and structural legs to ground; graphite steel, faded amber railings."
+  },
+  {
+    "name": "kairox-catwalk",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one straight horizontal modular industrial pedestrian catwalk span, 8 metres long and 2 metres wide, solid dark steel deck with thick side trusses, sturdy waist-high railings both sides, open walkable ends, connector plates. No supports to ground, no stairs."
+  },
+  {
+    "name": "kairox-rooftop-equipment",
+    "prompt": "Use case: stylized-concept. One complete isolated game prop for Kairox cyberpunk racing city, realistic PBR worn graphite steel, off-white panels, restrained teal and amber accents. Elevated front three-quarter studio view, entire silhouette with generous margins, neutral diffuse light, plain light gray background. Geometry-readable, substantial components, no people, text, logos, watermark, scenery, multiple views or floating pieces. Subject: one compact connected rooftop mechanical equipment assembly on a single rectangular steel skid: two ivory utility cabinets, a squat cylindrical exhaust stack and thick connected ducts, graphite housings and amber access panels. Clear chunky geometry, no cables or detached objects."
+  }
+]

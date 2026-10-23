@@ -1,0 +1,145 @@
+[
+  {
+    "name": "kairox-barrier-straight",
+    "slug": "barrier-straight",
+    "dimensions": [
+      4,
+      1.2,
+      0.7
+    ],
+    "budget": 1600,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One straight modular crash barrier segment, 4m long, 1.2m high, .7m thick. Low continuous concrete wedge with graphite metal crash plate, flat square joining ends, broad ivory inset panel, recessed thin teal strip near top. Exactly one simple straight length."
+  },
+  {
+    "name": "kairox-barrier-corner",
+    "slug": "barrier-corner",
+    "dimensions": [
+      2,
+      1.2,
+      2
+    ],
+    "budget": 2000,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One joined 90-degree L-shaped crash barrier corner, two equal short arms, each 2m long and 1.2m tall, .7m thick wedge section. Same graphite crash plates and ivory inset panels, teal recessed upper strip follows corner. Plain flat joining ends, open inner right angle."
+  },
+  {
+    "name": "kairox-barrier-end",
+    "slug": "barrier-end",
+    "dimensions": [
+      0.8,
+      1.2,
+      0.7
+    ],
+    "budget": 1200,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One short terminal crash barrier end cap, .8m long by .7m deep by1.2m tall, graphite steel and concrete wedge, blunt rounded vertical end protecting an exposed barrier termination, amber inset safety panel on the rounded end. No other barrier sections."
+  },
+  {
+    "name": "kairox-finish-gantry",
+    "slug": "finish-gantry",
+    "dimensions": [
+      23,
+      8,
+      1.4
+    ],
+    "budget": 6000,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One freestanding U-shaped racing finish gantry, very wide 23m span and8m height, two sturdy narrow side pillars supporting one thick overhead crossbeam. EMPTY unobstructed open centre from ground to beam. NO bottom crossbar, no floor. Ivory graphite armored structural frame, amber inset lamps, broad blank dark rectangular display at centre of top crossbeam. Front-on three-quarter angle preserves opening. Thick solid footing beneath each side post only."
+  },
+  {
+    "name": "kairox-checkpoint-gantry",
+    "slug": "checkpoint-gantry",
+    "dimensions": [
+      23,
+      8,
+      1
+    ],
+    "budget": 5000,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One freestanding inverted-U checkpoint gantry, wide23m span by8m height. Two slim but robust chamfered graphite side pillars joined by a thin overhead crossbeam, teal recessed light strips. EMPTY clear opening, no floor, NO bottom crossbar, no hanging decorations. A simpler lighter silhouette than a finish arch, solid attached footplates on posts."
+  },
+  {
+    "name": "kairox-streetlight",
+    "slug": "streetlight",
+    "dimensions": [
+      2.4,
+      7.5,
+      0.7
+    ],
+    "budget": 2200,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One cyberpunk streetlight: tall7.5m tapered graphite metal pole on square footplate, single robust horizontal arm projecting2m near the top, attached flat rectangular downward-facing ivory-white luminaire. Restrained teal maintenance stripe on pole, simple industrial shape, no wires, no second light, lamp is attached firmly."
+  },
+  {
+    "name": "kairox-wall-lamp",
+    "slug": "wall-lamp",
+    "dimensions": [
+      0.55,
+      0.7,
+      0.35
+    ],
+    "budget": 1200,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One wall-mounted exterior industrial lamp fixture WITHOUT a wall. Squat rectangular graphite armor housing with ivory-white frosted luminous front, angled weather hood on top, solid flat rear mounting plate. About.55m wide .7m high .35m deep. Show front and side clearly, no cable, no scene, no pole."
+  },
+  {
+    "name": "kairox-chevron-board",
+    "slug": "chevron-board",
+    "dimensions": [
+      2.4,
+      2.4,
+      0.6
+    ],
+    "budget": 1800,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One freestanding roadside chevron sign assembly, wide2.4m rectangular dark BLANK display panel inside thick graphite metal frame, two short sturdy posts and attached footplates. Panel height1m, total assembly height2.4m. Thin amber trim, front is flat and empty for later game-authored arrows. No symbols or text."
+  },
+  {
+    "name": "kairox-braking-board",
+    "slug": "braking-board",
+    "dimensions": [
+      0.85,
+      2.3,
+      0.55
+    ],
+    "budget": 1600,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One freestanding braking distance marker, tall narrow rectangular ivory BLANK face panel with thick graphite frame on a short sturdy pedestal with footplate. Total height2.3m,width.85m. Flat front panel reserved for exact game-authored distance digits. Restrained amber corner brackets. No symbols, digits, letters or text."
+  },
+  {
+    "name": "kairox-sidewalk-pavement",
+    "slug": "sidewalk-pavement",
+    "dimensions": [
+      4,
+      0.16,
+      2
+    ],
+    "budget": 1600,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One low rectangular modular sidewalk pavement slab, 4m long by2m wide by.16m thick. Flat top with a few broad rectangular concrete paving divisions, graphite slate concrete, straight flush joining edges, plain vertical sides, subtle wear. Low elevated three-quarter view makes thin thickness readable. No curb, terrain, steps or props."
+  },
+  {
+    "name": "kairox-sidewalk-curb",
+    "slug": "sidewalk-curb",
+    "dimensions": [
+      4,
+      0.28,
+      0.3
+    ],
+    "budget": 1200,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One straight curb stone module, 4m long by.3m wide by.28m high, lightly chamfered rectangular graphite concrete block with worn ivory road-facing edge and restrained amber reflector inset near an end. Continuous flat top, straight joining ends, no road or surrounding pavement."
+  },
+  {
+    "name": "kairox-sidewalk-corner",
+    "slug": "sidewalk-corner",
+    "dimensions": [
+      2,
+      0.16,
+      2
+    ],
+    "budget": 1800,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One modular sidewalk corner slab, 2m by2m footprint and.16m thick, square inner corner and rounded outer corner forming a quarter-turn edge, flat broad rectangular concrete paving pattern, graphite slate concrete and narrow ivory outer edge. Flat simple standalone slab, no attached props, no ground or terrain."
+  },
+  {
+    "name": "kairox-storm-drain",
+    "slug": "storm-drain",
+    "dimensions": [
+      0.75,
+      0.07,
+      0.6
+    ],
+    "budget": 1500,
+    "prompt": "Use case: stylized-concept. Create ONE isolated game-ready architectural prop reference for Tripo image-to-3D, Kairox cyberpunk street racing. Grounded stylized realism, graphite painted steel, slate concrete, worn ivory panels, restrained teal and amber insets; broad simple shapes, crisp construction, low surface-detail density. Complete object in elevated front three-quarter studio view, entire silhouette with generous margin, neutral soft diffuse lighting, plain light gray background, subtle contact shadow. No surrounding scenery, people, cars, logos, watermark, text, labels, dimension lines, extra objects or multi-view sheets. Solid practical construction, no fragile cables. Subject: One inset rectangular street drain grate with solid surrounding graphite concrete frame, .75m by.6m and.07m thick. Thick robust blackened steel parallel slots recessed into grate, subtle worn ivory edge, low flat object. No pipe, water, ground or terrain. Slot cavities clearly readable, whole small assembly isolated."
+  }
+]

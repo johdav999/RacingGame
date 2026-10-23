@@ -1,0 +1,82 @@
+{
+  "asset": "Vektor rear refinement",
+  "source": "cybercar1_parts_textured.glb",
+  "source_sha256": "230d8278a968f9b2389018201efced83ddd07f7e447bcc05f23ad1db2b3d5331",
+  "sha256": "c3c5c689f7e6375ee965a14479242385a5b9199cb4284954ead643b47145bc29",
+  "triangles": 15185,
+  "parts": 15,
+  "removed_parts": [
+    "car_part_02",
+    "car_part_06",
+    "car_part_07",
+    "car_part_10",
+    "car_part_14",
+    "car_part_15"
+  ],
+  "wheel_streams": [
+    {
+      "name": "wheel_front_left",
+      "sha256": "bc81b3fccd1a67ab957fb9c18c3bcd0c112adc80cb6e7b9339626efdba444ff7",
+      "translation": [
+        -0.25259819626808167,
+        0.08632750809192657,
+        0.20028451085090637
+      ],
+      "radius": 0.08524303582982047
+    },
+    {
+      "name": "wheel_front_right",
+      "sha256": "f7e202832c7f918d41b28a68c5865f459dd63a624e87c7621acec2138e33ba52",
+      "translation": [
+        -0.25237971544265747,
+        0.08663322031497955,
+        -0.20299604535102844
+      ],
+      "radius": 0.08528399960192344
+    },
+    {
+      "name": "wheel_rear_left",
+      "sha256": "34587d47d3427967b6d6f6c3f1e798d7247b75e66cec482cae8a11c3b0bc8805",
+      "translation": [
+        0.30048075318336487,
+        0.08641958981752396,
+        0.2010038197040558
+      ],
+      "radius": 0.08544422831497027
+    },
+    {
+      "name": "wheel_rear_right",
+      "sha256": "99c9ea792ebd187b4e078a4cc0e557a686eddfe8a3cdf49231e031e3715e0d7e",
+      "translation": [
+        0.29941561818122864,
+        0.08596517890691757,
+        -0.20279446244239807
+      ],
+      "radius": 0.08506040975006389
+    }
+  ],
+  "preparation": "scripts/refine-cybercar.py",
+  "changes": [
+    "rebuilt rear deck, louvers, wing, tail fascia, lenses and diffuser",
+    "satin body albedo and separate material families",
+    "UV atlas with baked panel seams, vent occlusion and roughness variation",
+    "small two-segment bevels and area-weighted split normals on authored rear"
+  ],
+  "rear_bake": {
+    "bevel_source_units": 0.0012,
+    "bevel_world_mm": 5.16,
+    "bevel_segments": 2,
+    "normals": "face-area-and-angle weighted split normals",
+    "atlas_size": [
+      1024,
+      1024
+    ],
+    "maps": [
+      "base-color",
+      "metallic-roughness"
+    ],
+    "baked_detail": "source-space panel seams, louver/vent AO, subtle roughness variation",
+    "triangles": 7565
+  },
+  "license_status": "Derived from the existing source asset; original provenance remains alongside it."
+}

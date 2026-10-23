@@ -1,0 +1,50 @@
+{
+  "asset": "kairox-player-garage",
+  "provider": "Tripo3D",
+  "task_id": "e0dc29d6-0d28-48d5-9885-57541d7defa4",
+  "source_sha256": "144811049c797ea6a1e52c0e5be13098856f5ef06ce7409fa4366c41325e3581",
+  "reference_sha256": "65b8788e39c44c1a2ff1400415dfe72f6d071b0a140e0eb9f4da4fdb72b595d2",
+  "sha256": "ba45adad7cf28210170db47757bea72cf61dbf2b8cd3e0b83d8da4f08feddd8d",
+  "bytes": 4705124,
+  "source_triangles": 42187,
+  "triangles": 42187,
+  "texture_sizes": [
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "dimensions_xyz_metres": [
+    13.27493667602539,
+    14.0,
+    18.264562606811523
+  ],
+  "coordinates": "+Y up; origin at bottom footprint centre; uniform scale",
+  "preparation": "scripts/prepare-buildings.py; source geometry preserved, normalized scale and 1024px maps",
+  "collision": "Game installs one static box envelope per placement; GLB has no embedded collision",
+  "validation": "2026-10-21: Blender QA; installed in Midnight Circuit, native building checks and frozen-site WebGPU/WebGL2 loading, retry, full lap and visual inspection; see docs/building-integration.md",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "credits_consumed": 60.0,
+  "source_texture_sizes": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ]
+  ]
+}

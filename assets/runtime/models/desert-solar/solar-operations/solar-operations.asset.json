@@ -1,0 +1,17 @@
+{
+  "name": "solar-operations",
+  "sha256": "bd7676a78d5cf66fee974c4f39f2b40883babbeb89353c9261e57a5e497e96c2",
+  "source_sha256": "edc358f749c8c0366231c27bd1fb1bbd1a92111b8d83924c17119b36a92a30af",
+  "triangles": 16571,
+  "materials": 1,
+  "dimensions": [
+    11.0,
+    5.304030895233154,
+    7.478121757507324
+  ],
+  "bytes": 3363956,
+  "texture_cap": 2048,
+  "provider": "Tripo3D",
+  "task_id": "4b04b3db-fab2-445b-8e97-b9da45b3482d",
+  "preparation": "scripts/prepare-solar-operations.py; uniform metric scale and bottom-center pivot; embedded PBR maps"
+}

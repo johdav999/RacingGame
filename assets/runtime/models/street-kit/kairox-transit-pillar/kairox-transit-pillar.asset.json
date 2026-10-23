@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-transit-pillar",
+  "provider": "Tripo3D",
+  "task_id": "9865c844-8894-444a-84e6-07325562fabe",
+  "credits_consumed": 60.0,
+  "sha256": "8519e5647b44d7a95e237f119d78ba4657ec3cddf3a778fe2117939fa5a9c9ce",
+  "source_sha256": "678a67d8c05217f84b658f251754c638877466cddb0ec7fdcea0646f944f6a88",
+  "reference_sha256": "a652d833d25aae1cbe2c9e0fb9d6066f5acd7230c6378f4ae175f609295985f1",
+  "bytes": 4747552,
+  "triangles": 44999,
+  "texture_size": 1024,
+  "dimensions": [
+    5.5406413078308105,
+    7.999999523162842,
+    3.513549327850342
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

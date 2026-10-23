@@ -1,0 +1,15 @@
+# Give each browser resource a content-based URL so long-lived tabs cannot mix
+# a newly staged page with cached JavaScript, styles or a different Wasm build.
+file(READ "${SITE_DIR}/index.html" html)
+file(GLOB resources RELATIVE "${SITE_DIR}" "${SITE_DIR}/*.js" "${SITE_DIR}/*.css" "${SITE_DIR}/*.wasm")
+set(manifest "{")
+foreach(name IN LISTS resources)
+  file(SHA256 "${SITE_DIR}/${name}" hash)
+  string(SUBSTRING "${hash}" 0 16 version)
+  string(APPEND manifest "\"${name}\":\"${version}\",")
+  string(REPLACE "src=\"${name}\"" "src=\"${name}?v=${version}\"" html "${html}")
+  string(REPLACE "href=\"${name}\"" "href=\"${name}?v=${version}\"" html "${html}")
+endforeach()
+string(REGEX REPLACE ",$" "}" manifest "${manifest}")
+string(REPLACE "</head>" "<script>window.racingAssetVersions=${manifest};</script>\n</head>" html "${html}")
+file(WRITE "${SITE_DIR}/index.html" "${html}")

@@ -1,0 +1,33 @@
+{
+  "provider": "ElevenLabs",
+  "endpoint": "https://api.elevenlabs.io/v1/sound-generation?output_format=mp3_44100_128",
+  "request": {
+    "text": "Seamless continuous loop of a futuristic vehicle reactor boost, powerful smooth compressed plasma rush with a deep turbine undertone, sustained steady thrust. No start or end burst, no explosions, no voices, no music.",
+    "loop": true,
+    "model_id": "eleven_text_to_sound_v2",
+    "prompt_influence": 0.45,
+    "duration_seconds": 4.0
+  },
+  "generated_at": "2026-10-22T09:32:18.130084+00:00",
+  "sha256": "285631a48338cf95771b0521862004c4e2bf8d074c8459cb12462f9cf7906ff2",
+  "request_id": null,
+  "character_cost": "40",
+  "license_status": "Unverified: record account plan and applicable rights before release",
+  "prepared": {
+    "name": "reactor-boost",
+    "file": "reactor-boost.wav",
+    "loop": true,
+    "sha256": "25f42548ad37ce0b6efd632c277112be363c581b7e98aa0e5de1d6af5371dd1b",
+    "sample_rate": 24000,
+    "channels": 1,
+    "frames": 93120,
+    "seconds": 3.88,
+    "peak": 0.34100193920872707,
+    "rms": 0.11000000000000001,
+    "source_seconds": 4.0,
+    "source_sha256": "285631a48338cf95771b0521862004c4e2bf8d074c8459cb12462f9cf7906ff2",
+    "loop_boundary_delta": 0.000640888698995941,
+    "preparation": "Mono 24kHz PCM16, level matched with peak headroom; 120ms circular loop seam or trimmed one-shot with 5ms edge fades",
+    "verification": "Decoded finite PCM, peak/RMS, duration and loop-boundary analysis; subjective listening not implied"
+  }
+}

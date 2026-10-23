@@ -1,0 +1,20 @@
+{
+  "asset": "kairox-shop-doorway",
+  "provider": "Tripo3D",
+  "task_id": "ab2e00e9-6e92-44bd-9303-f22a86d8951f",
+  "credits_consumed": 60.0,
+  "sha256": "561772fca98e73f67e74873d3f700d9ea7670d112fc0cdf40a02a74a337fa21d",
+  "source_sha256": "3f03d143444f457a1262b0a6b6a3a60bcc824fba0f47c3446a63f0a0217eabce",
+  "reference_sha256": "2c2163e1e562459e250e9df97cad49daec85d8ed283aae9b8ddbe2871f182e22",
+  "bytes": 2018288,
+  "triangles": 37252,
+  "texture_size": 512,
+  "dimensions": [
+    2.929971218109131,
+    3.0,
+    1.2244149446487427
+  ],
+  "coordinates": "+Y up, bottom-centre origin, facade front +Z, structural length +X",
+  "preparation": "scripts/prepare-street-kit.py; uniform metric scale, preserved geometry and UVs, resized embedded maps",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

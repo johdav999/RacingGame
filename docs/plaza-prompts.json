@@ -1,0 +1,10 @@
+[
+  {
+    "name": "kairox-plaza-paving",
+    "prompt": "Use case: stylized-concept. Asset type: image-to-3D reference for a modular paved market plaza in Kairox cyberpunk racing city. One complete isolated square paving module, 4 metres by 4 metres and only 12 centimetres thick, flat level top formed from tightly fitted rectangular medium warm grey concrete paving stones in staggered running bond. Each stone about 60 by 30cm. Thin dark joints, small chamfered edges, subtle aggregate and occasional worn corners, mostly clean dry matte stone with faint broad weathering. Strictly square straight outer edges, all perimeter stones cut flush, no border frame, no earth or vegetation. Realistic PBR game asset, top readable. Elevated three-quarter studio view with entire silhouette inside generous margins, neutral diffuse illumination, plain light grey background. No text, logos, people, street, buildings, separate objects, giant cracks or deep gaps. No gloss or puddles; dampness will be added in game."
+  },
+  {
+    "name": "kairox-plaza-drain",
+    "prompt": "Use case: stylized-concept. Asset type: image-to-3D reference for a modular market plaza drainage channel in Kairox cyberpunk racing city. One complete isolated straight rectangular drainage channel module, 4 metres long by 40 centimetres wide and 15 centimetres deep. A narrow dark charcoal cast-iron slotted grate in a light worn concrete trough, flat grate at the top, closely spaced thick transverse rectangular slots, two matching straight open connector ends that join seamlessly to another module. Simple solid robust industrial geometry with faint rust and grime in crevices. No pipes projecting out. Realistic PBR game prop. Elevated three-quarter studio view showing entire long silhouette and top with generous margins, neutral diffuse light, plain light grey background. No road, pavement surrounding it, people, text, logos, watermark, separate pieces or multiple views."
+  }
+]

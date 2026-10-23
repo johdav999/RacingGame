@@ -1,0 +1,30 @@
+{
+  "asset": "kairox-plaza-paving",
+  "provider": "Tripo3D",
+  "task_id": "22fb5dd8-a051-47bc-95ea-5fdba7bdd340",
+  "credits_consumed": 60.0,
+  "source_sha256": "49482daf450a9910ff1175c524b44f4c857e3c3e67cad27e91792860e431c3fe",
+  "reference_sha256": "ae5e13ead4aa9cbc11a1be85bf60168eace348834c1e5158c6dd595a6af4f54d",
+  "sha256": "34c8b983e44f34c0e30032ddc7f55551644dc6b2f75938b5931e3db052553688",
+  "bytes": 4333692,
+  "source_triangles": 41932,
+  "triangles": 3500,
+  "bounds_min": [
+    -2,
+    0,
+    -2
+  ],
+  "bounds_max": [
+    2,
+    0.11999999731779099,
+    2
+  ],
+  "dimensions_xyz_metres": [
+    4,
+    0.11999999731779099,
+    4
+  ],
+  "preparation": "scripts/prepare-plaza.py; fitted module dimensions, decimated mesh, embedded 1024px maps",
+  "coordinates": "+Y up, longitudinal +Z, bottom-centred; runtime conforms module to curved plaza",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

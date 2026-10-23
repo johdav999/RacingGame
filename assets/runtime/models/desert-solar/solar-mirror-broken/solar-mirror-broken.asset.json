@@ -1,0 +1,53 @@
+{
+  "asset": "solar-mirror-broken",
+  "provider": "Tripo3D",
+  "task_id": "dd3a08bc-4d9c-44b6-a6df-f7d889e2e270",
+  "credits_consumed": 60.0,
+  "source_sha256": "adb89fc617827f0a431617452e339defd5a9b999378742aaf4f4acb38bfb95b2",
+  "reference_sha256": "592dfb93b5721905b547a9ab9fa8fc33ecbe3debe332cb17d8503a92bf8c13b3",
+  "sha256": "66b0f40202178283fb1195a65eff3744d4a33f7948775af97ed1d3a72b0d7cad",
+  "bytes": 3653300,
+  "triangles": 3391,
+  "requested_triangle_limit": 4000,
+  "dimensions_xyz_metres": [
+    6.0,
+    5.7044572830200195,
+    5.964912414550781
+  ],
+  "coordinates": "glTF +Y up, bottom centre origin",
+  "scale_factor": 6.119884837338805,
+  "source_dimensions_blender": [
+    0.9746772050857544,
+    0.9804105758666992,
+    0.9321184158325195
+  ],
+  "source_textures": [
+    {
+      "name": "Color_dd3a08bc-4d9c-44b6-a6df-f7d889e2e270",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_dd3a08bc-4d9c-44b6-a6df-f7d889e2e270",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_dd3a08bc-4d9c-44b6-a6df-f7d889e2e270",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_dimension_cap": 1024,
+  "emission_mask_pixels": 0,
+  "materials": 1,
+  "preparation": "Uniform metric scale, bottom-centre pivot, texture reduction; cyan-only emissive map for tower and conduits. Provider geometry retained.",
+  "qa_scope": "Blender import, finite geometry, triangle counts, embedded maps, two rendered views. Not integrated or performance-tested in game.",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}
