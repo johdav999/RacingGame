@@ -74,3 +74,33 @@ The storage browser check uses different synthetic codec records for IDs 4/5
 and verifies that garage restoration and replay select the correct record on
 both backends. These fixtures are storage tests, not lap-performance evidence.
 The native trials produce and reload real physically driven records.
+
+## Recorded desktop acceptance — 2026-11-04
+
+Chrome **156.0.8078.80** passed `desert-circuits-smoke.cjs` on forced WebGPU and
+WebGL2: both tracks, all four chassis, all 20 environment models, keyboard
+controls/combat/recovery/pause, trial invalidation, career-preserving scene
+travel, narrow layouts and original Helios startup. Both backend runs produced
+no page or console errors. Thirty-two garage, race and scenic screenshots were
+captured and representative views inspected on both renderers.
+
+`desert-circuits-storage.cjs` passed distinct personal-best restoration and replay
+on both backends. Native `racing_desert_trials` passed actual completed solo
+laps, saved-best reload and ghost replay on both additions. The affected native
+AI planner, trial codec, championship, lighting, race-kit and village checks
+also passed.
+
+The exact browser Wasm SHA-256 was
+`5eeb18ead6a27401633736a0b379093a765ad56c246ad7de8fe3fe77e210eb37`.
+The build uses clean published engine pin
+`619ce5e7b5fc2965754b4fd4ce0c4cf96494f018` and Emscripten 6.0.11.
+Reports are `build/evidence/desert-circuits/report.json` and
+`storage-report.json` in that directory.
+
+Native `racing_desert_circuits` passed in **363.00 seconds**: eight complete
+three-lap physical events covering Vektor, Skimmer, Bastion and Vector on each
+new circuit. Every player and AI racer finished, with zero recoveries across
+all 48 finishes. The checks also verified exact payouts, frozen final results,
+restart state, full driving clearance, road separation and terrain clearance.
+The test driver uses ordinary corner-aware steering/braking and can physically
+reverse out of traffic contact; it never teleports the player around a corner.
