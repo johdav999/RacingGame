@@ -8,7 +8,7 @@ const TrialRun* StarterScene::personalBest() const {
     return best?&*best:nullptr;
 }
 bool StarterScene::restoreTrial(int track,int chassis,std::string_view bytes) {
-    if(phase!=Phase::Ready||track<0||track>1||chassis<0||chassis>3)return false;
+    if(phase!=Phase::Ready||track<0||track>=trackCount||chassis<0||chassis>3)return false;
     auto candidate=TrialRun::decode(bytes,track,chassis);if(!candidate)return false;
     auto& best=bestRuns[track*4+chassis];
     if(!best||candidate->duration<best->duration)best=std::move(candidate);

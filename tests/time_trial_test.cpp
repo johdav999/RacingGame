@@ -22,7 +22,7 @@ int main(){try{
     r=fixture();r.splits[1]=r.splits[0];check(!r.valid(),"unordered splits rejected");
     r=fixture();r.frames.pop_back();check(!r.valid(),"missing finish pose rejected");
     r=fixture();r.frames.erase(r.frames.begin()+10,r.frames.begin()+20);check(!r.valid(),"missing samples rejected");
-    for(auto track:{TrackKind::Kairox,TrackKind::DesertSolar}) {
+    for(auto track:{TrackKind::Kairox,TrackKind::DesertSolar,TrackKind::SiroccoSolar,TrackKind::CanyonRelay}) {
         Circuit c(track);RaceProgress progress;TrialRecorder recorder;
         Vec3 previous=c.gate(0)+c.gateForward(0)*2;previous.y=1;
         recorder.begin(int(track),0,previous,{});
@@ -34,6 +34,9 @@ int main(){try{
             if(progress.completedLaps)break;
         }
         check(recorder.clean&&recorder.run.valid(),"clean ordered lap records all sectors and finish");
+        auto saved=recorder.run.encode();
+        check(TrialRun::decode(saved,int(track),0).has_value(),"Every circuit restores its own ghost record");
+        check(!TrialRun::decode(saved,(int(track)+1)%trackCount,0),"New circuit records cannot cross track IDs");
         auto before=progress;progress.recover();recorder.observe(before,progress,previous,{});
         check(!recorder.clean,"recovery invalidates whole attempt");
         recorder.begin(int(track),0,previous,{});progress.reset();before=progress;progress.routeValid=false;

@@ -6,7 +6,7 @@ using namespace racing;
 using namespace racing::ai;
 void require(bool ok,const char* why){if(!ok)throw std::runtime_error(why);}
 void planner() {
-    for(auto kind:{TrackKind::Kairox,TrackKind::DesertSolar}){
+    for(auto kind:{TrackKind::Kairox,TrackKind::DesertSolar,TrackKind::SiroccoSolar,TrackKind::CanyonRelay}){
         Circuit track(kind);Planner planner(track);bool brakingBeforeCorner=false;
         for(int i=0;i<Circuit::samples;++i){
             float easy=planner.speedLimit(i,Difficulty::Easy),normal=planner.speedLimit(i,Difficulty::Normal),hard=planner.speedLimit(i,Difficulty::Hard);

@@ -127,7 +127,7 @@ public:
     const auto& desertRacePlacements() const {return desertRaceKit.placements();}
     const auto& desertPlacements() const {return desertKit.placements();}
     bool allDesertArtLoaded() const {return desertKit.ready()&&desertRaceKit.ready()&&duneVillages.ready();}
-    bool isDesert() const {return track.kind==TrackKind::DesertSolar;}
+    bool isDesert() const {return desertTrack(track.kind);}
     bool allSceneArtLoaded() const { return weaponLoaded&&allVehicleArtLoaded()&&gateMarker.ready()&&(isDesert()?allDesertArtLoaded():std::all_of(buildingsLoaded.begin(),buildingsLoaded.end(),[](bool loaded){return loaded;})&&allCityKitLoaded()&&streetKit.ready()&&trackKit.ready()&&marketPlaza.ready()); }
     void installStreetArt(unsigned model,std::span<const std::byte> bytes) {streetKit.install(*this,model,bytes);}
     const std::vector<streetkit::Placement>& streetPlacements() const {return streetKit.placements();}
@@ -215,7 +215,7 @@ private:
     bool trialMode=false,replay=false,newBest=false;
     unsigned bestRevision=0;
     TrialRecorder recorder;
-    std::array<std::optional<TrialRun>,8> bestRuns;
+    std::array<std::optional<TrialRun>,trackCount*4> bestRuns;
     std::optional<TrialRun> reference;
     engine::Actor* ghost=nullptr;
     void buildGhost();

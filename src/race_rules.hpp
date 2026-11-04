@@ -6,7 +6,20 @@
 namespace racing {
 using engine::Vec3;
 inline float magnitude(Vec3 v) { return std::sqrt(engine::dot(v,v)); }
-enum class TrackKind { Kairox, DesertSolar };
+// IDs 2 and 3 are reserved for the concurrent Kairox circuits.
+enum class TrackKind { Kairox=0, DesertSolar=1, SiroccoSolar=4, CanyonRelay=5 };
+inline constexpr int trackCount=6;
+inline bool desertTrack(TrackKind kind) {
+    return kind==TrackKind::DesertSolar||kind==TrackKind::SiroccoSolar||kind==TrackKind::CanyonRelay;
+}
+inline const char* circuitName(TrackKind kind) {
+    switch(kind) {
+    case TrackKind::SiroccoSolar:return "Sirocco Solar / Dune Sweep";
+    case TrackKind::CanyonRelay:return "Canyon Relay / Twin Mesa";
+    case TrackKind::DesertSolar:return "Desert Solar / Helios Run";
+    default:return "Kairox / Midnight Circuit";
+    }
+}
 // Shared source for asphalt, barriers, checkpoints and minimap. Metres; +Y up.
 struct Circuit {
     static constexpr int samples=192, gates=12;
@@ -15,30 +28,43 @@ struct Circuit {
     TrackKind kind;
     explicit Circuit(TrackKind selected=TrackKind::Kairox):kind(selected) {
         if(kind==TrackKind::DesertSolar) {
-            // Closed Catmull-Rom route, resampled by distance so checkpoints,
-            // AI look-ahead and road tessellation share uniform metric spacing.
-            constexpr std::array<Vec3,10> anchors{{{0,0,-160},{95,0,-160},{150,0,-100},
+            fromAnchors(std::array<Vec3,10>{{{0,0,-160},{95,0,-160},{150,0,-100},
                 {130,0,0},{145,0,95},{80,0,155},{-45,0,145},{-120,0,80},
-                {-110,0,-40},{-80,0,-145}}};
-            std::array<Vec3,1001> curve{};std::array<float,1001> length{};
-            for(int j=0;j<=1000;++j) {
-                int i=(j/100)%10;float u=float(j%100)/100;
-                auto a=anchors[(i+9)%10],b=anchors[i],c=anchors[(i+1)%10],d=anchors[(i+2)%10];
-                curve[j]=(b*2+(c-a)*u+(a*2-b*5+c*4-d)*(u*u)+(a*-1+b*3-c*3+d)*(u*u*u))*.5f;
-                if(j)length[j]=length[j-1]+magnitude(curve[j]-curve[j-1]);
-            }
-            int segment=1;
-            for(int i=0;i<samples;++i) {
-                float distance=length.back()*i/samples;
-                while(length[segment]<distance)++segment;
-                float u=(distance-length[segment-1])/(length[segment]-length[segment-1]);
-                points[i]=curve[segment-1]+(curve[segment]-curve[segment-1])*u;
-            }
-            return;
+                {-110,0,-40},{-80,0,-145}}});return;
+        }
+        if(kind==TrackKind::SiroccoSolar) {
+            // Long solar straight, wide eastern sweep and offset dune return.
+            fromAnchors(std::array<Vec3,12>{{{0,0,-170},{140,0,-170},{220,0,-110},
+                {210,0,-10},{135,0,45},{45,0,35},{-20,0,115},{-145,0,135},
+                {-225,0,55},{-220,0,-70},{-145,0,-160},{-70,0,-170}}});return;
+        }
+        if(kind==TrackKind::CanyonRelay) {
+            // Alternating mesa bends and a long northern crown, no crossings.
+            fromAnchors(std::array<Vec3,12>{{{0,0,-205},{135,0,-205},{205,0,-125},
+                {115,0,-40},{180,0,40},{150,0,165},{40,0,205},{-85,0,185},
+                {-165,0,105},{-130,0,10},{-195,0,-85},{-125,0,-200}}});return;
         }
         for(int i=0;i<samples;++i) {
             float t=2*engine::pi*i/samples;
             points[i]={72*std::sin(t)+12*std::sin(2*t),0,-100*std::cos(t)};
+        }
+    }
+    // Uniform metric sampling is shared by road, AI, gates and recovery.
+    template<std::size_t N> void fromAnchors(const std::array<Vec3,N>& anchors) {
+        constexpr int steps=int(N)*100;
+        std::array<Vec3,steps+1> curve{};std::array<float,steps+1> length{};
+        for(int j=0;j<=steps;++j) {
+            int i=(j/100)%int(N);float u=float(j%100)/100;
+            auto a=anchors[(i+N-1)%N],b=anchors[i],c=anchors[(i+1)%N],d=anchors[(i+2)%N];
+            curve[j]=(b*2+(c-a)*u+(a*2-b*5+c*4-d)*(u*u)+(a*-1+b*3-c*3+d)*(u*u*u))*.5f;
+            if(j)length[j]=length[j-1]+magnitude(curve[j]-curve[j-1]);
+        }
+        int segment=1;
+        for(int i=0;i<samples;++i) {
+            float distance=length.back()*i/samples;
+            while(length[segment]<distance)++segment;
+            float u=(distance-length[segment-1])/(length[segment]-length[segment-1]);
+            points[i]=curve[segment-1]+(curve[segment]-curve[segment-1])*u;
         }
     }
     Vec3 point(int i) const { return points[(i%samples+samples)%samples]; }

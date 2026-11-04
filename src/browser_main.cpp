@@ -64,7 +64,7 @@ EM_JS(int, selected_backend, (), {
     const backend = new URLSearchParams(location.search).get('renderer');
     return backend === 'webgpu' ? 1 : backend === 'webgl2' ? 2 : 0;
 });
-EM_JS(int, selected_track, (), {return new URLSearchParams(location.search).get('track')==='desert'?1:0;});
+EM_JS(int, selected_track, (), {return ({desert:1,sirocco:4,canyon:5})[new URLSearchParams(location.search).get('track')]||0;});
 EM_JS(void, load_desert_art, (int id,const char* name,const char* hash), {window.queueDesertArt(id,UTF8ToString(name),UTF8ToString(hash));});
 EM_JS(void, desert_race_placement, (int model,float x,float y,float z,float yaw,float sx,float sy,float sz,int gate), {
     (window.racingDesertRacePlacements ||= []).push({model,x,y,z,yaw,scale:[sx,sy,sz],gate});
@@ -517,7 +517,7 @@ EMSCRIPTEN_KEEPALIVE int race_load_plaza_art(int model,const unsigned char* byte
 int main() {
     auto audioBackend=std::make_unique<engine::BrowserAudioBackend>();const auto audioDevice=audioBackend->deviceId();
     raceAudio=std::make_unique<racing::sound::RaceAudio>(std::move(audioBackend));
-    auto scene = std::make_unique<racing::StarterScene>(selected_track()?racing::TrackKind::DesertSolar:racing::TrackKind::Kairox);
+    auto scene = std::make_unique<racing::StarterScene>(static_cast<racing::TrackKind>(selected_track()));
     auto* selectedScene = scene.get();
     game=selectedScene;
     char saved[16385]{};int loaded=read_progress(saved);
