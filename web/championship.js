@@ -19,7 +19,7 @@
     if(!c?.canRace||!garage()||!window.racingReady)return;
     // Persisted points live outside the track scene. The normal loader only
     // loads the scheduled environment and retains renderer/quality settings.
-    if(c.track!==(desertSelected?1:0)){
+    if(c.track!==selectedTrackId){
       if(!window.racingCareer?.saved){$('league-message').textContent='Saving is unavailable. Continue on the next track after browser storage is restored.';return;}
       const url=new URL(location.href);url.searchParams.set('track',c.track?'desert':'kairox');url.searchParams.delete('mode');
       if(direct){url.searchParams.set('continueLeague',String(c.revision));url.searchParams.delete('career');}
@@ -76,14 +76,14 @@
     const c=window.racingLeague;if(!c)return;
     s.championship=c;
     $('league-resume').hidden=!c.canRace;
-    $('league-resume').disabled=s.phase!==0||!window.racingReady||(!s.career?.saved&&c.track!==(desertSelected?1:0));
+    $('league-resume').disabled=s.phase!==0||!window.racingReady||(!s.career?.saved&&c.track!==selectedTrackId);
     $('league-resume').textContent=`CONTINUE LEAGUE · ${c.final?'FINAL':`ROUND ${c.completed+1}`} →`;
     $('league-resume').title=`${names[c.league]} · ${tracks[c.track]}`;
     paintRecords(s,c);
     const intent=new URLSearchParams(location.search).get('continueLeague');
     if(intent!==null&&window.racingReady&&s.phase===0){
       const url=new URL(location.href);url.searchParams.delete('continueLeague');history.replaceState(null,'',url);
-      if(intent===String(c.revision)&&c.canRace&&c.track===(desertSelected?1:0)){requestedStart=true;command(60);}
+      if(intent===String(c.revision)&&c.canRace&&c.track===selectedTrackId){requestedStart=true;command(60);}
       else show();
     }
     if(requestedStart&&c.racing&&s.phase!==0){requestedStart=false;driveFocus();}
@@ -129,7 +129,7 @@
       button.title=locked?`Win ${names[i-1]} to unlock`:i===c.league?'Current league':`Start ${names[i]}. The current run is saved to your results; earned titles and upgrades are kept.`;
     }
     $('league-season').hidden=c.league<0;if(c.league<0)return;
-    $('league-season-title').textContent=names[c.league];$('league-message').textContent=message+(!s.career?.saved&&c.track!==(desertSelected?1:0)?' Track travel needs working browser storage; your current session progress is kept.':'');
+    $('league-season-title').textContent=names[c.league];$('league-message').textContent=message+(!s.career?.saved&&c.track!==selectedTrackId?' Track travel needs working browser storage; your current session progress is kept.':'');
     const caps=['Stock (rank 0)','Rank 1','Rank 2','Rank 3','Rank 3'];
     $('league-rules').textContent=`3 laps · 6 racers · ${['Easy','Normal','Normal','Hard','Hard'][c.league]} rivals · Equipment ceiling: ${caps[c.league]}. Owned upgrades above the ceiling are temporarily capped. Rivals use the ceiling equipment.`;
     $('league-schedule').replaceChildren();
@@ -143,8 +143,8 @@
       for(const value of [row.position,drivers[row.id],row.points,row.gap?`−${row.gap}`:'—',row.wins,row.results.map(p=>p||'DNF').join(' · ')||'—']){
         const td=document.createElement('td');td.textContent=value;tr.append(td);}$('league-rows').append(tr);}
     $('league-continue').hidden=!c.canRace;
-    $('league-continue').disabled=!isGarage||!window.racingReady||(!s.career?.saved&&c.track!==(desertSelected?1:0));
-    $('league-continue').textContent=`${c.track!==(desertSelected?1:0)?'LOAD '+tracks[c.track].split(' / ')[0].toUpperCase():c.final?'RACE PROMOTION FINAL':'RACE ROUND '+(c.completed+1)} →`;
+    $('league-continue').disabled=!isGarage||!window.racingReady||(!s.career?.saved&&c.track!==selectedTrackId);
+    $('league-continue').textContent=`${c.track!==selectedTrackId?'LOAD '+tracks[c.track].split(' / ')[0].toUpperCase():c.final?'RACE PROMOTION FINAL':'RACE ROUND '+(c.completed+1)} →`;
     $('league-restart').disabled=!isGarage||!window.racingReady;
     $('league-restart').textContent=c.status===3||c.status===6?'START NEW SEASON':c.status===5?'REPLAY THIS LEAGUE':'RESTART SEASON · SAVE THIS RUN';
   };

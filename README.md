@@ -10,6 +10,10 @@ models shared by player and rivals; see [vehicle integration](docs/vehicle-integ
 The garage also offers [Desert Solar / Helios Run](docs/desert-solar-track.md),
 a 1.02 km circuit through orange dunes, solar mirror fields, a sandstone arch
 and blue energy conduits. Select it in the garage or use `?track=desert`.
+Two more [desert circuits](docs/desert-circuits.md) reuse that same art and daylight:
+**Sirocco Solar / Dune Sweep** (`?track=sirocco`) and **Canyon Relay / Twin Mesa**
+(`?track=canyon`). Both support all four chassis, three-lap races and separate
+time-trial personal bests and ghosts.
 The [Desert race kit](docs/desert-race-kit.md) adds 592 textured edge dividers and
 12 physical checkpoint gantries made from two optimized Tripo models.
 Two [dune villages](docs/dune-villages.md) add twelve buildings using five supplied

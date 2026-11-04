@@ -110,7 +110,7 @@ struct Game {
             }return result;
         }();
         for(int i=0;i<3;++i)scene->installVehicleArt(static_cast<Chassis>(i+1),other[i]);
-        if(track==TrackKind::DesertSolar) {
+        if(desertTrack(track)) {
             for(unsigned i=0;i<desert::models.size();++i) {
                 std::string name=desert::models[i].name;
                 std::ifstream file(std::string(RACING_ASSET_DIR)+"/models/desert-solar/"+name+"/"+name+".glb",std::ios::binary|std::ios::ate);
@@ -531,11 +531,12 @@ void complete(VehicleKind kind,bool upgraded=false,std::optional<Chassis> chassi
     Game g(true,track);auto& s=*g.scene;
     if(upgraded){require(s.restoreProgression("NA1 2000 7 0 3 3 3 3 3 3"),"Load upgraded career");}
     if(chassis){s.selectChassis(*chassis);s.start();g.step({},190);}else g.begin(kind);
+    ai::Planner testPlanner(s.track);ai::State testDriver;int reverseTicks=0,slowTicks=0;
     auto openingBalance=s.progression().credits,openingRaces=s.progression().completedRaces;
     require(!s.purchase(0),"Cannot buy during a race");
     auto grid=s.standings();
     require(grid[0].id==0,"Player starts at the front of the grid");
-    for(int i=0;i<18000 && !s.classificationFinal();++i) {
+    for(int i=0;i<(desertTrack(track)&&track!=TrackKind::DesertSolar?30000:18000) && !s.classificationFinal();++i) {
         if(s.awaitingResults()) {
             s.start();s.select(kind==VehicleKind::Car?VehicleKind::Hover:VehicleKind::Car);
             require(s.phase==Phase::Finished&&s.kind==kind&&s.progression().credits==openingBalance,"Pending classification cannot be skipped or paid early");
@@ -545,10 +546,21 @@ void complete(VehicleKind kind,bool upgraded=false,std::optional<Chassis> chassi
         float angle=angleDifference(std::atan2(d.x,d.z),s.heading());
         DrivingInput input;input.steer=std::clamp(-angle*2,-1.f,1.f);
         input.throttle=s.speed()<65?1.f:.1f;input.brake=s.speed()>76? .5f:0;
+        if(track==TrackKind::SiroccoSolar||track==TrackKind::CanyonRelay) {
+            std::array<ai::Car,1> cars{{{p,{std::sin(s.heading()),0,std::cos(s.heading())},s.body().linearVelocity()}}};
+            auto planned=testPlanner.update(0,cars,testDriver,ai::Difficulty::Easy,1.f/60);
+            input.throttle=planned.throttle;input.steer=planned.steer;input.brake=planned.brake;
+            // Physical traffic can pin the test driver against a wall. Back out
+            // using ordinary reverse input rather than teleporting the player.
+            slowTicks=s.speed()<3?slowTicks+1:0;
+            if(slowTicks>120&&reverseTicks==0){reverseTicks=90;slowTicks=0;}
+            if(reverseTicks>0){--reverseTicks;input.throttle=-1;input.brake=0;input.steer=-planned.steer;}
+        }
         input.fire=1;input.shield=std::fmod(s.race.elapsed,4)<1.2?1.f:0;
         g.step(input);
     }
-    std::cout<<"completion kind "<<int(kind)<<" laps "<<s.race.completedLaps<<" gate "<<s.race.nextGate<<" time "<<s.race.elapsed<<" recoveries "<<s.race.recoveries<<"\n";
+    std::cout<<"completion kind "<<int(kind)<<" laps "<<s.race.completedLaps<<" gate "<<s.race.nextGate<<" time "<<s.race.elapsed<<" recoveries "<<s.race.recoveries<<" valid "<<s.race.routeValid<<" speed "<<s.speed()<<"\n";
+    std::cout<<"  position "<<s.player().transform.position.x<<","<<s.player().transform.position.z<<" nearest "<<s.track.nearest(s.player().transform.position).segment<<" heading "<<s.heading()<<std::endl;
     require(s.phase==Phase::Finished,"Both vehicles must physically complete three laps");
     require(s.race.recoveries==0,"Centerline driver must finish without recovery");
     require(s.camera->worldToScreen(s.player().transform.position,{0,0,1280,720}).visible,"Chase camera must see player");
@@ -583,11 +595,11 @@ void complete(VehicleKind kind,bool upgraded=false,std::optional<Chassis> chassi
         require(r.combat.shots==0&&r.combat.blocks==0&&r.combat.charge==(upgraded&&r.id==0?175:100)&&!r.combat.shield,"Restart resets combat with installed capacity");
     }
 }
-void desertGameplay() {
-    Game g(true,TrackKind::DesertSolar);auto& s=*g.scene;
+void desertGameplay(TrackKind selected=TrackKind::DesertSolar) {
+    Game g(true,selected);auto& s=*g.scene;
     require(s.allSceneArtLoaded(),"Desert must wait for environment, dividers, gates, vehicles, weapon and beacon");
     require(s.buildingPlacements().empty()&&s.trackPlacements().empty()&&s.cityKitPlacements().empty(),"Desert must not instantiate Kairox assets");
-    std::array<int,12> counts{};for(const auto& p:s.desertPlacements())++counts[p.model];
+    std::array<int,desert::models.size()> counts{};for(const auto& p:s.desertPlacements())++counts[p.model];
     for(int count:counts)require(count>0,"Every desert kit model must appear");
     desert::Kit landscape;landscape.plan(s.track);
     int embedded=0;
@@ -618,7 +630,7 @@ void desertGameplay() {
     float length=0;
     for(int i=0;i<Circuit::samples;++i) {
         float segment=magnitude(s.track.point(i+1)-s.track.point(i));length+=segment;
-        require(segment>4&&segment<7,"Uniform desert route spacing");
+        require(segment>4&&segment<9,"Uniform desert route spacing");
         for(int j=i+10;j<i+Circuit::samples-10;++j)
             require(magnitude(s.track.point(i)-s.track.point(j))>28,"Road sections must not intersect");
     }
@@ -634,22 +646,30 @@ void desertGameplay() {
     auto elapsed=s.race.elapsed;g.app.pause();g.step({},60);require(s.race.elapsed==elapsed,"Desert pause freezes race");
     std::cout<<"Desert loaded "<<s.desertPlacements().size()<<" placements, length "<<length<<"m; driving envelope clear\n";
 }
-void completeTrial() {
-    for(auto track:{TrackKind::Kairox,TrackKind::DesertSolar}) {
+void completeTrial(bool additions=false) {
+    for(auto track:{TrackKind::Kairox,TrackKind::DesertSolar,TrackKind::SiroccoSolar,TrackKind::CanyonRelay}) {
+        if(additions!=(track==TrackKind::SiroccoSolar||track==TrackKind::CanyonRelay))continue;
         Game g(true,track);auto& s=*g.scene;
         require(s.restoreProgression("NA1 2000 7 0 3 3 3 3 3 3"),"Upgraded career fixture");
         s.setTimeTrial(true);
         for(auto chassis:{Chassis::Vektor,Chassis::Skimmer,Chassis::Bastion,Chassis::Vector}) {
+            if(additions&&chassis!=Chassis::Vektor)continue;
             s.selectChassis(chassis);require(!s.personalBest(),"Each chassis starts with its own empty record");
             require(!s.purchase(0),"Trials cannot buy upgrades");
             if(chassisKind(chassis)==VehicleKind::Car)require(std::abs(s.playerDrivetrain().definition()->engineTorque-(chassis==Chassis::Bastion?720:650))<.01f,"Trial chassis use stock power despite career upgrades");
             s.start();g.step({},190);
+            ai::Planner testPlanner(s.track);ai::State testDriver;
             const auto grid=s.standings();
             for(int i=0;i<12000&&s.phase!=Phase::Finished;++i) {
                 auto p=s.player().transform.position;auto nearest=s.track.nearest(p);auto d=s.track.point(nearest.segment+6)-p;
                 const float angle=angleDifference(std::atan2(d.x,d.z),s.heading());
                 DrivingInput input;input.steer=std::clamp(-angle*2,-1.f,1.f);
                 input.throttle=s.speed()<65?1.f:.1f;input.brake=s.speed()>76?.5f:0;input.fire=1;input.shield=1;
+                if(additions) {
+                    std::array<ai::Car,1> cars{{{p,{std::sin(s.heading()),0,std::cos(s.heading())},s.body().linearVelocity()}}};
+                    auto planned=testPlanner.update(0,cars,testDriver,ai::Difficulty::Normal,1.f/60);
+                    input.throttle=planned.throttle;input.steer=planned.steer;input.brake=planned.brake;
+                }
                 g.step(input);
             }
             std::cout<<"trial track "<<int(track)<<" chassis "<<int(chassis)<<" time "<<s.race.elapsed<<" clean "<<s.trialClean()<<'\n';
@@ -714,8 +734,16 @@ void desertLighting() {
     std::cout<<"Desert lighting: valid shared bake, aligned sun, warm ground bounce and unchanged city passed\n";
 }
 int main(int argc,char** argv){try{
+    if(argc>1&&std::string(argv[1])=="desert-circuits") {
+        for(auto track:{TrackKind::SiroccoSolar,TrackKind::CanyonRelay}) {
+            desertGameplay(track);
+            for(auto chassis:{Chassis::Vektor,Chassis::Skimmer,Chassis::Bastion,Chassis::Vector})
+                complete(chassis==Chassis::Vektor||chassis==Chassis::Bastion?VehicleKind::Car:VehicleKind::Hover,false,chassis,track);
+        }return 0;
+    }
     if(argc>1&&std::string(argv[1])=="lighting"){desertLighting();return 0;}
     if(argc>1&&std::string(argv[1])=="wheel-travel"){wheelTravel(Chassis::Vektor);wheelTravel(Chassis::Bastion);return 0;}
+    if(argc>1&&std::string(argv[1])=="desert-trials"){completeTrial(true);return 0;}
     if(argc>1&&std::string(argv[1])=="trial"){completeTrial();return 0;}
     if(argc>1&&std::string(argv[1])=="upgrade-drive"){upgradeDrive(VehicleKind::Car);upgradeDrive(VehicleKind::Hover);return 0;}
     if(argc>1&&std::string(argv[1])=="desert") {

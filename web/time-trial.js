@@ -3,7 +3,7 @@
 const trialStorage=new Map();
 const trialKey=(track,chassis)=>`neon-ascension.trial.v1.${track}.${chassis}`;
 window.restoreTimeTrials=()=>{
-  for(let track=0;track<2;track++)for(let chassis=0;chassis<4;chassis++){
+  for(const {id:track} of circuitCatalog)for(let chassis=0;chassis<4;chassis++){
     const key=trialKey(track,chassis),state={original:null,blocked:false,message:'Saved on this browser'};
     trialStorage.set(key,state);
     let pointer=0;
@@ -52,10 +52,10 @@ window.paintTimeTrial=s=>{
   $('upgrades').hidden=t.active;$('upgrade-scope').hidden=t.active;
   $('best').previousElementSibling.textContent=t.active?'PERSONAL BEST':'BEST LAP';
   $('position').previousElementSibling.textContent=t.active?'MODE':'POSITION';
-  document.querySelector('.event .tag').textContent=t.active?'TIME TRIAL':desertSelected?'HELIOS RUN':'STREET RACE';
+  document.querySelector('.event .tag').textContent=t.active?'TIME TRIAL':selectedCircuit.label;
   document.querySelector('.controls span:nth-child(7)').innerHTML=t.active?'<kbd>R</kbd> RECOVER / INVALIDATE':'<kbd>R</kbd> RECOVER +3s';
   document.querySelector('.intro').textContent=t.active?'Solo · 1 lap · 3 sectors · stock tuning. Boost allowed. Recovery or leaving the circuit invalidates the run.':'Race. Earn. Upgrade your machine. 3 laps · 6 racers · 300–1,200 CR per finish';
-  const state=trialStorage.get(trialKey(desertSelected?1:0,s.chassis));
+  const state=trialStorage.get(trialKey(selectedTrackId,s.chassis));
   $('trial-summary').textContent=`${chassisNames[s.chassis]} best: ${t.best?time(t.best):'No clean run yet'} · ${state?.message||'Loading records…'}`;
   document.querySelectorAll('.watch-best').forEach(button=>{button.hidden=!t.active;button.disabled=!window.racingReady||!t.best;});
   $('map-rivals').style.display=t.active?'none':'';

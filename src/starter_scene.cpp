@@ -64,7 +64,7 @@ StarterScene::StarterScene(TrackKind selected):track(selected),aiPlanner(track) 
     auto& light=spawn("Moonlight").addComponent<LightComponent>("Moon",LightType::Directional);
     light.direction={-.65f,-.85f,.35f};light.color={.72f,.82f,1};light.intensity=1.65f;
     if(isDesert()) {
-        name="Desert Solar / Helios Run";ambient={.36f,.39f,.43f};environmentIntensity=.48f;
+        name=circuitName(track.kind);ambient={.36f,.39f,.43f};environmentIntensity=.48f;
         sky.horizon={.78f,.72f,.62f};sky.zenith={.42f,.56f,.68f};sky.nadir={.38f,.23f,.11f};setSky(sky);
         fog.color={.64f,.57f,.46f};fog.density=.0015f;fog.startDistance=85;fog.heightFalloff=.012f;setFog(fog);
         light.color={1,.88f,.72f};light.intensity=2.35f;light.direction={-.65f,-.72f,-.32f};

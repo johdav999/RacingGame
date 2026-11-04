@@ -1,8 +1,16 @@
 'use strict';
 const $ = id => document.getElementById(id);
 const canvas = $('viewport');
-const desertSelected=new URLSearchParams(location.search).get('track')==='desert';
-window.racingTrackKind=desertSelected?'desert':'kairox';
+const circuitCatalog=[
+  {id:0,key:'kairox',name:'Kairox / Midnight Circuit',label:'STREET RACE'},
+  {id:1,key:'desert',name:'Desert Solar / Helios Run',label:'HELIOS RUN',region:'HELIOS',note:'Solar-field straight · sandstone canyon · conduit corridor'},
+  {id:4,key:'sirocco',name:'Sirocco Solar / Dune Sweep',label:'DUNE SWEEP',region:'SIROCCO',note:'Long solar straight · broad mesa sweep · offset dune return'},
+  {id:5,key:'canyon',name:'Canyon Relay / Twin Mesa',label:'TWIN MESA',region:'CANYON RELAY',note:'Linked canyon bends · northern crown · blue conduit return'}
+];
+const selectedCircuit=circuitCatalog.find(t=>t.key===new URLSearchParams(location.search).get('track'))||circuitCatalog[0];
+const selectedTrackId=selectedCircuit.id;
+const desertSelected=['desert','sirocco','canyon'].includes(selectedCircuit.key);
+window.racingTrackKind=selectedCircuit.key;
 $('track-select').value=window.racingTrackKind;
 $('track-select').onchange=event=>{
   const url=new URL(location.href);url.searchParams.set('track',event.target.value);
@@ -13,13 +21,13 @@ for(const link of document.querySelectorAll('.system a')){
   const url=new URL(location.href);url.searchParams.set('renderer',new URL(link.href).searchParams.get('renderer'));link.href=url;
 }
 if(desertSelected){
-  document.body.classList.add('desert');document.title='Neon Ascension · Desert Solar';
-  document.querySelector('.brand small').textContent='HELIOS / SOLAR COMPLEX';
-  document.querySelector('.event').innerHTML='<span class="live-dot"></span> DESERT SOLAR <span class="tag">HELIOS RUN</span>';
-  document.querySelector('.garage-heading .eyebrow').textContent='DESERT SOLAR / GARAGE';
-  document.querySelector('.map-panel > div > span').textContent='HELIOS';
-  canvas.setAttribute('aria-label',canvas.getAttribute('aria-label').replace('Kairox city','Desert Solar'));
-  $('track-note').textContent='Solar-field straight · sandstone canyon · conduit corridor';
+  document.body.classList.add('desert');document.title='Neon Ascension · '+selectedCircuit.name;
+  document.querySelector('.brand small').textContent=selectedCircuit.region+' / SOLAR COMPLEX';
+  document.querySelector('.event').innerHTML='<span class="live-dot"></span> '+selectedCircuit.name.split(' / ')[0].toUpperCase()+' <span class="tag">'+selectedCircuit.label+'</span>';
+  document.querySelector('.garage-heading .eyebrow').textContent=selectedCircuit.region+' / GARAGE';
+  document.querySelector('.map-panel > div > span').textContent=selectedCircuit.region;
+  canvas.setAttribute('aria-label',canvas.getAttribute('aria-label').replace('Kairox city',selectedCircuit.name));
+  $('track-note').textContent=selectedCircuit.note;
 }
 
 const chassisNames=['Vektor','Skimmer','Bastion','Vector'];

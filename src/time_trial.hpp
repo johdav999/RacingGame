@@ -30,7 +30,7 @@ struct TrialRun {
             {angle(a.rotation.x,b.rotation.x),angle(a.rotation.y,b.rotation.y),angle(a.rotation.z,b.rotation.z)}};
     }
     bool valid() const {
-        if(track<0||track>1||chassis<0||chassis>3||!std::isfinite(duration)||duration<=0||duration>maxSeconds||
+        if(track<0||track>=trackCount||chassis<0||chassis>3||!std::isfinite(duration)||duration<=0||duration>maxSeconds||
             frames.size()<2||frames.size()>maxFrames||frames.front().time!=0||std::abs(frames.back().time-duration)>.00001)return false;
         double last=0;
         for(double s:splits){if(!std::isfinite(s)||s<=last||s>duration)return false;last=s;}
