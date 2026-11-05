@@ -1,0 +1,181 @@
+{
+  "scope": "Exported GLB reimport, hashes, PBR, meter bounds, pivots, triangle counts, surface ray tests and renders; no game physics acceptance",
+  "assets": [
+    {
+      "id": "track-straight",
+      "sha256_verified": true,
+      "embedded_pbr_verified": true,
+      "triangles": 12,
+      "dimensions_xyz_gltf": [
+        12.0,
+        0.25,
+        16.0
+      ],
+      "maps": [
+        {
+          "name": "track-straight-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "track-straight-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "track-straight-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "flat_top_samples": 25
+    },
+    {
+      "id": "track-corner-left",
+      "sha256_verified": true,
+      "embedded_pbr_verified": true,
+      "triangles": 1296,
+      "dimensions_xyz_gltf": [
+        16.0,
+        0.25,
+        16.0
+      ],
+      "maps": [
+        {
+          "name": "track-straight-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "track-straight-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "track-straight-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "flat_top_samples": 115
+    },
+    {
+      "id": "track-corner-right",
+      "sha256_verified": true,
+      "embedded_pbr_verified": true,
+      "triangles": 1296,
+      "dimensions_xyz_gltf": [
+        16.0,
+        0.25,
+        16.0
+      ],
+      "maps": [
+        {
+          "name": "track-straight-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "track-straight-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "track-straight-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "flat_top_samples": 115
+    },
+    {
+      "id": "track-curb",
+      "sha256_verified": true,
+      "embedded_pbr_verified": true,
+      "triangles": 1796,
+      "dimensions_xyz_gltf": [
+        4.0,
+        0.15000000596046448,
+        0.6000000238418579
+      ],
+      "maps": [
+        {
+          "name": "track-curb-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "track-curb-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "track-curb-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "flat_top_samples": 0
+    },
+    {
+      "id": "drainage-grate",
+      "sha256_verified": true,
+      "embedded_pbr_verified": true,
+      "triangles": 5996,
+      "dimensions_xyz_gltf": [
+        2.0,
+        0.11999999731779099,
+        0.5
+      ],
+      "maps": [
+        {
+          "name": "drainage-grate-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "drainage-grate-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "drainage-grate-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ],
+      "flat_top_samples": 0,
+      "open_slot_sample_fraction": 0.58125
+    }
+  ]
+}

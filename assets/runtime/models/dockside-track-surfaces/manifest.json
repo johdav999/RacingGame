@@ -1,0 +1,411 @@
+{
+  "assets": [
+    {
+      "id": "drainage-grate",
+      "source_id": "drainage-grate",
+      "bytes": 1720420,
+      "sha256": "8f6b03f1be199da4234aa8f7b206e56fcd1b04d66a28e0f2108db16d14804a5a",
+      "triangles_instanced": 5996,
+      "triangles_unique": 5996,
+      "mesh_instances": 1,
+      "unique_meshes": 1,
+      "materials": 1,
+      "dimensions_xyz_gltf": [
+        2,
+        0.12,
+        0.5
+      ],
+      "units": "meters",
+      "up_axis": "Y",
+      "pivot": "bottom center",
+      "source_triangles": 16900,
+      "source_dimensions_blender": [
+        0.23854976892471313,
+        0.9808621406555176,
+        0.08903592824935913
+      ],
+      "source_rotation_z_degrees": 90,
+      "original_maps": [
+        {
+          "name": "Color_cbd3914c-289b-4519-bdf5-21186cc14d51",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_cbd3914c-289b-4519-bdf5-21186cc14d51",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_cbd3914c-289b-4519-bdf5-21186cc14d51",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_cap": 1024,
+      "pbr_rebaked": true,
+      "provider": "Tripo3D",
+      "task_id": "cbd3914c-289b-4519-bdf5-21186cc14d51",
+      "credits_consumed": 60.0,
+      "source_sha256": "c8077e6b20da4c000cb8ce03ace80332bfaec6e699c626d6a1ab6bc5406f4b72",
+      "reference_sha256": "0940c756d9a49224d7ae33a9003fabf0aea60e14d2ad13e7486f6189b3171a71",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "request": {
+        "model": "v3.1-20260211",
+        "geometry_quality": "detailed",
+        "face_limit": 20000,
+        "texture": true,
+        "pbr": true,
+        "quad": false,
+        "texture_quality": "detailed",
+        "texture_version": "v3.5-20260815",
+        "delight": false,
+        "enable_image_autofix": false
+      },
+      "geometry_correction": null,
+      "flat_road_top_m": null
+    },
+    {
+      "id": "track-corner-left",
+      "source_id": "track-corner",
+      "bytes": 2568460,
+      "sha256": "b65b024ceb63e659c456a5d393e0cf49d573106a0ea67b0b8258a64c62292bac",
+      "triangles_instanced": 1296,
+      "triangles_unique": 1296,
+      "mesh_instances": 1,
+      "unique_meshes": 1,
+      "materials": 2,
+      "dimensions_xyz_gltf": [
+        16,
+        0.25,
+        16
+      ],
+      "units": "meters",
+      "up_axis": "Y",
+      "pivot": "bottom center",
+      "source_triangles": 19618,
+      "source_dimensions_blender": [
+        0.7951257228851318,
+        0.9782984852790833,
+        0.7731281518936157
+      ],
+      "source_rotation_z_degrees": 0,
+      "original_maps": [
+        {
+          "name": "Color_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_cap": 1024,
+      "pbr_rebaked": false,
+      "material_source_asset": "track-straight",
+      "provider": "Tripo3D",
+      "task_id": "1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+      "credits_consumed": 60.0,
+      "source_sha256": "4e432bfe5970c05be86abfa118db90486fc94f2e3271c60f60a81f6752c451c2",
+      "reference_sha256": "1a0b1ec369ce5d2f317bfc6485f58db07bcdf605370a3b1a72a93bc24bd4d645",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "request": {
+        "model": "v3.1-20260211",
+        "geometry_quality": "detailed",
+        "face_limit": 20000,
+        "texture": true,
+        "pbr": true,
+        "quad": false,
+        "texture_quality": "detailed",
+        "texture_version": "v3.5-20260815",
+        "delight": false,
+        "enable_image_autofix": false
+      },
+      "geometry_correction": {
+        "method": "Rebuilt flat quarter annulus with shared straight-road PBR after provider geometry/UV distortion",
+        "inner_radius_m": 4,
+        "outer_radius_m": 16,
+        "angle_degrees": 90
+      },
+      "flat_road_top_m": 0.25,
+      "join_centers_xyz_gltf": [
+        [
+          2,
+          0.25,
+          8
+        ],
+        [
+          -8,
+          0.25,
+          -2
+        ]
+      ]
+    },
+    {
+      "id": "track-corner-right",
+      "source_id": "track-corner",
+      "bytes": 2568468,
+      "sha256": "6691916833688499dee5373cfe3a36bc58c53676f64f7bfcadb697a9f8ac54c0",
+      "triangles_instanced": 1296,
+      "triangles_unique": 1296,
+      "mesh_instances": 1,
+      "unique_meshes": 1,
+      "materials": 2,
+      "dimensions_xyz_gltf": [
+        16,
+        0.25,
+        16
+      ],
+      "units": "meters",
+      "up_axis": "Y",
+      "pivot": "bottom center",
+      "source_triangles": 19618,
+      "source_dimensions_blender": [
+        0.7951257228851318,
+        0.9782984852790833,
+        0.7731281518936157
+      ],
+      "source_rotation_z_degrees": 0,
+      "original_maps": [
+        {
+          "name": "Color_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_cap": 1024,
+      "pbr_rebaked": false,
+      "material_source_asset": "track-straight",
+      "provider": "Tripo3D",
+      "task_id": "1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+      "credits_consumed": 0,
+      "source_sha256": "4e432bfe5970c05be86abfa118db90486fc94f2e3271c60f60a81f6752c451c2",
+      "reference_sha256": "1a0b1ec369ce5d2f317bfc6485f58db07bcdf605370a3b1a72a93bc24bd4d645",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "request": {
+        "model": "v3.1-20260211",
+        "geometry_quality": "detailed",
+        "face_limit": 20000,
+        "texture": true,
+        "pbr": true,
+        "quad": false,
+        "texture_quality": "detailed",
+        "texture_version": "v3.5-20260815",
+        "delight": false,
+        "enable_image_autofix": false
+      },
+      "geometry_correction": {
+        "method": "Rebuilt flat quarter annulus with shared straight-road PBR after provider geometry/UV distortion",
+        "inner_radius_m": 4,
+        "outer_radius_m": 16,
+        "angle_degrees": 90
+      },
+      "flat_road_top_m": 0.25,
+      "join_centers_xyz_gltf": [
+        [
+          -2,
+          0.25,
+          8
+        ],
+        [
+          8,
+          0.25,
+          -2
+        ]
+      ],
+      "derived_from": "track-corner-left",
+      "derivation": "Offline X reflection with corrected face winding; shared source task and maps"
+    },
+    {
+      "id": "track-curb",
+      "source_id": "track-curb",
+      "bytes": 3001132,
+      "sha256": "56f051ec02ac44b895d3dc90b24f8e1edede2c372e88a0300615e646d58b7df2",
+      "triangles_instanced": 1796,
+      "triangles_unique": 1796,
+      "mesh_instances": 1,
+      "unique_meshes": 1,
+      "materials": 1,
+      "dimensions_xyz_gltf": [
+        4,
+        0.15,
+        0.6
+      ],
+      "units": "meters",
+      "up_axis": "Y",
+      "pivot": "bottom center",
+      "source_triangles": 15706,
+      "source_dimensions_blender": [
+        0.15320631861686707,
+        0.9769733548164368,
+        0.05569419264793396
+      ],
+      "source_rotation_z_degrees": 90,
+      "original_maps": [
+        {
+          "name": "Color_8abeb8b3-3bd3-48bf-919c-49eb7bb32536",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_8abeb8b3-3bd3-48bf-919c-49eb7bb32536",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_8abeb8b3-3bd3-48bf-919c-49eb7bb32536",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_cap": 1024,
+      "pbr_rebaked": true,
+      "provider": "Tripo3D",
+      "task_id": "8abeb8b3-3bd3-48bf-919c-49eb7bb32536",
+      "credits_consumed": 60.0,
+      "source_sha256": "93d372c1208e24c9a95b702b5e3f3fae0ea56b5dcc743a1d87512c8fab39002a",
+      "reference_sha256": "df7a4c99f7b871a2e74f6fc580d1e86afce13d786f435d10b941193ab3614a2e",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "request": {
+        "model": "v3.1-20260211",
+        "geometry_quality": "detailed",
+        "face_limit": 20000,
+        "texture": true,
+        "pbr": true,
+        "quad": false,
+        "texture_quality": "detailed",
+        "texture_version": "v3.5-20260815",
+        "delight": false,
+        "enable_image_autofix": false
+      },
+      "geometry_correction": null,
+      "flat_road_top_m": null
+    },
+    {
+      "id": "track-straight",
+      "source_id": "track-straight",
+      "bytes": 2523664,
+      "sha256": "86adbb1675619d3b77f525dd68a841e084a72abbeb634912467ec2cd2124f77f",
+      "triangles_instanced": 12,
+      "triangles_unique": 12,
+      "mesh_instances": 1,
+      "unique_meshes": 1,
+      "materials": 2,
+      "dimensions_xyz_gltf": [
+        12,
+        0.25,
+        16
+      ],
+      "units": "meters",
+      "up_axis": "Y",
+      "pivot": "bottom center",
+      "source_triangles": 16074,
+      "source_dimensions_blender": [
+        0.9794719219207764,
+        0.5836381912231445,
+        0.021100543439388275
+      ],
+      "source_rotation_z_degrees": 90,
+      "original_maps": [
+        {
+          "name": "Color_71379497-6fa2-4fc8-8c28-4c2cc4d06478",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_71379497-6fa2-4fc8-8c28-4c2cc4d06478",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_71379497-6fa2-4fc8-8c28-4c2cc4d06478",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "texture_cap": 1024,
+      "pbr_rebaked": true,
+      "provider": "Tripo3D",
+      "task_id": "71379497-6fa2-4fc8-8c28-4c2cc4d06478",
+      "credits_consumed": 60.0,
+      "source_sha256": "59309d4753f631687de40c10c1a359baf03c47419f831dc13110964ba429d2c3",
+      "reference_sha256": "8004327715deaab0fce3115843ac1fa1f6ccc5164c4dfe616f79129dfcbe7177",
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "request": {
+        "model": "v3.1-20260211",
+        "geometry_quality": "detailed",
+        "face_limit": 20000,
+        "texture": true,
+        "pbr": true,
+        "quad": false,
+        "texture_quality": "detailed",
+        "texture_version": "v3.5-20260815",
+        "delight": false,
+        "enable_image_autofix": false
+      },
+      "geometry_correction": null,
+      "flat_road_top_m": 0.25,
+      "join_centers_xyz_gltf": [
+        [
+          0,
+          0.25,
+          8
+        ],
+        [
+          0,
+          0.25,
+          -8
+        ]
+      ]
+    }
+  ],
+  "credits_consumed": 240.0,
+  "scope": "Static surface assets; no race logic or engine integration"
+}

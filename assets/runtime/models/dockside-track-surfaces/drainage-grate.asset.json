@@ -1,0 +1,71 @@
+{
+  "id": "drainage-grate",
+  "source_id": "drainage-grate",
+  "bytes": 1720420,
+  "sha256": "8f6b03f1be199da4234aa8f7b206e56fcd1b04d66a28e0f2108db16d14804a5a",
+  "triangles_instanced": 5996,
+  "triangles_unique": 5996,
+  "mesh_instances": 1,
+  "unique_meshes": 1,
+  "materials": 1,
+  "dimensions_xyz_gltf": [
+    2,
+    0.12,
+    0.5
+  ],
+  "units": "meters",
+  "up_axis": "Y",
+  "pivot": "bottom center",
+  "source_triangles": 16900,
+  "source_dimensions_blender": [
+    0.23854976892471313,
+    0.9808621406555176,
+    0.08903592824935913
+  ],
+  "source_rotation_z_degrees": 90,
+  "original_maps": [
+    {
+      "name": "Color_cbd3914c-289b-4519-bdf5-21186cc14d51",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_cbd3914c-289b-4519-bdf5-21186cc14d51",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_cbd3914c-289b-4519-bdf5-21186cc14d51",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 1024,
+  "pbr_rebaked": true,
+  "provider": "Tripo3D",
+  "task_id": "cbd3914c-289b-4519-bdf5-21186cc14d51",
+  "credits_consumed": 60.0,
+  "source_sha256": "c8077e6b20da4c000cb8ce03ace80332bfaec6e699c626d6a1ab6bc5406f4b72",
+  "reference_sha256": "0940c756d9a49224d7ae33a9003fabf0aea60e14d2ad13e7486f6189b3171a71",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "request": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 20000,
+    "texture": true,
+    "pbr": true,
+    "quad": false,
+    "texture_quality": "detailed",
+    "texture_version": "v3.5-20260815",
+    "delight": false,
+    "enable_image_autofix": false
+  },
+  "geometry_correction": null,
+  "flat_road_top_m": null
+}
