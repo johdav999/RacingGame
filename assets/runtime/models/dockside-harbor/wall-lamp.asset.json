@@ -1,0 +1,69 @@
+{
+  "id": "wall-lamp",
+  "bytes": 11371008,
+  "sha256": "9193a1bff1e9eedaae13f938b3cece365e83e772c2702c2b90da9a5dc73ef37e",
+  "triangles_instanced": 18616,
+  "triangles_unique": 18616,
+  "mesh_instances": 1,
+  "unique_meshes": 1,
+  "materials": 1,
+  "units": "meters",
+  "up_axis": "Y",
+  "dimensions_xyz_gltf": [
+    0.6,
+    0.534022121676664,
+    0.6674272309528645
+  ],
+  "pivot": "bottom center",
+  "source_triangles": 18616,
+  "source_dimensions_blender": [
+    0.9799742698669434,
+    0.8809717893600464,
+    0.7840973734855652
+  ],
+  "source_rotation_z_degrees": -90,
+  "original_maps": [
+    {
+      "name": "Color_257a0a32-fe43-48b5-ad59-6a430d126423",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_257a0a32-fe43-48b5-ad59-6a430d126423",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_257a0a32-fe43-48b5-ad59-6a430d126423",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 2048,
+  "pbr_rebaked": false,
+  "offline_repairs": [],
+  "provider": "Tripo3D",
+  "task_id": "257a0a32-fe43-48b5-ad59-6a430d126423",
+  "credits_consumed": 60.0,
+  "source_sha256": "fb1f71f2a95aba4bddac0c505761ada186d87808d5d208b089212438328a65c1",
+  "reference_sha256": "32686f0c5823d6bdfc000f1ef236c7679e9fd53560d1ee1d8566cdf3236ddec0",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "request": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 20000,
+    "texture": true,
+    "pbr": true,
+    "quad": false,
+    "texture_quality": "detailed",
+    "texture_version": "v3.5-20260815",
+    "delight": false,
+    "enable_image_autofix": false
+  }
+}
