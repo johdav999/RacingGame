@@ -1,0 +1,215 @@
+{
+  "modules": [
+    {
+      "module": "wall",
+      "variant": "detail",
+      "triangles": 1793,
+      "dimensions_blender": [
+        4.0,
+        0.29999998211860657,
+        4.0
+      ],
+      "embedded_maps": 3,
+      "sha256": "40c28fd24d5a7884754d7f4c645e3ab99a265b245f4c423b337dce20d3ad2697"
+    },
+    {
+      "module": "wall",
+      "variant": "assembly",
+      "triangles": 413,
+      "dimensions_blender": [
+        4.0,
+        0.30000001192092896,
+        4.0
+      ],
+      "embedded_maps": 3,
+      "sha256": "d783dbaee89dd8636a06b3b56fe5983d90bcccd341d2984ac861b229e553c162"
+    },
+    {
+      "module": "corner",
+      "variant": "detail",
+      "triangles": 496,
+      "dimensions_blender": [
+        0.41999998688697815,
+        0.42000001668930054,
+        4.0
+      ],
+      "embedded_maps": 3,
+      "sha256": "9942e063a4b240b81692be5604903fa69aa04194fc3dd248deb5e72c02931df2"
+    },
+    {
+      "module": "corner",
+      "variant": "assembly",
+      "triangles": 116,
+      "dimensions_blender": [
+        0.41999998688697815,
+        0.41999998688697815,
+        4.0
+      ],
+      "embedded_maps": 3,
+      "sha256": "55a95d7e9c04b04f50a92edc969007cd9f22210db2d499d4241335459bdd56e3"
+    },
+    {
+      "module": "roof",
+      "variant": "detail",
+      "triangles": 896,
+      "dimensions_blender": [
+        3.999999761581421,
+        4.0,
+        0.2199999988079071
+      ],
+      "embedded_maps": 3,
+      "sha256": "1be31ed0214095b2b49d635ba5c20299a1518990f0537242791196b0b0decc6f"
+    },
+    {
+      "module": "roof",
+      "variant": "assembly",
+      "triangles": 176,
+      "dimensions_blender": [
+        4.0,
+        4.0,
+        0.2199999988079071
+      ],
+      "embedded_maps": 3,
+      "sha256": "d589f438acd308036ebdbbc3b2a9ee5326aa3a8667b61ea6a4518a2912857c24"
+    },
+    {
+      "module": "door",
+      "variant": "detail",
+      "triangles": 1996,
+      "dimensions_blender": [
+        3.5,
+        0.2199999988079071,
+        3.5999999046325684
+      ],
+      "embedded_maps": 3,
+      "sha256": "68e6c6c6f99e3662ab39778aad50c88361df12800b31ea0ebb0dbc3ac5a1cf45"
+    },
+    {
+      "module": "door",
+      "variant": "assembly",
+      "triangles": 646,
+      "dimensions_blender": [
+        3.5,
+        0.2199999988079071,
+        3.5999999046325684
+      ],
+      "embedded_maps": 3,
+      "sha256": "4466f17edf588f09b6f133800dfe9209b0288f86a34999abc33b597fe8246a35"
+    },
+    {
+      "module": "vent",
+      "variant": "detail",
+      "triangles": 1195,
+      "dimensions_blender": [
+        1.2000000476837158,
+        1.2000000476837158,
+        1.0
+      ],
+      "embedded_maps": 3,
+      "sha256": "7d27addce039a3e30f0245448e8206eab02b7740b4bf13080e13f7a063212fe2"
+    },
+    {
+      "module": "vent",
+      "variant": "assembly",
+      "triangles": 755,
+      "dimensions_blender": [
+        1.2000000476837158,
+        1.1999999284744263,
+        1.0
+      ],
+      "embedded_maps": 3,
+      "sha256": "9db70be20693fe437c14c3a29300d54f759e30af71a03bff63bccec6a1c35345"
+    },
+    {
+      "module": "window",
+      "variant": "detail",
+      "triangles": 1195,
+      "dimensions_blender": [
+        2.799999952316284,
+        0.18000000715255737,
+        1.2000000476837158
+      ],
+      "embedded_maps": 3,
+      "sha256": "3ab77ed9690adeca796d9733c0509bab579e48792a91265ccb026041797d9dfb"
+    },
+    {
+      "module": "window",
+      "variant": "assembly",
+      "triangles": 235,
+      "dimensions_blender": [
+        2.799999952316284,
+        0.17999999225139618,
+        1.1999999284744263
+      ],
+      "embedded_maps": 3,
+      "sha256": "38f8908de3c5b1172a67b95da40dfde142c651096803be14ac1813ca20cc53ab"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": "compact-depot",
+      "triangles_instanced": 12269,
+      "mesh_instances": 72,
+      "unique_meshes": 9,
+      "dimensions_m_xyz_gltf": [
+        12.659999370574951,
+        5.409999848902226,
+        12.679999828338623
+      ],
+      "embedded_maps": 18,
+      "closure_rays_passed": 189,
+      "empty_cells_passed": 0,
+      "module_placements_verified": true,
+      "sha256": "ce574ec281745684bb49a88ac87467d279e153e60f47367c77c397d6f117dad9"
+    },
+    {
+      "id": "long-freight-shed",
+      "triangles_instanced": 19958,
+      "mesh_instances": 123,
+      "unique_meshes": 9,
+      "dimensions_m_xyz_gltf": [
+        24.65999984741211,
+        5.409999848902226,
+        12.679999828338623
+      ],
+      "embedded_maps": 18,
+      "closure_rays_passed": 324,
+      "empty_cells_passed": 0,
+      "module_placements_verified": true,
+      "sha256": "5494e0e7233cde13af464855494ae0447ffd1090dd0be4ba5baf443262a68e25"
+    },
+    {
+      "id": "high-bay-store",
+      "triangles_instanced": 18359,
+      "mesh_instances": 114,
+      "unique_meshes": 9,
+      "dimensions_m_xyz_gltf": [
+        16.68000030517578,
+        9.409999848902226,
+        16.679999351501465
+      ],
+      "embedded_maps": 18,
+      "closure_rays_passed": 288,
+      "empty_cells_passed": 0,
+      "module_placements_verified": true,
+      "sha256": "c3236be10aa6a369277fa495b5972304d67eb6d23b0bbd7d1c254c5322fb173a"
+    },
+    {
+      "id": "l-shaped-transfer",
+      "triangles_instanced": 19583,
+      "mesh_instances": 122,
+      "unique_meshes": 9,
+      "dimensions_m_xyz_gltf": [
+        20.65999984741211,
+        5.409999848902226,
+        20.559999465942383
+      ],
+      "embedded_maps": 18,
+      "closure_rays_passed": 324,
+      "empty_cells_passed": 9,
+      "module_placements_verified": true,
+      "sha256": "2f0bf732842c96d24685b111ffeb26e48383b466ce39662cd8f0caa193fb7adb"
+    }
+  ],
+  "scope": "Blender 3.5 GLB reimport, payload validation, layout and sampled mesh closure; no game runtime acceptance"
+}

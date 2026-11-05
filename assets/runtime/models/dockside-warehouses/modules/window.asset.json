@@ -1,0 +1,62 @@
+{
+  "name": "window",
+  "size": [
+    2.8,
+    0.18,
+    1.2
+  ],
+  "detail_budget": 1200,
+  "assembly_budget": 240,
+  "bytes": 1593472,
+  "sha256": "3ab77ed9690adeca796d9733c0509bab579e48792a91265ccb026041797d9dfb",
+  "triangles_instanced": 1195,
+  "triangles_unique": 1195,
+  "mesh_instances": 1,
+  "unique_meshes": 1,
+  "materials": 1,
+  "assembly_lod": {
+    "bytes": 1874924,
+    "sha256": "38f8908de3c5b1172a67b95da40dfde142c651096803be14ac1813ca20cc53ab",
+    "triangles_instanced": 235,
+    "triangles_unique": 235,
+    "mesh_instances": 1,
+    "unique_meshes": 1,
+    "materials": 1
+  },
+  "source_triangles": 13797,
+  "source_dimensions_blender": [
+    0.1283707618713379,
+    0.9793866872787476,
+    0.394343763589859
+  ],
+  "original_maps": [
+    {
+      "name": "Color_c1c354cc-baa4-46be-b0c4-2a2a30253706",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_c1c354cc-baa4-46be-b0c4-2a2a30253706",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_c1c354cc-baa4-46be-b0c4-2a2a30253706",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 1024,
+  "provider": "Tripo3D",
+  "task_id": "c1c354cc-baa4-46be-b0c4-2a2a30253706",
+  "credits_consumed": 60.0,
+  "source_sha256": "543328387e2daca15430b00aff48770b37defd5a409080f74abe7318fdec8f26",
+  "reference_sha256": "883b4123d737ca0915c9b8b6666373d131ad6563006038357a87a64b1d213b0e",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}
