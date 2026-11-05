@@ -1,0 +1,116 @@
+{
+  "models": [
+    {
+      "name": "container-20ft",
+      "triangles": 15756,
+      "dimensions_m_LWH": [
+        6.057999610900879,
+        2.438000202178955,
+        2.5910000801086426
+      ],
+      "pivot": "bottom center",
+      "maps": [
+        {
+          "name": "NormalGL_e77b0fcb-f5ae-4f2e-9c29-e244a11c1091",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "Paint 245D88",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "painted-steel-orm",
+          "size": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "protected_texel_max_error_after_glb": 0
+    },
+    {
+      "name": "container-40ft",
+      "triangles": 17563,
+      "dimensions_m_LWH": [
+        12.192000389099121,
+        2.437999963760376,
+        2.5910000801086426
+      ],
+      "pivot": "bottom center",
+      "maps": [
+        {
+          "name": "NormalGL_094aae65-4207-4b67-b717-eddb2bbd0237",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "Paint 913E34",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "painted-steel-orm",
+          "size": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "protected_texel_max_error_after_glb": 0
+    },
+    {
+      "name": "container-40ft-highcube",
+      "triangles": 16010,
+      "dimensions_m_LWH": [
+        12.192000389099121,
+        2.437999963760376,
+        2.8959999084472656
+      ],
+      "pivot": "bottom center",
+      "maps": [
+        {
+          "name": "NormalGL_92d32eed-01f4-42bb-8fef-c178c2313c42",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "Paint 3E6854",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "painted-steel-orm",
+          "size": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "protected_texel_max_error_after_glb": 0
+    }
+  ],
+  "alternate_color": {
+    "hex": "#C99B45",
+    "geometry_identical": true,
+    "normal_and_orm_identical": true,
+    "albedo_changed": true,
+    "protected_texel_max_error_after_glb": 0
+  },
+  "portable_recolor": {
+    "all_binary_payloads_identical_to_blend_export": true
+  }
+}
