@@ -1,0 +1,71 @@
+{
+  "id": "chainlink-fence",
+  "bytes": 9599860,
+  "sha256": "8e02b1cdc3da71fdef7e6364ea8a5ccdeca88b60fb9ad70295f3862d3b6a5549",
+  "triangles_instanced": 6570,
+  "triangles_unique": 6570,
+  "mesh_instances": 1,
+  "unique_meshes": 1,
+  "materials": 2,
+  "units": "meters",
+  "up_axis": "Y",
+  "dimensions_xyz_gltf": [
+    4,
+    2.4,
+    0.3
+  ],
+  "pivot": "bottom center",
+  "source_triangles": 18725,
+  "source_dimensions_blender": [
+    0.090397909283638,
+    0.9867346286773682,
+    0.5500900149345398
+  ],
+  "source_rotation_z_degrees": 90,
+  "original_maps": [
+    {
+      "name": "Color_10326f0f-9a28-4652-ab44-f03799b307f3",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_10326f0f-9a28-4652-ab44-f03799b307f3",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_10326f0f-9a28-4652-ab44-f03799b307f3",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 2048,
+  "pbr_rebaked": false,
+  "offline_repairs": [
+    "Regular geometry wire web; source frame retained"
+  ],
+  "provider": "Tripo3D",
+  "task_id": "10326f0f-9a28-4652-ab44-f03799b307f3",
+  "credits_consumed": 60.0,
+  "source_sha256": "d5bd9dc26f2ec7beca80ff320e5d8b3e29791c977f71b351bc402a65809b51c9",
+  "reference_sha256": "69cd10c9b63b77618d62ed4a6b769c86080d9b35803c4903f067e03abb647ca8",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "request": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 20000,
+    "texture": true,
+    "pbr": true,
+    "quad": false,
+    "texture_quality": "detailed",
+    "texture_version": "v3.5-20260815",
+    "delight": false,
+    "enable_image_autofix": false
+  }
+}

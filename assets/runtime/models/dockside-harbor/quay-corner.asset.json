@@ -1,0 +1,68 @@
+{
+  "id": "quay-corner",
+  "bytes": 2467576,
+  "sha256": "fb6d73016cf26f2ddc7b4903f1a9b02697e5ea291d093c217dc8c8d543086904",
+  "triangles_instanced": 3995,
+  "triangles_unique": 3995,
+  "mesh_instances": 1,
+  "unique_meshes": 1,
+  "materials": 1,
+  "units": "meters",
+  "up_axis": "Y",
+  "dimensions_xyz_gltf": [
+    4,
+    4,
+    4
+  ],
+  "pivot": "bottom center",
+  "source_triangles": 16667,
+  "source_dimensions_blender": [
+    0.9149684309959412,
+    0.9795337915420532,
+    0.48445767164230347
+  ],
+  "source_rotation_z_degrees": 0,
+  "original_maps": [
+    {
+      "name": "Color_6a27ab79-3c55-45bb-94e4-dbdde8900f81",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_6a27ab79-3c55-45bb-94e4-dbdde8900f81",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_6a27ab79-3c55-45bb-94e4-dbdde8900f81",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 1024,
+  "pbr_rebaked": true,
+  "provider": "Tripo3D",
+  "task_id": "6a27ab79-3c55-45bb-94e4-dbdde8900f81",
+  "credits_consumed": 60.0,
+  "source_sha256": "da249305c829a4aa28daff02b94d03bc666a0bd11c45c1c8334be9c7d3947452",
+  "reference_sha256": "5599c53e9af0d79e947a6668d091acde2921c425a02c24baee22d1dec8eb1a9f",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "request": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 20000,
+    "texture": true,
+    "pbr": true,
+    "quad": false,
+    "texture_quality": "detailed",
+    "texture_version": "v3.5-20260815",
+    "delight": false,
+    "enable_image_autofix": false
+  }
+}

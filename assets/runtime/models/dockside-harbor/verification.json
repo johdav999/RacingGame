@@ -1,0 +1,346 @@
+{
+  "scope": "GLB reimport, embedded PBR, finite geometry, meter bounds, pivots, triangle budgets, opposite-view renders; no engine integration",
+  "assets": [
+    {
+      "id": "quay-wall",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 2996,
+      "dimensions_xyz_gltf": [
+        8.0,
+        4.0,
+        0.9999999403953552
+      ],
+      "maps": [
+        {
+          "name": "quay-wall-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "quay-wall-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "quay-wall-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quay-corner",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 3995,
+      "dimensions_xyz_gltf": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "maps": [
+        {
+          "name": "quay-corner-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "quay-corner-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "quay-corner-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quay-coping",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 995,
+      "dimensions_xyz_gltf": [
+        4.0,
+        0.25,
+        1.2000000476837158
+      ],
+      "maps": [
+        {
+          "name": "quay-coping-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "quay-coping-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "quay-coping-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dock-edge",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 2995,
+      "dimensions_xyz_gltf": [
+        3.999999761581421,
+        0.2199999988079071,
+        4.0
+      ],
+      "maps": [
+        {
+          "name": "dock-edge-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "dock-edge-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "dock-edge-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "concrete-barrier",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 3996,
+      "dimensions_xyz_gltf": [
+        4.0,
+        1.0999999046325684,
+        0.699999988079071
+      ],
+      "maps": [
+        {
+          "name": "concrete-barrier-albedo",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "concrete-barrier-normal",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "concrete-barrier-orm",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 17862,
+      "dimensions_xyz_gltf": [
+        4.0,
+        0.8500000238418579,
+        0.35000014305114746
+      ],
+      "maps": [
+        {
+          "name": "Color_c9d798be-4b48-440f-bca2-62842e6c363d",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "NormalGL_c9d798be-4b48-440f-bca2-62842e6c363d",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "ORM_c9d798be-4b48-440f-bca2-62842e6c363d",
+          "size": [
+            2048,
+            2048
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chainlink-fence",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 6570,
+      "dimensions_xyz_gltf": [
+        4.0,
+        2.4000000953674316,
+        0.30000001192092896
+      ],
+      "maps": [
+        {
+          "name": "Color_10326f0f-9a28-4652-ab44-f03799b307f3",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "NormalGL_10326f0f-9a28-4652-ab44-f03799b307f3",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "ORM_10326f0f-9a28-4652-ab44-f03799b307f3",
+          "size": [
+            2048,
+            2048
+          ]
+        }
+      ],
+      "open_area_sample_fraction": 0.8229166666666666
+    },
+    {
+      "id": "floodlight-mast",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 19247,
+      "dimensions_xyz_gltf": [
+        6.861386299133301,
+        12.0,
+        2.1919078826904297
+      ],
+      "maps": [
+        {
+          "name": "Color_02b21b26-e223-4dd9-b454-748ae6978d42",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "NormalGL_02b21b26-e223-4dd9-b454-748ae6978d42",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "ORM_02b21b26-e223-4dd9-b454-748ae6978d42",
+          "size": [
+            2048,
+            2048
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall-lamp",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 18616,
+      "dimensions_xyz_gltf": [
+        0.5999999642372131,
+        0.5340220928192139,
+        0.6674272418022156
+      ],
+      "maps": [
+        {
+          "name": "Color_257a0a32-fe43-48b5-ad59-6a430d126423",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "NormalGL_257a0a32-fe43-48b5-ad59-6a430d126423",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "ORM_257a0a32-fe43-48b5-ad59-6a430d126423",
+          "size": [
+            2048,
+            2048
+          ]
+        }
+      ]
+    },
+    {
+      "id": "container-crane",
+      "sha256_verified": true,
+      "embedded_maps_verified": true,
+      "triangles": 18506,
+      "dimensions_xyz_gltf": [
+        65.57128143310547,
+        42.0,
+        16.13030242919922
+      ],
+      "maps": [
+        {
+          "name": "Color_e5239eb7-b5e2-4c65-8d7f-becdaebf71b7",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "NormalGL_e5239eb7-b5e2-4c65-8d7f-becdaebf71b7",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "ORM_e5239eb7-b5e2-4c65-8d7f-becdaebf71b7",
+          "size": [
+            2048,
+            2048
+          ]
+        }
+      ]
+    }
+  ]
+}
