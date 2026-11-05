@@ -1,0 +1,167 @@
+{
+  "assets": [
+    {
+      "name": "container-20ft",
+      "dimensions_m_LWH": [
+        6.058,
+        2.438,
+        2.591
+      ],
+      "triangles": 15756,
+      "default_color": "#245D88",
+      "bytes": 10784368,
+      "sha256": "0392b339f5fe28fa71a3b437ab6a2f397a05a4216d94148cd38c07f801208d2f",
+      "provider": "Tripo3D",
+      "task_id": "e77b0fcb-f5ae-4f2e-9c29-e244a11c1091",
+      "credits_consumed": 60.0,
+      "source_sha256": "4592a811f10ebd3bdae9b034309cb8eee013efd12aeadd9f757b0a08b94fa42b",
+      "reference_sha256": "26aac70ca3a3163bbbfe12cfb9ae4e4a18b1f638a68ea642e77ec384924e6109",
+      "original_maps": [
+        {
+          "name": "Color_e77b0fcb-f5ae-4f2e-9c29-e244a11c1091",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_e77b0fcb-f5ae-4f2e-9c29-e244a11c1091",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_e77b0fcb-f5ae-4f2e-9c29-e244a11c1091",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "runtime_texture_max_dimension": 2048,
+      "source_dimensions_blender": [
+        0.978782057762146,
+        0.3553624749183655,
+        0.39134424924850464
+      ],
+      "paint": {
+        "paint_coverage": 0.8727429509162903,
+        "protected_texels": 472749,
+        "paint_reference_srgb": 0.6313725709915161,
+        "protected_texel_max_error_before_encoding": 0.0
+      },
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "qa": "Finite geometry, measured GLB triangles, exact dimensions, normal map retained, paint-only dielectric/roughness adjustment, protected texels unchanged before encoding. Studio renders; no in-game integration."
+    },
+    {
+      "name": "container-40ft",
+      "dimensions_m_LWH": [
+        12.192,
+        2.438,
+        2.591
+      ],
+      "triangles": 17563,
+      "default_color": "#913E34",
+      "bytes": 10348432,
+      "sha256": "04920a7532270c61145f86d5d281c0c4fce6ee3c89b9b6ccd7cc88290ce09815",
+      "provider": "Tripo3D",
+      "task_id": "094aae65-4207-4b67-b717-eddb2bbd0237",
+      "credits_consumed": 60.0,
+      "source_sha256": "fce9cbfb1bb636a13378e6a8ed506de865bed242351f671c293215c46ddd5c4c",
+      "reference_sha256": "a12e792f2127ec36623083589c36380d44751a76a8b1a4b8231044d1d63f6c3e",
+      "original_maps": [
+        {
+          "name": "Color_094aae65-4207-4b67-b717-eddb2bbd0237",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_094aae65-4207-4b67-b717-eddb2bbd0237",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_094aae65-4207-4b67-b717-eddb2bbd0237",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "runtime_texture_max_dimension": 2048,
+      "source_dimensions_blender": [
+        0.20293524861335754,
+        0.9795109033584595,
+        0.20933157205581665
+      ],
+      "paint": {
+        "paint_coverage": 0.8831015825271606,
+        "protected_texels": 412005,
+        "paint_reference_srgb": 0.6313725709915161,
+        "protected_texel_max_error_before_encoding": 0.0
+      },
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "qa": "Finite geometry, measured GLB triangles, exact dimensions, normal map retained, paint-only dielectric/roughness adjustment, protected texels unchanged before encoding. Studio renders; no in-game integration."
+    },
+    {
+      "name": "container-40ft-highcube",
+      "dimensions_m_LWH": [
+        12.192,
+        2.438,
+        2.896
+      ],
+      "triangles": 16010,
+      "default_color": "#3E6854",
+      "bytes": 10827224,
+      "sha256": "293e9f6d13a24a5926d7f557b4fc09bc6edb1737961a185b7ceb43940408468a",
+      "provider": "Tripo3D",
+      "task_id": "92d32eed-01f4-42bb-8fef-c178c2313c42",
+      "credits_consumed": 60.0,
+      "source_sha256": "e2d4e30aa5bb00750fa8c8b4e06f88a882f75925fdfca78b8f11bdba8b316a68",
+      "reference_sha256": "dff0d0f56dab11a2b2b10d1bc50c4c2997fd1e38d7c936791128f410be07ab64",
+      "original_maps": [
+        {
+          "name": "Color_92d32eed-01f4-42bb-8fef-c178c2313c42",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "NormalGL_92d32eed-01f4-42bb-8fef-c178c2313c42",
+          "size": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "name": "ORM_92d32eed-01f4-42bb-8fef-c178c2313c42",
+          "size": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "runtime_texture_max_dimension": 2048,
+      "source_dimensions_blender": [
+        0.24113744497299194,
+        0.9829517602920532,
+        0.2608546018600464
+      ],
+      "paint": {
+        "paint_coverage": 0.874190628528595,
+        "protected_texels": 408173,
+        "paint_reference_srgb": 0.6666666865348816,
+        "protected_texel_max_error_before_encoding": 0.0
+      },
+      "license_status": "Unverified: record account entitlement and applicable rights before release",
+      "qa": "Finite geometry, measured GLB triangles, exact dimensions, normal map retained, paint-only dielectric/roughness adjustment, protected texels unchanged before encoding. Studio renders; no in-game integration."
+    }
+  ],
+  "total_triangles": 49329
+}
