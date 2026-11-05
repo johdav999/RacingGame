@@ -1,0 +1,91 @@
+{
+  "id": "track-corner-right",
+  "source_id": "track-corner",
+  "bytes": 2568468,
+  "sha256": "6691916833688499dee5373cfe3a36bc58c53676f64f7bfcadb697a9f8ac54c0",
+  "triangles_instanced": 1296,
+  "triangles_unique": 1296,
+  "mesh_instances": 1,
+  "unique_meshes": 1,
+  "materials": 2,
+  "dimensions_xyz_gltf": [
+    16,
+    0.25,
+    16
+  ],
+  "units": "meters",
+  "up_axis": "Y",
+  "pivot": "bottom center",
+  "source_triangles": 19618,
+  "source_dimensions_blender": [
+    0.7951257228851318,
+    0.9782984852790833,
+    0.7731281518936157
+  ],
+  "source_rotation_z_degrees": 0,
+  "original_maps": [
+    {
+      "name": "Color_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 1024,
+  "pbr_rebaked": false,
+  "material_source_asset": "track-straight",
+  "provider": "Tripo3D",
+  "task_id": "1429e2d8-23c8-4aff-88c2-d9d80715dbf8",
+  "credits_consumed": 0,
+  "source_sha256": "4e432bfe5970c05be86abfa118db90486fc94f2e3271c60f60a81f6752c451c2",
+  "reference_sha256": "1a0b1ec369ce5d2f317bfc6485f58db07bcdf605370a3b1a72a93bc24bd4d645",
+  "license_status": "Unverified: record account entitlement and applicable rights before release",
+  "request": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 20000,
+    "texture": true,
+    "pbr": true,
+    "quad": false,
+    "texture_quality": "detailed",
+    "texture_version": "v3.5-20260815",
+    "delight": false,
+    "enable_image_autofix": false
+  },
+  "geometry_correction": {
+    "method": "Rebuilt flat quarter annulus with shared straight-road PBR after provider geometry/UV distortion",
+    "inner_radius_m": 4,
+    "outer_radius_m": 16,
+    "angle_degrees": 90
+  },
+  "flat_road_top_m": 0.25,
+  "join_centers_xyz_gltf": [
+    [
+      -2,
+      0.25,
+      8
+    ],
+    [
+      8,
+      0.25,
+      -2
+    ]
+  ],
+  "derived_from": "track-corner-left",
+  "derivation": "Offline X reflection with corrected face winding; shared source task and maps"
+}

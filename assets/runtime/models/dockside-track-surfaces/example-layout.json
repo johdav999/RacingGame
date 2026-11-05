@@ -1,0 +1,36 @@
+{
+  "units": "meters",
+  "up_axis": "Y",
+  "components": [
+    {
+      "asset": "track-corner-left",
+      "translation_xyz_gltf": [
+        0,
+        0,
+        0
+      ],
+      "rotation_y_degrees": 0
+    },
+    {
+      "asset": "track-straight",
+      "translation_xyz_gltf": [
+        2,
+        0,
+        16
+      ],
+      "rotation_y_degrees": 0
+    },
+    {
+      "asset": "track-straight",
+      "translation_xyz_gltf": [
+        -16,
+        0,
+        -2
+      ],
+      "rotation_y_degrees": 90
+    }
+  ],
+  "join_samples_passed": 20,
+  "road_width_m": 12,
+  "surface_y_m": 0.25
+}
