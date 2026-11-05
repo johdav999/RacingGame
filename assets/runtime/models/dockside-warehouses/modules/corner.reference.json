@@ -1,0 +1,5 @@
+{
+  "provider": "Built-in ImageGen",
+  "prompt": "Use case: stylized-concept. Photorealistic isolated image-to-3D reference. One modular warehouse CORNER POST for a realistic weathered dockside industrial building. A tall straight square-section structural steel column, approximately 4 meters tall and 0.42 meters square, dark desaturated charcoal galvanized steel with bolted reinforcing angle plates on two adjoining outer faces. Concrete square pedestal at bottom, discreet dark red-brown masonry scuffing at base, light rust at bolts and rain streaks. A simple flat square cap at top, no beams extending sideways. Clearly visible two adjoining faces in three-quarter view, complete slender vertical silhouette with substantial blank margins. Plausible construction, crisp flat straight faces, thickness readable, no bent geometry. Consistent realistic PBR materials: graphite steel, gray concrete. Plain light gray background, neutral diffuse studio lighting. Exactly one corner post, no other objects, wall sections, roof, text, logos, labels or multiple views.",
+  "sha256": "d1b7f7f30b3d8f55e3a4aaf334d136af4b933c07877b1cb7f8829b4afb4e70e3"
+}

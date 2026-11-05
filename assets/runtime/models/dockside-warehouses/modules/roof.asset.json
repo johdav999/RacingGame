@@ -1,0 +1,62 @@
+{
+  "name": "roof",
+  "size": [
+    4,
+    4,
+    0.22
+  ],
+  "detail_budget": 900,
+  "assembly_budget": 180,
+  "bytes": 1739188,
+  "sha256": "1be31ed0214095b2b49d635ba5c20299a1518990f0537242791196b0b0decc6f",
+  "triangles_instanced": 896,
+  "triangles_unique": 896,
+  "mesh_instances": 1,
+  "unique_meshes": 1,
+  "materials": 1,
+  "assembly_lod": {
+    "bytes": 1727264,
+    "sha256": "d589f438acd308036ebdbbc3b2a9ee5326aa3a8667b61ea6a4518a2912857c24",
+    "triangles_instanced": 176,
+    "triangles_unique": 176,
+    "mesh_instances": 1,
+    "unique_meshes": 1,
+    "materials": 1
+  },
+  "source_triangles": 14960,
+  "source_dimensions_blender": [
+    0.9782502055168152,
+    0.978823184967041,
+    0.047675080597400665
+  ],
+  "original_maps": [
+    {
+      "name": "Color_c62ef451-1701-4a61-b340-b28838c84b02",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_c62ef451-1701-4a61-b340-b28838c84b02",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_c62ef451-1701-4a61-b340-b28838c84b02",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 1024,
+  "provider": "Tripo3D",
+  "task_id": "c62ef451-1701-4a61-b340-b28838c84b02",
+  "credits_consumed": 60.0,
+  "source_sha256": "8ac9c031025ac384a1f93166e0da2b27be7e485863e1f600d5a69d53ed193261",
+  "reference_sha256": "3bf0843210da74fb65be6b8c4907c725c5bc3383c755a5a4a15f47d2f355832d",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

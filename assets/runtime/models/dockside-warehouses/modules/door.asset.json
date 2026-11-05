@@ -1,0 +1,62 @@
+{
+  "name": "door",
+  "size": [
+    3.5,
+    0.22,
+    3.6
+  ],
+  "detail_budget": 2000,
+  "assembly_budget": 650,
+  "bytes": 2198048,
+  "sha256": "68e6c6c6f99e3662ab39778aad50c88361df12800b31ea0ebb0dbc3ac5a1cf45",
+  "triangles_instanced": 1996,
+  "triangles_unique": 1996,
+  "mesh_instances": 1,
+  "unique_meshes": 1,
+  "materials": 1,
+  "assembly_lod": {
+    "bytes": 1670516,
+    "sha256": "4466f17edf588f09b6f133800dfe9209b0288f86a34999abc33b597fe8246a35",
+    "triangles_instanced": 646,
+    "triangles_unique": 646,
+    "mesh_instances": 1,
+    "unique_meshes": 1,
+    "materials": 1
+  },
+  "source_triangles": 11766,
+  "source_dimensions_blender": [
+    0.18323861062526703,
+    0.9782097935676575,
+    0.9681077003479004
+  ],
+  "original_maps": [
+    {
+      "name": "Color_4d8b3db7-f2d0-44a1-805e-1170d89adeb0",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_4d8b3db7-f2d0-44a1-805e-1170d89adeb0",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_4d8b3db7-f2d0-44a1-805e-1170d89adeb0",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "texture_cap": 1024,
+  "provider": "Tripo3D",
+  "task_id": "4d8b3db7-f2d0-44a1-805e-1170d89adeb0",
+  "credits_consumed": 60.0,
+  "source_sha256": "3c6aef43392a89c4e47ac09c77b59c74139c4607575146cd6423af946c0d80b5",
+  "reference_sha256": "f219941160d88ed21fa997b59a8685a56c9d5415967eb6c2e09fe2b65df74eee",
+  "license_status": "Unverified: record account entitlement and applicable rights before release"
+}

@@ -1,0 +1,1823 @@
+{
+  "id": "high-bay-store",
+  "label": "High-bay warehouse",
+  "grid_m": 4.0,
+  "footprint_cells": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "nominal_footprint_m": [
+    16,
+    16
+  ],
+  "wall_height_m": 8,
+  "dimensions_m_xyz_gltf": [
+    16.679999351501465,
+    9.409999848902226,
+    16.679999351501465
+  ],
+  "bounds_min_xyz_gltf": [
+    -8.329999923706055,
+    -1.4901161415892261e-09,
+    -8.329999923706055
+  ],
+  "bounds_max_xyz_gltf": [
+    8.34999942779541,
+    9.40999984741211,
+    8.34999942779541
+  ],
+  "module_counts": {
+    "foundation": 16,
+    "roof": 16,
+    "roof-backing": 16,
+    "wall": 16,
+    "wall-backing": 16,
+    "door": 3,
+    "window": 13,
+    "corner": 16,
+    "vent": 2
+  },
+  "bytes": 10655100,
+  "sha256": "c3236be10aa6a369277fa495b5972304d67eb6d23b0bbd7d1c254c5322fb173a",
+  "triangles_instanced": 18359,
+  "triangles_unique": 2377,
+  "mesh_instances": 114,
+  "unique_meshes": 9,
+  "materials": 7,
+  "components": [
+    {
+      "name": "foundation_000",
+      "module": "foundation",
+      "translation": [
+        -6.0,
+        0.0,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_001",
+      "module": "roof",
+      "translation": [
+        -6.0,
+        8.199999809265137,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_002",
+      "module": "roof-backing",
+      "translation": [
+        -6.0,
+        8.149999618530273,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_003",
+      "module": "foundation",
+      "translation": [
+        -6.0,
+        0.0,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_004",
+      "module": "roof",
+      "translation": [
+        -6.0,
+        8.199999809265137,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_005",
+      "module": "roof-backing",
+      "translation": [
+        -6.0,
+        8.149999618530273,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_006",
+      "module": "foundation",
+      "translation": [
+        -6.0,
+        0.0,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_007",
+      "module": "roof",
+      "translation": [
+        -6.0,
+        8.199999809265137,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_008",
+      "module": "roof-backing",
+      "translation": [
+        -6.0,
+        8.149999618530273,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_009",
+      "module": "foundation",
+      "translation": [
+        -6.0,
+        0.0,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_010",
+      "module": "roof",
+      "translation": [
+        -6.0,
+        8.199999809265137,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_011",
+      "module": "roof-backing",
+      "translation": [
+        -6.0,
+        8.149999618530273,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_012",
+      "module": "foundation",
+      "translation": [
+        -2.0,
+        0.0,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_013",
+      "module": "roof",
+      "translation": [
+        -2.0,
+        8.199999809265137,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_014",
+      "module": "roof-backing",
+      "translation": [
+        -2.0,
+        8.149999618530273,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_015",
+      "module": "foundation",
+      "translation": [
+        -2.0,
+        0.0,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_016",
+      "module": "roof",
+      "translation": [
+        -2.0,
+        8.199999809265137,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_017",
+      "module": "roof-backing",
+      "translation": [
+        -2.0,
+        8.149999618530273,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_018",
+      "module": "foundation",
+      "translation": [
+        -2.0,
+        0.0,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_019",
+      "module": "roof",
+      "translation": [
+        -2.0,
+        8.199999809265137,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_020",
+      "module": "roof-backing",
+      "translation": [
+        -2.0,
+        8.149999618530273,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_021",
+      "module": "foundation",
+      "translation": [
+        -2.0,
+        0.0,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_022",
+      "module": "roof",
+      "translation": [
+        -2.0,
+        8.199999809265137,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_023",
+      "module": "roof-backing",
+      "translation": [
+        -2.0,
+        8.149999618530273,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_024",
+      "module": "foundation",
+      "translation": [
+        2.0,
+        0.0,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_025",
+      "module": "roof",
+      "translation": [
+        2.0,
+        8.199999809265137,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_026",
+      "module": "roof-backing",
+      "translation": [
+        2.0,
+        8.149999618530273,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_027",
+      "module": "foundation",
+      "translation": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_028",
+      "module": "roof",
+      "translation": [
+        2.0,
+        8.199999809265137,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_029",
+      "module": "roof-backing",
+      "translation": [
+        2.0,
+        8.149999618530273,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_030",
+      "module": "foundation",
+      "translation": [
+        2.0,
+        0.0,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_031",
+      "module": "roof",
+      "translation": [
+        2.0,
+        8.199999809265137,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_032",
+      "module": "roof-backing",
+      "translation": [
+        2.0,
+        8.149999618530273,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_033",
+      "module": "foundation",
+      "translation": [
+        2.0,
+        0.0,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_034",
+      "module": "roof",
+      "translation": [
+        2.0,
+        8.199999809265137,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_035",
+      "module": "roof-backing",
+      "translation": [
+        2.0,
+        8.149999618530273,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_036",
+      "module": "foundation",
+      "translation": [
+        6.0,
+        0.0,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_037",
+      "module": "roof",
+      "translation": [
+        6.0,
+        8.199999809265137,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_038",
+      "module": "roof-backing",
+      "translation": [
+        6.0,
+        8.149999618530273,
+        6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_039",
+      "module": "foundation",
+      "translation": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_040",
+      "module": "roof",
+      "translation": [
+        6.0,
+        8.199999809265137,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_041",
+      "module": "roof-backing",
+      "translation": [
+        6.0,
+        8.149999618530273,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_042",
+      "module": "foundation",
+      "translation": [
+        6.0,
+        0.0,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_043",
+      "module": "roof",
+      "translation": [
+        6.0,
+        8.199999809265137,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_044",
+      "module": "roof-backing",
+      "translation": [
+        6.0,
+        8.149999618530273,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "foundation_045",
+      "module": "foundation",
+      "translation": [
+        6.0,
+        0.0,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof_046",
+      "module": "roof",
+      "translation": [
+        6.0,
+        8.199999809265137,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "roof-backing_047",
+      "module": "roof-backing",
+      "translation": [
+        6.0,
+        8.149999618530273,
+        -6.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_048",
+      "module": "wall",
+      "translation": [
+        -6.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_049",
+      "module": "wall-backing",
+      "translation": [
+        -6.0,
+        0.20000000298023224,
+        7.900000095367432
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "door_050",
+      "module": "door",
+      "translation": [
+        -6.0,
+        0.20000000298023224,
+        8.239999771118164
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1.5,
+        1
+      ]
+    },
+    {
+      "name": "wall_051",
+      "module": "wall",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        6.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_052",
+      "module": "wall-backing",
+      "translation": [
+        -7.900000095367432,
+        0.20000000298023224,
+        6.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_053",
+      "module": "window",
+      "translation": [
+        -8.239999771118164,
+        6.550000190734863,
+        6.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_054",
+      "module": "wall",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        2.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_055",
+      "module": "wall-backing",
+      "translation": [
+        -7.900000095367432,
+        0.20000000298023224,
+        2.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_056",
+      "module": "window",
+      "translation": [
+        -8.239999771118164,
+        6.550000190734863,
+        2.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_057",
+      "module": "wall",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        -2.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_058",
+      "module": "wall-backing",
+      "translation": [
+        -7.900000095367432,
+        0.20000000298023224,
+        -2.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_059",
+      "module": "window",
+      "translation": [
+        -8.239999771118164,
+        6.550000190734863,
+        -2.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_060",
+      "module": "wall",
+      "translation": [
+        -6.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_061",
+      "module": "wall-backing",
+      "translation": [
+        -6.0,
+        0.20000000298023224,
+        -7.899999618530273
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_062",
+      "module": "window",
+      "translation": [
+        -6.0,
+        6.550000190734863,
+        -8.239999771118164
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_063",
+      "module": "wall",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        -6.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_064",
+      "module": "wall-backing",
+      "translation": [
+        -7.900000095367432,
+        0.20000000298023224,
+        -6.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_065",
+      "module": "window",
+      "translation": [
+        -8.239999771118164,
+        6.550000190734863,
+        -6.0
+      ],
+      "rotation_y_degrees": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_066",
+      "module": "wall",
+      "translation": [
+        -2.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_067",
+      "module": "wall-backing",
+      "translation": [
+        -2.0,
+        0.20000000298023224,
+        7.900000095367432
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "door_068",
+      "module": "door",
+      "translation": [
+        -2.0,
+        0.20000000298023224,
+        8.239999771118164
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1.5,
+        1
+      ]
+    },
+    {
+      "name": "wall_069",
+      "module": "wall",
+      "translation": [
+        -2.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_070",
+      "module": "wall-backing",
+      "translation": [
+        -2.0,
+        0.20000000298023224,
+        -7.899999618530273
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_071",
+      "module": "window",
+      "translation": [
+        -2.0,
+        6.550000190734863,
+        -8.239999771118164
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_072",
+      "module": "wall",
+      "translation": [
+        2.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_073",
+      "module": "wall-backing",
+      "translation": [
+        2.0,
+        0.20000000298023224,
+        7.900000095367432
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_074",
+      "module": "window",
+      "translation": [
+        2.0,
+        6.550000190734863,
+        8.239999771118164
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_075",
+      "module": "wall",
+      "translation": [
+        2.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_076",
+      "module": "wall-backing",
+      "translation": [
+        2.0,
+        0.20000000298023224,
+        -7.899999618530273
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_077",
+      "module": "window",
+      "translation": [
+        2.0,
+        6.550000190734863,
+        -8.239999771118164
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_078",
+      "module": "wall",
+      "translation": [
+        6.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_079",
+      "module": "wall-backing",
+      "translation": [
+        6.0,
+        0.20000000298023224,
+        7.900000095367432
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_080",
+      "module": "window",
+      "translation": [
+        6.0,
+        6.550000190734863,
+        8.239999771118164
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_081",
+      "module": "wall",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        6.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_082",
+      "module": "wall-backing",
+      "translation": [
+        7.899999618530273,
+        0.20000000298023224,
+        6.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_083",
+      "module": "window",
+      "translation": [
+        8.239999771118164,
+        6.550000190734863,
+        6.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_084",
+      "module": "wall",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        2.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_085",
+      "module": "wall-backing",
+      "translation": [
+        7.899999618530273,
+        0.20000000298023224,
+        2.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "door_086",
+      "module": "door",
+      "translation": [
+        8.239999771118164,
+        0.20000000298023224,
+        2.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        1.5,
+        1
+      ]
+    },
+    {
+      "name": "wall_087",
+      "module": "wall",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        -2.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_088",
+      "module": "wall-backing",
+      "translation": [
+        7.899999618530273,
+        0.20000000298023224,
+        -2.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_089",
+      "module": "window",
+      "translation": [
+        8.239999771118164,
+        6.550000190734863,
+        -2.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_090",
+      "module": "wall",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        -6.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_091",
+      "module": "wall-backing",
+      "translation": [
+        7.899999618530273,
+        0.20000000298023224,
+        -6.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_092",
+      "module": "window",
+      "translation": [
+        8.239999771118164,
+        6.550000190734863,
+        -6.0
+      ],
+      "rotation_y_degrees": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "wall_093",
+      "module": "wall",
+      "translation": [
+        6.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "wall-backing_094",
+      "module": "wall-backing",
+      "translation": [
+        6.0,
+        0.20000000298023224,
+        -7.899999618530273
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "window_095",
+      "module": "window",
+      "translation": [
+        6.0,
+        6.550000190734863,
+        -8.239999771118164
+      ],
+      "rotation_y_degrees": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "corner_096",
+      "module": "corner",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_097",
+      "module": "corner",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        4.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_098",
+      "module": "corner",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        -0.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_099",
+      "module": "corner",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        -4.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_100",
+      "module": "corner",
+      "translation": [
+        -8.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_101",
+      "module": "corner",
+      "translation": [
+        -4.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_102",
+      "module": "corner",
+      "translation": [
+        -4.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_103",
+      "module": "corner",
+      "translation": [
+        0.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_104",
+      "module": "corner",
+      "translation": [
+        0.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_105",
+      "module": "corner",
+      "translation": [
+        4.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_106",
+      "module": "corner",
+      "translation": [
+        4.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_107",
+      "module": "corner",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_108",
+      "module": "corner",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        4.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_109",
+      "module": "corner",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        -0.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_110",
+      "module": "corner",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        -4.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "corner_111",
+      "module": "corner",
+      "translation": [
+        8.0,
+        0.20000000298023224,
+        -8.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        2.0,
+        1
+      ]
+    },
+    {
+      "name": "vent_112",
+      "module": "vent",
+      "translation": [
+        -2.0,
+        8.40999984741211,
+        2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "vent_113",
+      "module": "vent",
+      "translation": [
+        2.0,
+        8.40999984741211,
+        -2.0
+      ],
+      "rotation_y_degrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "doors_closed": true,
+  "interiors": false
+}

@@ -1,0 +1,435 @@
+{
+  "warehouses": [
+    {
+      "id": "compact-depot",
+      "label": "Compact dock depot",
+      "grid_m": 4.0,
+      "footprint_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "nominal_footprint_m": [
+        12,
+        12
+      ],
+      "wall_height_m": 4,
+      "dimensions_m_xyz_gltf": [
+        12.65999984741211,
+        5.409999848902226,
+        12.679999828338623
+      ],
+      "bounds_min_xyz_gltf": [
+        -6.329999923706055,
+        -1.4901161415892261e-09,
+        -6.329999923706055
+      ],
+      "bounds_max_xyz_gltf": [
+        6.329999923706055,
+        5.409999847412109,
+        6.349999904632568
+      ],
+      "module_counts": {
+        "foundation": 9,
+        "roof": 9,
+        "roof-backing": 9,
+        "wall": 12,
+        "wall-backing": 12,
+        "door": 2,
+        "window": 5,
+        "corner": 12,
+        "vent": 2
+      },
+      "bytes": 10649032,
+      "sha256": "ce574ec281745684bb49a88ac87467d279e153e60f47367c77c397d6f117dad9",
+      "triangles_instanced": 12269,
+      "triangles_unique": 2377,
+      "mesh_instances": 72,
+      "unique_meshes": 9,
+      "materials": 7,
+      "doors_closed": true,
+      "interiors": false
+    },
+    {
+      "id": "long-freight-shed",
+      "label": "Long freight shed",
+      "grid_m": 4.0,
+      "footprint_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "nominal_footprint_m": [
+        24,
+        12
+      ],
+      "wall_height_m": 4,
+      "dimensions_m_xyz_gltf": [
+        24.65999984741211,
+        5.409999848902226,
+        12.679999828338623
+      ],
+      "bounds_min_xyz_gltf": [
+        -12.329999923706055,
+        -1.4901161415892261e-09,
+        -6.329999923706055
+      ],
+      "bounds_max_xyz_gltf": [
+        12.329999923706055,
+        5.409999847412109,
+        6.349999904632568
+      ],
+      "module_counts": {
+        "foundation": 18,
+        "roof": 18,
+        "roof-backing": 18,
+        "wall": 18,
+        "wall-backing": 18,
+        "window": 8,
+        "door": 5,
+        "corner": 18,
+        "vent": 2
+      },
+      "bytes": 10654980,
+      "sha256": "5494e0e7233cde13af464855494ae0447ffd1090dd0be4ba5baf443262a68e25",
+      "triangles_instanced": 19958,
+      "triangles_unique": 2377,
+      "mesh_instances": 123,
+      "unique_meshes": 9,
+      "materials": 7,
+      "doors_closed": true,
+      "interiors": false
+    },
+    {
+      "id": "high-bay-store",
+      "label": "High-bay warehouse",
+      "grid_m": 4.0,
+      "footprint_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "nominal_footprint_m": [
+        16,
+        16
+      ],
+      "wall_height_m": 8,
+      "dimensions_m_xyz_gltf": [
+        16.679999351501465,
+        9.409999848902226,
+        16.679999351501465
+      ],
+      "bounds_min_xyz_gltf": [
+        -8.329999923706055,
+        -1.4901161415892261e-09,
+        -8.329999923706055
+      ],
+      "bounds_max_xyz_gltf": [
+        8.34999942779541,
+        9.40999984741211,
+        8.34999942779541
+      ],
+      "module_counts": {
+        "foundation": 16,
+        "roof": 16,
+        "roof-backing": 16,
+        "wall": 16,
+        "wall-backing": 16,
+        "door": 3,
+        "window": 13,
+        "corner": 16,
+        "vent": 2
+      },
+      "bytes": 10655100,
+      "sha256": "c3236be10aa6a369277fa495b5972304d67eb6d23b0bbd7d1c254c5322fb173a",
+      "triangles_instanced": 18359,
+      "triangles_unique": 2377,
+      "mesh_instances": 114,
+      "unique_meshes": 9,
+      "materials": 7,
+      "doors_closed": true,
+      "interiors": false
+    },
+    {
+      "id": "l-shaped-transfer",
+      "label": "L-shaped transfer warehouse",
+      "grid_m": 4.0,
+      "footprint_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "nominal_footprint_m": [
+        20,
+        20
+      ],
+      "wall_height_m": 4,
+      "dimensions_m_xyz_gltf": [
+        20.65999984741211,
+        5.409999848902226,
+        20.559999465942383
+      ],
+      "bounds_min_xyz_gltf": [
+        -10.329999923706055,
+        -1.4901161415892261e-09,
+        -10.210000038146973
+      ],
+      "bounds_max_xyz_gltf": [
+        10.329999923706055,
+        5.409999847412109,
+        10.34999942779541
+      ],
+      "module_counts": {
+        "foundation": 16,
+        "roof": 16,
+        "roof-backing": 16,
+        "wall": 20,
+        "wall-backing": 20,
+        "door": 3,
+        "window": 9,
+        "corner": 20,
+        "vent": 2
+      },
+      "bytes": 10655268,
+      "sha256": "2f0bf732842c96d24685b111ffeb26e48383b466ce39662cd8f0caa193fb7adb",
+      "triangles_instanced": 19583,
+      "triangles_unique": 2377,
+      "mesh_instances": 122,
+      "unique_meshes": 9,
+      "materials": 7,
+      "doors_closed": true,
+      "interiors": false
+    }
+  ],
+  "module_manifest": "modules/manifest.json",
+  "scope": "Modular exterior assets; no scene placement or game runtime changes",
+  "authored_supports": [
+    "foundation",
+    "roof-backing",
+    "wall-backing"
+  ]
+}
